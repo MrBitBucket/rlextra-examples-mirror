@@ -100,12 +100,12 @@ def main():
     print 'file parsed OK \n'
 
     pdf = create_pdf(products, 'checklist_template.prep')
-    filename ='harwood_checklist.pdf'
+    filename ='output/harwood_checklist.pdf'
     open(filename,'wb').write(pdf)
     print 'Created %s' % filename, '\n'
     
     pdf = create_pdf(products, 'flyer_template.prep')
-    filename ='harwood_flyer.pdf'
+    filename ='output/harwood_flyer.pdf'
     open(filename,'wb').write(pdf)
     print 'Created %s' % filename
 
