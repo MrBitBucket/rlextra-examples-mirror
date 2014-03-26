@@ -3,8 +3,8 @@ Rlextra Examples
 ==================
 
 
-Product Catalogue Tutorial
-==========================
+First example: Product Catalogue Tutorial
+-----------------------------------------
 
 XML product listing converted to a fully customisable PDF in seconds.
 ---------------------------------------------------------------------
