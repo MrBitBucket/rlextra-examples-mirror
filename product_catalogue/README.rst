@@ -73,26 +73,27 @@ The file looks a lot like XML, with various bits of Python included within brace
 The whole document is wrapped in a tag, with some key sections within it:
 
 .. code::xml
+
     <docinit>  
         Here we register the fonts and colors to be used throughout   
         the document. 
     </docinit>       
-	    <template>  
-	        Here we define templates for the document.   
-	        They can include frames to handle flowing text, as well as   
-	        static components of the page, such as images, text, and   
-	        graphics. Later on, as we pass in our content, we can choose   
-	        which templates to use for each page.  
-	    </template>     
-	    <stylesheet>  
-	        Here we define paragraph and table styles much like you   
-	        would in a word processor.  
-	    </stylesheet>   
-	    <story>  
-	        Now it gets interesting. You've put in all the hard effort of   
-	        defining styles, frames, and fonts, and now it's time to give   
-	        your document some content.  
-	    </story>
+	<template>  
+	    Here we define templates for the document.   
+	    They can include frames to handle flowing text, as well as   
+	    static components of the page, such as images, text, and   
+	    graphics. Later on, as we pass in our content, we can choose   
+	   which templates to use for each page.  
+	</template>     
+	<stylesheet>  
+	    Here we define paragraph and table styles much like you   
+	    would in a word processor.  
+	</stylesheet>   
+	<story>  
+	    Now it gets interesting. You've put in all the hard effort of   
+	    defining styles, frames, and fonts, and now it's time to give   
+	    your document some content.  
+	</story>
 
 
 Making your first change: adding some new data
