@@ -74,10 +74,10 @@ The whole document is wrapped in a tag, with some key sections within it:
 
 .. code::xml
 
-	    <docinit>  
-	        Here we register the fonts and colors to be used throughout   
-	        the document.  
-	    </docinit>  
+<docinit>  
+Here we register the fonts and colors to be used throughout   
+the document. 
+</docinit>  
           
 	    <template>  
 	        Here we define templates for the document.   
