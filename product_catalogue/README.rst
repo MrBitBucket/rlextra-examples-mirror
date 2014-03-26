@@ -375,7 +375,7 @@ Remember how the checklist has been failing to generate? This is because the PDF
     prod.imgURL = 'img/' + fix(prodTag.ImageUrl).replace(' ','').split('/')[-1]   
     if prod.modelNumber in request_a_quote:   
 
-Now try building the document again. You will need to `download a pack of images`__ and extract the /img directory within your /rml directory for this to work:
+Now try building the document again:
 
 __ http://www.reportlab.com/static/cms/img/img.zip
 
