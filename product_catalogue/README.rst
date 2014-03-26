@@ -73,25 +73,21 @@ The file looks a lot like XML, with various bits of Python included within brace
 The whole document is wrapped in a tag, with some key sections within it:
 
 .. code::xml
-
-<docinit>  
-Here we register the fonts and colors to be used throughout   
-the document. 
-</docinit>  
-          
+    <docinit>  
+        Here we register the fonts and colors to be used throughout   
+        the document. 
+    </docinit>       
 	    <template>  
 	        Here we define templates for the document.   
 	        They can include frames to handle flowing text, as well as   
 	        static components of the page, such as images, text, and   
 	        graphics. Later on, as we pass in our content, we can choose   
 	        which templates to use for each page.  
-	    </template>  
-          
+	    </template>     
 	    <stylesheet>  
 	        Here we define paragraph and table styles much like you   
 	        would in a word processor.  
-	    </stylesheet>  
-          
+	    </stylesheet>   
 	    <story>  
 	        Now it gets interesting. You've put in all the hard effort of   
 	        defining styles, frames, and fonts, and now it's time to give   
@@ -106,15 +102,12 @@ First, let's turn our attention to the story where we loop over the product obje
 
 .. code::xml
 	<story>  
-  
-	    <para style="h1"> Product Availability </para>  
+      <para style="h1"> Product Availability </para>  
 	    <para style="h2">{{today.strftime('%d %B %Y')}}</para>  
-  
-	    {{for prod in products}}  
+      {{for prod in products}}  
 	        <para style="prod_name">{{i(prod.name)}}</para>  
 	    {{endfor}}  
-  
-	</story>
+    </story>
 
 We're looping over all our products and printing a paragraph for each product's name. Let's add product summary and product price as well; your story should now look like this:
 
