@@ -27,12 +27,12 @@ Download and install tutorial pack
 
 First thing's first: download our tutorial pack. This includes a number of images which you will need later.
 
-Take a look at the directory structure::
+Take a look at the directory structure:
 
-    data/ 
-    output/
-    rml/
-    product_catalog.py
+    -data/ 
+    -output/
+    -rml/
+    -product_catalog.py
 
     -data/ will hold our XML
     -rml/ will hold the fonts, images, and templates for constructing the documents 
@@ -260,7 +260,7 @@ Learning some basic page flow controls
 Now let's make the designer proud. First, note that page 3 beings with the text "meat...":
 
 
-http://www.reportlab.com/static/cms/img/tut5a.png
+.. image:: http://www.reportlab.com/static/cms/img/tut5a.png
 
 Ideally, we would be able to keep the descriptions from breaking across pages, so that all the information about a product stayed together. RML has many ways of controlling page flow and layouts, and in this case, we can use the keepWithNext attribute on these paragraph styles (prod_summary and prod_name). Your stylesheet should now look like this:
 
