@@ -29,15 +29,15 @@ First thing's first: download our tutorial pack. This includes a number of image
 
 Take a look at the directory structure:
 
-    data/ 
-    output/
-    rml/
-    product_catalog.py
+- data/ 
+- output/
+- rml/
+- product_catalog.py
 
--data/ will hold our XML
--rml/ will hold the fonts, images, and templates for constructing the documents 
--output/ will hold the generated PDFs
--product_catalog.py will be the script which ties it all together
+- data/ will hold our XML
+- rml/ will hold the fonts, images, and templates for constructing the documents 
+- output/ will hold the generated PDFs
+- product_catalog.py will be the script which ties it all together
 	
 
 Making your first document in Report Markup Language
@@ -45,18 +45,16 @@ Making your first document in Report Markup Language
 
 Execute python product_catalog.py, you should see the following output::
 
+    about to parse file:  ../data/products.xml 
+    file parsed OK 
 
-#################### 
-about to parse file:  ../data/products.xml 
-file parsed OK 
+    Trying to regenerate the check-list 
+    Check-list failed! Error: 
+    'Product' object has no attribute 'imgURL' 
 
-Trying to regenerate the check-list 
-Check-list failed! Error: 
-'Product' object has no attribute 'imgURL' 
+    Trying to regenerate the flyer 
+    success! created output/harwood_flyer.pdf 
 
-Trying to regenerate the flyer 
-success! created output/harwood_flyer.pdf 
-#################### 
 
 
 Notice that your 'checklist' is broken; that's ok for now, we'll come back to that later. Let's take a look at the flyer PDF. It's in /output/
