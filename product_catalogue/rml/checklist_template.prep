@@ -89,7 +89,7 @@ VEGETARIAN = False
     {{for prod in products}}
         <para style="prod_name">{{i(prod.name)}}  </para>
         <para style="prod_summary">{{i(prod.summary)}}</para>
-        <imageAndFlowables imageName="{{RML_DIR}}/{{if VEGETARIAN}}img/carrot.jpg{{else}}{{prod.imgURL}}{{endif}}" imageTopPadding="12" imageBottomPadding="12"></imageAndFlowables>  
+        <imageAndFlowables imageName="{{IMG_DIR}}/{{if VEGETARIAN}}carrot.jpg{{else}}{{prod.image}}{{endif}}" imageTopPadding="12" imageBottomPadding="12"></imageAndFlowables>  
         <illustration width="55" height="20">
             <fill color="lightgrey"/>
             <rect x="15" y="3" width="30"  height="10" fill="Yes" stroke="No" round="1"/>

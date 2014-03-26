@@ -55,6 +55,11 @@ def parse_catalog(filename):
         prod.name = fix(prodTag.ModelName)
         prod.summary= fix(prodTag.Summary)
         prod.description= fix(prodTag.Description)
+
+        #originally the images came from a remote site.  We have stashed them in
+        #the img/ subdirectory, so just chop off the final part of the path.
+        prod.image = os.path.split(fix(prodTag.ImageUrl))[-1].replace(' ','')
+        
         if prod.modelNumber in request_a_quote:
             prod.price = "Call us on 01635 246830 for a quote"
         else:
@@ -77,7 +82,9 @@ def create_pdf(catalog, template):
     template = preppy.getModule(templateName)
     namespace = {
         'products':catalog,
-        'RML_DIR': RML_DIR
+        'RML_DIR': RML_DIR,
+        'IMG_DIR': 'img'
+
         }
     rml = template.getOutput(namespace)
     open(os.path.join(DATA_DIR,'latest.rml'), 'w').write(rml)
@@ -91,24 +98,17 @@ def main():
     print '\nabout to parse file: ', filename
     products = parse_catalog(filename)
     print 'file parsed OK \n'
-    print "Trying to regenerate the check-list"
-    try:
-        pdf = create_pdf(products, 'checklist_template.prep')
-        filename ='output/harwood_checklist.pdf'
-        open(filename,'wb').write(pdf)
-        print 'success! created %s' % filename, '\n'
-    except Exception, e:
-        print 'Check-list failed! Error:\n', e, '\n'
 
-    print "Trying to regenerate the flyer"
-    try:
-        pdf = create_pdf(products, 'flyer_template.prep')
-        filename ='output/harwood_flyer.pdf'
-        open(filename,'wb').write(pdf)
-        print 'success! created %s' % filename
-    except Exception, e:
-        print e
-    print '\n' + '#'*20 + '\n'
+    pdf = create_pdf(products, 'checklist_template.prep')
+    filename ='harwood_checklist.pdf'
+    open(filename,'wb').write(pdf)
+    print 'Created %s' % filename, '\n'
+    
+    pdf = create_pdf(products, 'flyer_template.prep')
+    filename ='harwood_flyer.pdf'
+    open(filename,'wb').write(pdf)
+    print 'Created %s' % filename
+
 
 if __name__ == '__main__':
     main()
