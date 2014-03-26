@@ -17,10 +17,10 @@ We'll show you how to generate a well laid out and styled document from an XML f
 Register and install an evaluation copy of ReportLab PLUS
 ---------------------------------------------------------
 
-This tutorial is aimed at showing the use of Report Markup Language (RML), which is a component of our commercial tool-kit. All you need to do to download a full evaluation copy is `sign in`++ or `register on our site`__; then, follow the installation instructions to get yourself set up. Once these are completed, you're ready to go.
+This tutorial is aimed at showing the use of Report Markup Language (RML), which is a component of our commercial tool-kit. All you need to do to download a full evaluation copy is `sign in`_ or `register on our site`_; then, follow the installation instructions to get yourself set up. Once these are completed, you're ready to go.
 
-__ http://www.reportlab.com/accounts/register/
-++ https://www.reportlab.com/accounts/login/
+.. - sign in: https://www.reportlab.com/accounts/login/
+.. _ register on our site: http://www.reportlab.com/accounts/register/
 
 
 Download and install tutorial pack
