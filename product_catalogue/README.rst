@@ -1,6 +1,11 @@
 Product Catalogue Tutorial
 --------------------------
 
+For the impatient:
+------------------
+
+Run python product_catalogue.py and look into the output directory.
+
 XML product listing converted to a fully customisable PDF in seconds.
 ---------------------------------------------------------------------
 
