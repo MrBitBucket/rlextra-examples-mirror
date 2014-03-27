@@ -82,23 +82,44 @@ VEGETARIAN = False
 
 <story>
 
-    <setNextTemplate name="products"/>
-
-    <para style="h1">Packing Checklist</para>
-
-    {{for prod in products}}
-        <para style="prod_name">{{i(prod.name)}}  </para>
-        <para style="prod_summary">{{i(prod.summary)}}</para>
-        <imageAndFlowables imageName="{{IMG_DIR}}/{{if VEGETARIAN}}carrot.jpg{{else}}{{prod.image}}{{endif}}" imageTopPadding="12" imageBottomPadding="12"></imageAndFlowables>  
-        <illustration width="55" height="20">
-            <fill color="lightgrey"/>
-            <rect x="15" y="3" width="30"  height="10" fill="Yes" stroke="No" round="1"/>
-            <fill color="(0.2,0.25,0.60,0.25)" />
-            <setFont name="HelveticaNeue-Bold" size="7.5"/>
-            <drawCenteredString x="30" y="5">{{prod.price}}</drawCenteredString>
-            <rect x="0" y="3" width="12" height="12" fill="No" stroke="Yes" round="1"/>
-        </illustration>
-    {{endfor}}
-
+    <story>  
+  
+    <setNextTemplate name="products"/>  
+  
+    <para style="h1">Packing Checklist</para>  
+  
+    {{for prod in products}}  
+  
+    <para style="prod_name">{{i(prod.name)}}  </para>  
+    <para style="prod_summary">{{i(prod.summary)}}</para>  
+    <imageAndFlowables imageName="{{RML_DIR}}/{{if VEGETARIAN}}img/carrot.jpg{{else}}{{prod.imgURL}}{{endif}}"   
+imageTopPadding="12"   
+imageBottomPadding="12"></imageAndFlowables>    
+  
+    {{if len(str(prod.price)) < 15}}  
+        <illustration width="55" height="20">  
+        <fill color="lightgrey"/>  
+        <rect x="15" y="3" width="30" height="10" fill="Yes"   
+stroke="No" round="1"/>  
+        <fill color="(0.2,0.25,0.60,0.25)" />  
+        <setFont name="HelveticaNeue-Bold" size="7.5"/>  
+        <drawCenteredString x="30" y="5">{{prod.price}}</drawCenteredString>  
+    {{else}}  
+        <illustration width="85" height="20">  
+        <fill color="lightgrey"/>  
+        <rect x="15" y="3" width="130" height="10" fill="Yes"   
+stroke="No" round="1"/>  
+        <fill color="(0.2,0.25,0.60,0.25)" />  
+        <setFont name="HelveticaNeue-Bold" size="7.5"/>  
+        <drawCenteredString x="80" y="5">{{(prod.price)}}</drawCenteredString>  
+    {{endif}}  
+  
+    <rect x="0" y="3" width="12" height="12" fill="No" stroke="Yes"   
+round="1"/>  
+    </illustration>  
+  
+    {{endfor}}  
+  
+</story>  
 </story>
 </document>

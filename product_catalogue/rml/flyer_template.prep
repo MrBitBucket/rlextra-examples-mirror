@@ -58,21 +58,22 @@ today = datetime.date.today()
     spaceBefore = "15"
     />
 
-    <paraStyle name="prod_name"
-    fontName="HelveticaNeue-Light"
-    fontSize="14.5"
-    leading="14"
-    spaceBefore = "14"
-    />
-
-    <paraStyle name="prod_summary"
-    fontName="HelveticaNeue-Light"
-    fontSize="12"
-    leading="10"
-    spaceBefore = "12"
-    textColor="green" 
-    />
-
+	<paraStyle name="prod_name"  
+	    fontName="HelveticaNeue-Light"  
+	    fontSize="14.5"  
+	    leading="14"  
+	    spaceBefore = "14"  
+	    keepWithNext = "1"  
+	    />  
+  
+	    <paraStyle name="prod_summary"  
+	    fontName="HelveticaNeue-Light"  
+	    fontSize="12"  
+	    leading="10"  
+	    spaceBefore = "12"  
+	    textColor="green"  
+	    keepWithNext = "1"  
+	    />  
     <paraStyle name="prod_price"
     fontName="HelveticaNeue-Bold"
     fontSize="7.5"
@@ -84,12 +85,30 @@ today = datetime.date.today()
 </stylesheet>
 
 <story>
+	
+	<includePdfPages filename="{{RML_DIR}}/flyer_front.pdf"   
+	leadingFrame="no"/>  
+	
+	<setNextTemplate name="products" />  
+	    <nextFrame/>  
+  
+	    <para style="h1"> Product Availability </para>  
+	    <para style="h2">{{today.strftime('%d %B %Y')}}</para>  
+  
+	    {{for prod in products{% templatetag   
+	closevariable %}  
+	        <para style="prod_name">{{i(prod.name)}}</para>  
+	        <para style="prod_summary">{{i(prod.summary)}}</para>  
+	        <para style="prod_price">{{i(prod.price)}}</para>  
+	    {{endfor}}  
 
     <para style="h1"> Product Availability </para>
     <para style="h2">{{today.strftime('%d %B %Y')}}</para>
 
     {{for prod in products}}
         <para style="prod_name">{{i(prod.name)}}</para>
+		<para style="prod_summary">{{i(prod.summary)}}</para>  
+		        <para style="prod_price">{{i(prod.price)}}</para>  
     {{endfor}}
 
 </story>
