@@ -99,10 +99,6 @@ def main():
     products = parse_catalog(filename)
     print 'file parsed OK \n'
 
-    pdf = create_pdf(products, 'checklist_template.prep')
-    filename ='output/harwood_checklist.pdf'
-    open(filename,'wb').write(pdf)
-    print 'Created %s' % filename, '\n'
     
     pdf = create_pdf(products, 'flyer_template.prep')
     filename ='output/harwood_flyer.pdf'

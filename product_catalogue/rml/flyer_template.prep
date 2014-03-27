@@ -95,8 +95,7 @@ today = datetime.date.today()
 	    <para style="h1"> Product Availability </para>  
 	    <para style="h2">{{today.strftime('%d %B %Y')}}</para>  
   
-	    {{for prod in products{% templatetag   
-	closevariable %}  
+	    {{for prod in products}}
 	        <para style="prod_name">{{i(prod.name)}}</para>  
 	        <para style="prod_summary">{{i(prod.summary)}}</para>  
 	        <para style="prod_price">{{i(prod.price)}}</para>  
