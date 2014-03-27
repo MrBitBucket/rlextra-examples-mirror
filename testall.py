@@ -165,7 +165,7 @@ def makeSuite():
     suite.addTests(loader.loadTestsFromTestCase(ManualsAndDemos))
     
     #load all RML samples in test directory
-    #suite.addTests(makeRmlTests())
+    suite.addTests(makeRmlTests())
 
 
     #find all the RML samples
