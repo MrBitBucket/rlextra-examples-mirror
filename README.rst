@@ -21,7 +21,10 @@ Product Catalogue Tutorial
 ==========================
 
 This is an example taken from a real world solution to create a catalogue for a business delivering seasonal wild meats.  It demonstrates how to create attractive
-listings using our preppy templating system and Report Markup Language.  To try it::
+listings using our preppy templating system and Report Markup Language.  Most people will be using this kind of workflow, with a templating system to handle
+loops/conditionals/variables, embedded in an RML document to control the formatting.
+
+To try it::
  	cd product_catalogue
  	python product_catalog.py
 
