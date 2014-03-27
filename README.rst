@@ -1,8 +1,15 @@
 ==================
-Rlextra Examples
+ReportLab PLUS Examples
 ==================
 
-This contains runnable examples of our commercial PDF library, ReportLab PLUS.
+This contains runnable examples for our commercial PDF library, ReportLab PLUS.
+It should help you get up and running and creating your own PDF document layouts
+quickly.   
+
+We strongly suggest you start by skimming through the RML User Guide:
+    
+    https://www.reportlab.com/software/documentation/
+
 
 Current contents:
 
@@ -14,8 +21,7 @@ Product Catalogue Tutorial
 ==========================
 
 This is an example taken from a real world solution to create a catalogue for a business delivering seasonal wild meats.  It demonstrates how to create attractive
-listings using our preppy templating system and Report Markup Language.
-
+listings using our preppy templating system and Report Markup Language.  To try it::
  	cd product_catalogue
  	python product_catalog.py
 
@@ -29,7 +35,7 @@ We include a full copy of our own internal RML test suite.  These files can also
    https://www.reportlab.com/software/documentation/rml-samples/
 
 You should be able to convert any of them with the installed 'rml2pdf' command.
-For example,
+For example::
 
    $ rml2pdf test_001_hello.rml
    test_001_hello.pdf
