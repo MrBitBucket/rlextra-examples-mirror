@@ -25,6 +25,7 @@ listings using our preppy templating system and Report Markup Language.  Most pe
 loops/conditionals/variables, embedded in an RML document to control the formatting.
 
 To try it::
+
  	cd product_catalogue
  	python product_catalog.py
 
