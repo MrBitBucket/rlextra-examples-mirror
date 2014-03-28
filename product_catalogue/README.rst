@@ -23,11 +23,13 @@ How is the PDF generated?
 The main script lives in prodcut_catalog.py, this is just a Python module which starts by pulling in data from an XML file, then uses a Rlextra utility function to first render a RML file from template filled in by the data, then use the rendered RML to produce a PDF. RML is the markup language use to describe the desired PDF document. The template itself uses Preppy, a Python pre-processor used to output valid RML. Preppy is just Python and therefore quite powerful. 
 
 .. code:: python
+from rlextra.rml2pdf import rml2pdf
+
     #generate the RML file from the preppy template
     rml = template.getOutput(dict(products=some_data))
     open(os.path.join(DATA_DIR,'latest.rml'), 'w').write(rml)
     buf = StringIO.StringIO()
-	#write the rml into a pdf file
+	#write the rml into a pdf file using rml2pdf
     rml2pdf.go(rml, outputFileName=buf)
     return buf.getvalue()
 
@@ -62,8 +64,60 @@ Preppy is just Python, so you get proper Python tracebacks, with the original li
 What is Report Markup Language?
 -------------------------------
 
-Report Markup LanguageTM (RML) is ReportLab's direct-to-PDF document formatting solution. It addresses key shortcomings in the marketplace for reporting and document generating tools, and has proven itself in demanding mission-critical solutions with some of the world's largest financial houses. And it's the natural reporting tool for XML workflows!
+Report Markup LanguageTM (RML) is ReportLab's direct-to-PDF document formatting solution. We defined a Markup Language which describes the exact appearance of a printed document; and a software component, RML2PDF, which converts RML into PDF files. Report Markup Language describes the precise layout of a printed document, and RML2PDF converts this to a finished document in one step.
 
-The idea is extremely simple. Developers everywhere have plenty of tools for generating data-driven HTML. We defined a Markup Language which describes the exact appearance of a printed document; and a software component, RML2PDF, which converts RML into PDF files. (We also have some very powerful and simple tools to help generate the RML, in case you don't). 
 
-In the process, we have made it as easy to generate PDF as it is to generate HTML. This is not only the most flexible solution possible; it's also easy to deploy, and completely natural and straightforward for developers.
+What does a RML file look like?
+-------------------------------
+
+A RML file will in most cases contain the following three sections: a template, a stylesheet and a story. 
+
+The template tells rml2pdf what should be on the page: headers, footers, any graphic elements you use as a background. It is the section where the layout of a document is set out - both for the whole document and for individual pages within it.
+
+The stylesheet is where the styles for a document are set. This tells the parser what fonts to use for paragraphs and paragraph headers, how to format tables and other things of that nature.
+
+The story is where the "meat" of the document is. Just like in a newspaper, the story is the bit you want people to read, as opposed to design elements or page markup. As such, this is where headers, paragraphs and the actual text is contained.
+
+.. code:: xml
+
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="example_2.pdf">
+    <template>
+        <pageTemplate id="main">
+            <frame id="first" x1="72" y1="72" width="451" height="698"/>
+        </pageTemplate>
+</template>
+    <stylesheet>
+
+    <paraStyle name="h1"
+               fontName="Courier-Bold"
+               fontSize="12"
+               spaceBefore="0.5 cm"
+               />
+    </stylesheet>
+    <!-- The story starts below this comment -->
+    <story>
+        <para style="h1">
+            This is the "story". This is the part of the RML document where
+            your text is placed.
+        </para>
+        <para>
+            It should be enclosed in "para" and "/para" tags to turn it into
+paragraphs.
+        </para>
+    </story>
+</document>
+
+
+RML basics
+----------
+
+RML allows you to use comments in the RML code. These are not displayed in the output PDF file. Just like in HTML, they start with a "<!--" and are terminated with a "-->". Unlike other tags, comments cannot be nested. In fact, you can't even have the characters "--" inside the <!-- --> section.
+
+<template> allows you to set options for the whole document. The <pageTemplate> tag allows you to set options for individual pages. You can have more than one<pageTemplate> inside the template section. This allows you to have different pageTemplates for each page that requires a different structure. For example, the title page of a report could have a number of graphics on it while the rest of the pages are more text-orientated.
+
+Just like in a word processor, RML allows you to define a stylesheet at the start of your document, and then apply it to paragraphs later on. This means that you can define a complicated mixture of settings that you want to apply to paragraphs, only define it in one place, and refer to it with a simple name at the start of each paragraph rather than having to type or cut-and-paste large blocks of text over and over for each paragraph.
+
+For more info, please take a look at the `official documentation`_
+
+.. _official documentation: https://www.reportlab.com/docs/rml2pdf-userguide.pdf
