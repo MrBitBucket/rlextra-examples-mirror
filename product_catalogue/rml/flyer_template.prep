@@ -18,6 +18,8 @@ today = datetime.date.today()
 <docinit>
     <registerTTFont faceName="HelveticaNeue-Light" fileName="{{RML_DIR}}/fonts/LTe50263.ttf"/>
     <registerTTFont faceName="HelveticaNeue-Bold" fileName="{{RML_DIR}}/fonts/LTe50261.ttf"/>
+	<registerTTFont faceName="Angelina" fileName="{{RML_DIR}}/fonts/angelina.TTF"/>    
+	    <color id="GREEN-ISH" CMYK="[0.2,0.25,0.60,0.25]"/> 
 </docinit>
 
 <template pageSize="(595, 842)" leftMargin="72" showBoundary="0">
@@ -29,7 +31,7 @@ today = datetime.date.today()
     <pageTemplate id="products">
         <pageGraphics>
             <image file="{{RML_DIR}}/flyer_background.pdf" x="0" y="0" width="595" height="842"/>
-            <fill color="red"/>
+            <fill color="GREEN-ISH"/>
             <setFont name="HelveticaNeue-Light" size="12"/>
             <drawCenteredString x="297" y="40">Order online</drawCenteredString>
             <fill color="black"/>
@@ -45,7 +47,7 @@ today = datetime.date.today()
 <stylesheet>
 
     <paraStyle name="h1"
-    fontName="HelveticaNeue-Light"
+    fontName="Angelina"
     fontSize="27"
     leading="17"
     spaceBefore = "30"
@@ -59,7 +61,7 @@ today = datetime.date.today()
     />
 
 	<paraStyle name="prod_name"  
-	    fontName="HelveticaNeue-Light"  
+	    fontName="Angelina"  
 	    fontSize="14.5"  
 	    leading="14"  
 	    spaceBefore = "14"  
@@ -68,10 +70,10 @@ today = datetime.date.today()
   
 	    <paraStyle name="prod_summary"  
 	    fontName="HelveticaNeue-Light"  
-	    fontSize="12"  
+	    fontSize="8"  
 	    leading="10"  
-	    spaceBefore = "12"  
-	    textColor="green"  
+	    spaceBefore = "4"  
+	    textColor="GREEN-ISH"  
 	    keepWithNext = "1"  
 	    />  
     <paraStyle name="prod_price"
@@ -79,7 +81,7 @@ today = datetime.date.today()
     fontSize="7.5"
     leading="14"
     spaceBefore = "4"
-    textColor="green" 
+    textColor="GREEN-ISH" 
     />
 
 </stylesheet>
