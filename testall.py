@@ -85,8 +85,6 @@ def makeRmlTests():
         suite.addTest(ParameterizedTestCase.parameterize(RmlTestCase, param=target, expectError=target.endswith('_error.rml')))
     return suite
 
-
-
 class ManualsAndDemos(unittest.TestCase):
     """Initialise this with the current directory.
 
@@ -107,7 +105,7 @@ class ManualsAndDemos(unittest.TestCase):
         os.chdir('product_catalogue')
         sys.path.insert(0, os.getcwd())
         import product_catalog
-        product_catalog.main()
+        product_catalog.main(verbose=False)
         sys.path = sys.path[1:]
 
     # def testRmlUserGuide(self):
