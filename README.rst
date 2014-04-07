@@ -17,6 +17,16 @@ Current contents:
 - RML test suite
 
 
+Quickstart
+==========
+
+Run::
+
+    $ rml2pdf *.rml 
+
+and look at the .pdf files and their corresponding .rml files within the /rml folder. 
+
+
 Product Catalogue Tutorial
 ==========================
 
@@ -44,4 +54,3 @@ For example::
    $ rml2pdf test_001_hello.rml
    test_001_hello.pdf
 
-    
