@@ -22,7 +22,7 @@ Quickstart
 
 Run::
 
-    $ rml2pdf *.rml 
+    $ cd rml_tests && rml2pdf *.rml 
 
 and look at the .pdf files and their corresponding .rml files within the /rml folder. 
 
