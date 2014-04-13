@@ -78,8 +78,11 @@ def makeRmlTests():
     #so put it first.  At some point we should arrange in alpha order.
 
     do_first = os.path.join('rml_tests','test_000_simple.rml')
-    targets.remove(do_first)
-    targets.insert(0, do_first)
+    try:
+        targets.remove(do_first)
+        targets.insert(0, do_first)
+    except ValueError, e:
+        pass #don't include these in examples, it's too complex for users, might not be there
 
     for target in targets:
         suite.addTest(ParameterizedTestCase.parameterize(RmlTestCase, param=target, expectError=target.endswith('_error.rml')))
