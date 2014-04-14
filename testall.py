@@ -81,7 +81,7 @@ def makeRmlTests():
     try:
         targets.remove(do_first)
         targets.insert(0, do_first)
-    except ValueError, e:
+    except ValueError:
         pass #don't include these in examples, it's too complex for users, might not be there
 
     for target in targets:
