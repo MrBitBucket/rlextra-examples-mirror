@@ -4,10 +4,10 @@ ReportLab PLUS Examples
 
 This contains runnable examples for our commercial PDF library, ReportLab PLUS.
 It should help you get up and running and creating your own PDF document layouts
-quickly.   
+quickly.
 
 We strongly suggest you start by skimming through the RML User Guide:
-    
+
     https://www.reportlab.com/software/documentation/
 
 
@@ -22,9 +22,9 @@ Quickstart
 
 Run::
 
-    $ cd rml_tests && rml2pdf *.rml 
+    $ cd rml_tests && rml2pdf *.rml
 
-and look at the .pdf files and their corresponding .rml files within the /rml folder. 
+and look at the .pdf files and their corresponding .rml files within the /rml folder.
 
 
 Product Catalogue Tutorial
@@ -53,4 +53,3 @@ For example::
 
    $ rml2pdf test_001_hello.rml
    test_001_hello.pdf
-
