@@ -360,6 +360,23 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 <para style="normal">You can now add images between<img src="replogo.gif" width="15" height="15" />words within text.  This works with bitmaps, but not with PDF images.</para>
 
 
+<nextPage/>
+<para style="h2">ImageFigures with various strange parameters</para>
+<imageFigure imageName="logo_no_bar.png" pdfBoxType="MediaBox"/>
+<imageFigure imageName="replogo.gif" caption="Aligned Left" captionAlign="left" captionColor="green" captionGap="-5" pdfBoxType="MediaBox"/>
+<imageFigure imageName="replogo.gif" imageWidth="150" imageHeight="200" showBoundary="yes" preserveAspectRatio="yes" pdfBoxType="MediaBox" captionGap="0"><para style="normal" spaceBefore="0">a left bottom para</para></imageFigure>
+<imageFigure imageName="replogo.gif" imageWidth="150" imageHeight="200" showBoundary="yes" preserveAspectRatio="yes" pdfBoxType="MediaBox" captionGap="0"><para style="normal" alignment="right" spaceBefore="0">a right bottom para</para></imageFigure>
+<imageFigure imageName="replogo.gif" imageWidth="150" imageHeight="200" showBoundary="yes" captionPosition="top" preserveAspectRatio="yes" pdfBoxType="MediaBox" captionGap="0"><para style="normal" alignment="centre" spaceBefore="0">a centred top para</para></imageFigure>
+<imageFigure imageName="replogo.gif" imageWidth="150" imageHeight="200"  showBoundary="border(color='red',width=2,dashArray=[2,2])" captionPosition="top" preserveAspectRatio="yes" pdfBoxType="MediaBox" captionGap="0"><para style="normal" alignment="centre" spaceBefore="0">a centred top para</para></imageFigure>
+<nextPage/>
+<para style="h2">Figures with various strange parameters</para>
+<figure caption="scatterPlot" captionAlign="left" captionPosition="top">
+    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
+</figure>
+<para style="h2">Figures with various strange parameters</para>
+<figure captionAlign="left" captionPosition="top"><para style="normal">a para caption</para>
+    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
+</figure>
 
 
 </story>

@@ -29,6 +29,42 @@
 	<frame id="p2-first" x1="1in" y1="1in" width="3in" height="4.645in"/>
 	<frame id="p2-second" x1="4.27in" y1="1in" width="3in" height="4.645in"/>
 	</pageTemplate>
+	<pageTemplate id="one">
+	<pageGraphics>
+		<setFont name="Helvetica-Bold" size="18"/>
+		    <drawString x="35" y="783">PageTemplate One</drawString>
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+		<setFont name="Helvetica-Bold" size="144"/>
+		<fill color="deepskyblue"/>
+		<drawCentredString x="297.5" y="539">1</drawCentredString>
+	</pageGraphics>
+	<frame id="first" x1="1in" y1="1in" width="6.25in" height="5in"/>
+	</pageTemplate>
+	<pageTemplate id="two">
+	<pageGraphics>
+		<setFont name="Helvetica-Bold" size="18"/>
+		    <drawString x="35" y="783">PageTemplate Two</drawString>
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+		<setFont name="Helvetica-Bold" size="144"/>
+		<fill color="deepskyblue"/>
+		<drawCentredString x="297.5" y="539">2</drawCentredString>
+	</pageGraphics>
+	<frame id="first" x1="1in" y1="1in" width="6.25in" height="5in"/>
+	</pageTemplate>
+	<pageTemplate id="three">
+	<pageGraphics>
+		<setFont name="Helvetica-Bold" size="18"/>
+		    <drawString x="35" y="783">PageTemplate Three</drawString>
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+		<setFont name="Helvetica-Bold" size="144"/>
+		<fill color="deepskyblue"/>
+		<drawCentredString x="297.5" y="539">3</drawCentredString>
+	</pageGraphics>
+	<frame id="first" x1="1in" y1="1in" width="6.25in" height="5in"/>
+	</pageTemplate>
 </template>
 
 <stylesheet>
@@ -120,7 +156,17 @@ This is the text for frame 3. This is the text for frame three.
 This is the text for frame 3. This is the text for frame three. This is the text for frame three.
 </para>
 
-
+<switchTemplate name="one"/>
+<para style="normal">This should appear on Template One</para>
+<nextPage name="two"/>
+<para style="normal">This should appear on Template Two</para>
+<switchTemplate name="two"/>
+<para style="normal">As should this.</para>
+<nextPageIfNotEmpty name="three"/>
+<para style="normal">This should appear on Template Three</para>
+<nextPage/>
+<nextPageIfNotEmpty name="one"/>
+<para style="normal">Should be on template one without a blankpage preceding.</para>
 </story>
 
 </document>

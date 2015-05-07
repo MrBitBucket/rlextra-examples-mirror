@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE document SYSTEM "rml_1_0.dtd">
 <document filename="test_016_pagecatcher.pdf"> 
-
 
 <template pageSize="(595, 842)" leftMargin="72" showBoundary="0">
 
@@ -19,9 +18,12 @@
         <drawCenteredString x="297" y="25">Page <pageNumber/></drawCenteredString>
 	</pageGraphics>
 	<frame id="second" x1="35" y1="45" width="525" height="590"/>
-	</pageTemplate><pageTemplate id="landscape" pageSize="(842,595)">
-	
+	</pageTemplate>
+	<pageTemplate id="landscape" pageSize="(842,595)">
 		<frame id="second" x1="35" y1="45" width="525" height="590"/>
+	</pageTemplate>
+	<pageTemplate id="bare" pageSize="(595,842)">
+		<frame id="second" x1="72" y1="72" width="451" height="3in"/>
 	</pageTemplate>
 	
 	<pageTemplate id="main2">
@@ -180,7 +182,22 @@ the cleaner version on page 7.
 </para>
 <setNextTemplate name="maskout"/>
 <includePdfPages filename="ir684.pdf" pages="1" outlineText="IR684 again, masked"/>
-
-
+<setNextTemplate name="bare"/>
+<includePdfPages filename="cropped-media.pdf" pages="1" outlineText="cropped-media naked"/>
+<para>Most of the interesting stuff should be off in the hills.</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" outlineText="cropped-media box=cropbox not cropped"/>
+<para>With pdfBoxType=cropbox specified not cropped.</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" autoCrop="true" outlineText="cropped-media box=cropbox autoCrop=True"/>
+<para>With pdfBoxType=cropbox specified autoCrop=True.</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" autoCrop="true" pageSize="set" outlineText="cropped-media box=cropbox autoCrop=True pageSize=set"/>
+<para>With pdfBoxType=cropbox specified autoCrop=True pageSize=set.</para>
+<includePdfPages filename="ir684.pdf" pages="1" outlineText="IR684 again, to check pageSize is again A4"/>
+<para>Is pageSize A4 again?</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" autoCrop="true" pageSize="orthofit" outlineText="cropped-media box=cropbox autoCrop=True pageSize=orthofit"/>
+<para>With pdfBoxType=cropbox specified autoCrop=True pageSize=orthofit.</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" autoCrop="true" pageSize="fit" outlineText="cropped-media box=cropbox autoCrop=True pageSize=fit"/>
+<para>With pdfBoxType=cropbox specified autoCrop=True pageSize=orthofit.</para>
+<includePdfPages filename="cropped-media.pdf" pages="1" pdfBoxType="cropbox" autoCrop="true" pageSize="center" outlineText="cropped-media box=cropbox autoCrop=True pageSize=center"/>
+<para>With pdfBoxType=cropbox specified autoCrop=True pageSize=center.</para>
 </story>
 </document>

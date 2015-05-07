@@ -109,6 +109,7 @@
 	bulletIndent = "20"
 	bulletColor = "purple"
 	bulletText="&#x261b;"
+	bulletOffsetY="0.01in"
 	/>
 
 	<paraStyle name="style10"
@@ -286,6 +287,11 @@
 		<blockBackground colorName="pink" start="0,0" stop="-1,-1"/>
 		<blockBackground colorName="yellow" start="0,0" stop="-1,-1"/-->
 	</blockTableStyle>
+    <blockTableStyle id="anchor" spaceBefore="20">
+        <blockFont name="Courier" size="8" start="0,0" stop="-1,-1"/>    
+        <lineStyle start="0,0" stop="-1,-1" kind="GRID" colorName="black"/>
+        <lineStyle start="0,0" stop="-1,-1" kind="BOX" colorName="black" thickness="2"/>
+    </blockTableStyle>
 		
 </stylesheet>
 
@@ -331,12 +337,12 @@ It should be indented on the left. This should be <strike>struck out</strike>.</
 <para style="h1">Paragraphs 8-12: Simple Bullet Points</para>
 <para style="style8" bulletText="&#x25cf;"><b>Parastyle<onDraw name="_indexAdd" label="paraStyle"/> name="style8" parent="style1" bulletFontName = "ZapfDingbats" bulletFontSize = "5"</b></para>
 <para style="style8" bulletText="&#x25cf;">These paragraphs are in a style we have called "style8"</para>
-<para style="style8" bulletText="&#x25cf;">These five lines should have bullet points.</para>
-<para style="style8" bulletText="&#x25cf;">The bullet font<onDraw name="_indexAdd" label="font"/> is ZapfDingbats.</para>
+<para style="style8" bulletText="&#x25cf;" bulletOffsetY="0.05in">These five lines should have bullet points.</para>
+<para style="style8" bulletText="&#x25cf;" bulletOffsetY="-0.05in">The bullet font<onDraw name="_indexAdd" label="font"/> is ZapfDingbats.</para>
 <para style="style8" bulletText="&#x25cf;">The bullet size is 5 points</para>
 <para style="style8" bulletText="&#x25cf;">This is a long line to see how multi-line bullets look: These paragraphs are in a style we have called "style8". These four lines should have bullet points. The bullet font<onDraw name="_indexAdd" label="font"/> is ZapfDingbats. The bullet size is 5 points</para>
 
-<para style="h1">Paragraph 13-18: Indented Bullet Points</para>
+<para style="h1">Paragraphs 13-18: Indented Bullet Points</para>
 <para style="style9"><b>bulletFontName = "ZapfDingbats" bulletFontSize = "10" bulletIndent = "20"</b></para>
 <para style="style9">These paragraphs are in a style we have called "style9"</para>
 <para style="style9">These five lines should have <i>indented</i> bullet points.</para>
@@ -384,6 +390,36 @@ It should be indented on the left. This should be <strike>struck out</strike>.</
 <para style="style21">This text should be <b>GREEN</b></para>
 <para style="style22">This text should be <b>BLUE</b></para>
 
+<nextPage/>
+<para style="h1">Paragraphs with anchored bullets: green line is the global indent, blue the bullet indent</para>
+<illustration height="0" width="0"><lineMode dash="2,2"/><stroke color="green"/><lines>1cm 0 1cm -2.5in</lines><stroke color="blue"/><lines>0.3cm 0 0.3cm -2.5in</lines></illustration>
+<indent left="1cm"/>
+<para style="style1"><bullet bulletIndent="-0.7cm">1.1</bullet>bullet anchor absent</para>
+<para style="style1"><bullet bulletIndent="-0.7cm">1.22</bullet>bullet anchor absent</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletOffsetY="0.05in"><span color="red">1</span><span color="green">.</span><span color="blue">3</span></bullet>bullet anchor absent</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="start" bulletOffsetY="-0.05in">1.1</bullet>bullet anchor start</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="start">1.22</bullet>bullet anchor start</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="start"><span color="red">1</span><span color="green">.</span><span color="blue">3</span></bullet>bullet anchor start</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="middle">1.1</bullet>bullet anchor middle</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="middle">1.22</bullet>bullet anchor middle</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="middle"><span color="red">1</span><span color="green">.</span><span color="blue">3</span></bullet>bullet anchor middle</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="end">1.1</bullet>bullet anchor end</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="end">1.22</bullet>bullet anchor end</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="end"><span color="red">1</span><span color="green">.</span><span color="blue">3</span></bullet>bullet anchor end</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="numeric">1.1</bullet>bullet anchor numeric</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="numeric">1.22</bullet>bullet anchor numeric</para>
+<para style="style1"><bullet bulletIndent="-0.7cm" bulletAnchor="numeric"><span color="red">1</span><span color="green">.</span><span color="blue">3</span></bullet>bullet anchor numeric</para>
+<indent left="-1cm"/>
+
+<para spaceBefore="1cm" fontName="Courier">Here is another example, demonstrating bulletAnchor, note the alignment of the text when we get to double figures:</para>
+<blockTable style="anchor" colWidths="230">
+    <tr><td><para style="style1" fontSize="13" ><b>Numbers not aligned</b></para></td><td><para style="style1" fontSize="13"><b>Numbers aligned </b></para></td></tr>
+    <tr><td><para style="style1"><bullet bulletFontName="Courier">9.0</bullet>bulletAnchor absent</para></td><td><para style="style1"><bullet bulletFontName="Courier" bulletAnchor="numeric" bulletIndent="15">9.0</bullet>bulletAnchor="numeric"</para></td></tr>
+    <tr><td><para style="style1"><bullet bulletFontName="Courier">10.0</bullet>bulletAnchor absent</para></td><td><para style="style1"><bullet bulletFontName="Courier" bulletAnchor="numeric" bulletIndent="15">10.0</bullet>bulletAnchor="numeric"</para></td></tr>
+</blockTable>
+
+<nextPage/>
+
 <!-- THESE CURRENTLY DON'T WORK - SEE THE STYLES SECTION -->
 <!--
 <para style="h1">Paragraph 36-38: Using Colours by Hex Value</para>
@@ -415,7 +451,7 @@ by all the means available to reportlab.lib.colours. Currently, you
 <para style="style1">
     This checks for all the possible quotes: &amp;amp; = &amp;, 
     &amp;lt; = &lt;, &amp;gt; = &gt;, &amp;apos; = &apos;, &amp;quot; = &quot;, 
-    &amp;pound; = &pound;.
+    &amp;pound; = &#xa3;.
 </para>
 <para style="style1">
 	<i>If this is not italic</i>, <b>and this is not bold</b>, even normal<onDraw name="_indexAdd" label="normal"/> angle brackets are broken.
@@ -448,10 +484,29 @@ base component does not readily tolerate problems of phonemic and
 morphological analysis.
 </para>
 </imageAndFlowables>
-<imageAndFlowables imageName="replogo.gif" imageWidth="141" imageHeight="90" imageSide="left">
-<para style="h1">Test imageAndFlowables tag with paras</para>
-<para style="style1">We should have an image on the <b>right</b> side of the paragraphs here.
-</para>
+
+<imageAndFlowables imageName="replogo.gif" imageWidth="70" imageHeight="45" imageSide="left">
+    <para style="h1">Test imageAndFlowables tag with paras</para>
+    <para style="style1">We should have an image on the <b>left</b> side of the paragraphs here.
+    </para>
+</imageAndFlowables>
+
+<imageAndFlowables imageName="replogo.gif" imageWidth="70" imageHeight="45" imageSide="right">
+    <para style="h1">Test imageAndFlowables tag on right</para>
+    <para style="style1">We should have an image on the <b>right</b> side of the paragraphs here.
+    </para>
+</imageAndFlowables>
+
+<name id="default:image" value="default.gif"/>
+
+<imageAndFlowables imageName="missing.gif" imageWidth="70" imageHeight="45" imageSide="left">
+    <para style="h1">Test imageAndFlowables tag with default image</para>
+    <para style="style1">You can supply a default image to be used if the intended one is not found.
+    You should still see our grey logo here despite the requested 'missing.gif' not being present.
+    </para>
+</imageAndFlowables>
+
+
 <para style="style1">
 Summarizing, then, we assume that the fundamental error of regarding
 functional notions as categorial may remedy and, at the same time,
@@ -465,7 +520,6 @@ defined in such a way as to impose irrelevant intervening contexts in
 selectional rules.  So far, a descriptively adequate grammar is rather
 different from a general convention regarding the forms of the grammar.
 </para>
-</imageAndFlowables>
 
 
 <imageAndFlowables imageName="internet_access.pdf" imageWidth="50" imageHeight="50" imageSide="left">
@@ -596,6 +650,8 @@ forms of the grammar. Dots</para>
 <para style="dotStyle1CJK">AAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAACCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDD</para>
 <nextPage/>
 <plugInFlowable module="mymodule" function="IndexFinisher"></plugInFlowable>
+<para style="style.normal"> <span backcolor="pink">ABCDEFGHI</span> </para>
+<para style="style.normal"> <span backcolor="pink">&nbsp; ABCDEFGHI&nbsp;</span> </para>
 </story>
 
 </document>

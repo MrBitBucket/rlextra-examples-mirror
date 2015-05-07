@@ -6,6 +6,8 @@
     subject="My subject"
     title="My title"
     creator="My creator"
+	displayDocTitle="1"
+	lang="en-US"
     >
 	<pageTemplate id="main" pageSize="a4">
 	<pageGraphics>

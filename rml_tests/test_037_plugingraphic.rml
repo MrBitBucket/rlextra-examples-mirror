@@ -1,9 +1,8 @@
 <!DOCTYPE document SYSTEM "rml_1_0.dtd">
 <document filename="test_037_plugingraphic.pdf" invariant="1">
 
-
-		
 <stylesheet/>
+<pageInfo title="My simple document" displayDocTitle="1" lang="en-US"/>
 
 <pageDrawing>
  <setFont name="Helvetica-Bold" size="18"/>
