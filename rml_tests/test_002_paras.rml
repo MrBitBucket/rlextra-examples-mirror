@@ -652,6 +652,121 @@ forms of the grammar. Dots</para>
 <plugInFlowable module="mymodule" function="IndexFinisher"></plugInFlowable>
 <para style="style.normal"> <span backcolor="pink">ABCDEFGHI</span> </para>
 <para style="style.normal"> <span backcolor="pink">&nbsp; ABCDEFGHI&nbsp;</span> </para>
+
+<nextPage/>
+<para style="h1">placePara</para>
+<para style="style.normal">The <b>&lt;placePara&gt;</b> tag allows you to place paragraphs inside story mode. It has
+	<b><i>x</i></b>,
+	<b><i>y</i></b>,
+	<b><i>width</i></b>,
+	<b><i>origin</i></b> &amp;
+	<b><i>anchor</i></b>
+	attributes.</para>
+<graphicsMode borderStrokeColor="red" borderStrokeWidth="1" origin="frame">
+	<stroke width="0.5" color="blue"/>
+	<fill color="green"/>
+	<lines>10 534 10 538 8 536 12 536</lines>
+	<lines>154 534 154 538 152 536 156 536</lines>
+	<lines>398 534 398 538 396 536 400 536</lines>
+	<lines>10 462 10 466 8 464 12 464</lines>
+	<lines>154 462 154 466 152 464 156 464</lines>
+	<lines>398 462 398 466 396 464 400 464</lines>
+	<lines>10 390 10 394 8 392 12 392</lines>
+	<lines>154 390 154 394 152 392 156 392</lines>
+	<lines>398 390 398 394 396 392 400 392</lines>
+</graphicsMode>
+<placePara x="10" y="536" width="72" anchor="w" origin="frame">This is Line 1<br/>anchor=w<br/>this is line 3.</placePara>
+<placePara x="154" y="536" width="72" anchor="c" origin="frame">This is Line 1<br/>anchor=c<br/>this is line 3.</placePara>
+<placePara x="398" y="536" width="72" anchor="e" origin="frame">This is Line 1<br/>anchor=e<br/>this is line 3.</placePara>
+<placePara x="10" y="464" width="72" anchor="sw" origin="frame">This is Line 1<br/>anchor=sw<br/>this is line 3.</placePara>
+<placePara x="154" y="464" width="72" anchor="s" origin="frame">This is Line 1<br/>anchor=s<br/>this is line 3.</placePara>
+<placePara x="398" y="464" width="72" anchor="se" origin="frame">This is Line 1<br/>anchor=se<br/>this is line 3.</placePara>
+<placePara x="10" y="392" width="72" anchor="nw" origin="frame">This is Line 1<br/>anchor=nw<br/>this is line 3.</placePara>
+<placePara x="154" y="392" width="72" anchor="n" origin="frame">This is Line 1<br/>anchor=n<br/>this is line 3.</placePara>
+<placePara x="398" y="392" width="72" anchor="ne" origin="frame">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
+
+<nextPage/>
+<para style="h1">placePara in graphics mode</para>
+<graphicsMode borderStrokeColor="red" borderStrokeWidth="1" origin="frame">
+	<stroke width="0.5" color="blue"/>
+	<fill color="green"/>
+	<lines>10 534 10 538 8 536 12 536</lines>
+	<lines>154 534 154 538 152 536 156 536</lines>
+	<lines>398 534 398 538 396 536 400 536</lines>
+	<lines>10 462 10 466 8 464 12 464</lines>
+	<lines>154 462 154 466 152 464 156 464</lines>
+	<lines>398 462 398 466 396 464 400 464</lines>
+	<lines>10 390 10 394 8 392 12 392</lines>
+	<lines>154 390 154 394 152 392 156 392</lines>
+	<lines>398 390 398 394 396 392 400 392</lines>
+<placePara x="10" y="536" width="72" anchor="w" origin="local">This is Line 1<br/>anchor=w<br/>this is line 3.</placePara>
+<placePara x="154" y="536" width="72" anchor="c" origin="local">This is Line 1<br/>anchor=c<br/>this is line 3.</placePara>
+<placePara x="398" y="536" width="72" anchor="e" origin="local">This is Line 1<br/>anchor=e<br/>this is line 3.</placePara>
+<placePara x="10" y="464" width="72" anchor="sw" origin="local">This is Line 1<br/>anchor=sw<br/>this is line 3.</placePara>
+<placePara x="154" y="464" width="72" anchor="s" origin="local">This is Line 1<br/>anchor=s<br/>this is line 3.</placePara>
+<placePara x="398" y="464" width="72" anchor="se" origin="local">This is Line 1<br/>anchor=se<br/>this is line 3.</placePara>
+<placePara x="10" y="392" width="72" anchor="nw" origin="local">This is Line 1<br/>anchor=nw<br/>this is line 3.</placePara>
+<placePara x="154" y="392" width="72" anchor="n" origin="local">This is Line 1<br/>anchor=n<br/>this is line 3.</placePara>
+<placePara x="398" y="392" width="72" anchor="ne" origin="local">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
+</graphicsMode>
+<nextPage/>
+<para style="h1">placePara in an illustration</para>
+<illustration width="525" height="600" borderStrokeColor="red" borderStrokeWidth="1">
+	<stroke width="0.5" color="blue"/>
+	<fill color="green"/>
+	<lines>10 534 10 538 8 536 12 536</lines>
+	<lines>154 534 154 538 152 536 156 536</lines>
+	<lines>398 534 398 538 396 536 400 536</lines>
+	<lines>10 462 10 466 8 464 12 464</lines>
+	<lines>154 462 154 466 152 464 156 464</lines>
+	<lines>398 462 398 466 396 464 400 464</lines>
+	<lines>10 390 10 394 8 392 12 392</lines>
+	<lines>154 390 154 394 152 392 156 392</lines>
+	<lines>398 390 398 394 396 392 400 392</lines>
+<placePara x="10" y="536" width="72" anchor="w" origin="local">This is Line 1<br/>anchor=w<br/>this is line 3.</placePara>
+<placePara x="154" y="536" width="72" anchor="c" origin="local">This is Line 1<br/>anchor=c<br/>this is line 3.</placePara>
+<placePara x="398" y="536" width="72" anchor="e" origin="local">This is Line 1<br/>anchor=e<br/>this is line 3.</placePara>
+<placePara x="10" y="464" width="72" anchor="sw" origin="local">This is Line 1<br/>anchor=sw<br/>this is line 3.</placePara>
+<placePara x="154" y="464" width="72" anchor="s" origin="local">This is Line 1<br/>anchor=s<br/>this is line 3.</placePara>
+<placePara x="398" y="464" width="72" anchor="se" origin="local">This is Line 1<br/>anchor=se<br/>this is line 3.</placePara>
+<placePara x="10" y="392" width="72" anchor="nw" origin="local">This is Line 1<br/>anchor=nw<br/>this is line 3.</placePara>
+<placePara x="154" y="392" width="72" anchor="n" origin="local">This is Line 1<br/>anchor=n<br/>this is line 3.</placePara>
+<placePara x="398" y="392" width="72" anchor="ne" origin="local">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
+</illustration>
+<nextPage/>
+<para style="h1">Special Justification</para>
+<para style="h2">Justified</para>
+<para style="style14">
+Furthermore, a subset of English sentences interesting on quite independent
+grounds is not quite equivalent to a stipulation to place the constructions into these
+various categories. We will bring evidence in favor of The following thesis:
+most of the methodological work in modern linguistics can be defined in such a way
+as to impose problems of phonemic and morphological analysis.
+</para>
+<para style="h2">Justified with some &lt;br/&gt; tags</para>
+<para style="style14">
+Furthermore, a subset of English sentences interesting on quite independent<br/>
+grounds is not quite equivalent to a stipulation to place the constructions into these<br/>
+various categories. We will bring evidence in favor of The following thesis:<br/>
+most of the methodological work in modern linguistics can be defined in such a way<br/>
+as to impose problems of phonemic and morphological analysis.<br/>
+</para>
+<para style="h2">Justified(justifyBreaks=1) with some &lt;br/&gt; tags</para>
+<para style="style14" justifyBreaks="1">
+Furthermore, a subset of English sentences interesting on quite independent<br/>
+grounds is not quite equivalent to a stipulation to place the constructions into these<br/>
+various categories. We will bring evidence in favor of The following thesis:<br/>
+most of the methodological work in modern linguistics can be defined in such a way<br/>
+as to impose problems of phonemic and morphological analysis.<br/>
+</para>
+<para style="h2">Justified(justifyBreaks=1 justifyLastLine=3) with some &lt;br/&gt; tags</para>
+<para style="style14" justifyBreaks="1" justifyLastLine="3">
+Furthermore, a subset of English sentences interesting on quite independent<br/>
+grounds is not quite equivalent to a stipulation to place the constructions into these<br/>
+various categories. We will bring evidence in favor of The following thesis:<br/>
+most of the methodological work in modern linguistics can be defined in such a way<br/>
+as to impose problems of phonemic and morphological analysis.<br/>
+</para>
 </story>
 
 </document>

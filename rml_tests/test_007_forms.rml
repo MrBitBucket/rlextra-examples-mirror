@@ -163,10 +163,10 @@
 		after boxes 2 and 4 and 4 points after box 6.
 		
 		</para>
-		<illustration width="8cm" height="8cm">
+		<illustration width="8cm" height="10cm">
 			<letterBoxes 
 				x="1cm" 
-				y="6cm" 
+				y="8cm" 
 				count="8" 
 				boxWidth="0.4cm" 
 				boxGap="0.1cm" 
@@ -177,7 +177,7 @@
 
 			<letterBoxes 
 				x="1cm" 
-				y="4.9cm" 
+				y="6.9cm" 
 				count="6" 
 				boxWidth="0.4cm" 
 				boxGap="0.1cm" 
@@ -189,7 +189,7 @@
 
 			<letterBoxes 
 				x="1cm" 
-				y="4.2cm" 
+				y="6.2cm" 
 				count="6" 
 				boxWidth="0.4cm" 
 				boxGap="0.1cm" 
@@ -200,7 +200,7 @@
 		
 			<letterBoxes 
 				x="1cm" 
-				y="3cm" 
+				y="5cm" 
 				count="9" 
 				boxWidth="0.4cm" 
 				boxGap="0.1cm" 
@@ -211,12 +211,25 @@
 
 			<letterBoxes 
 				x="1cm" 
-				y="1cm" 
+				y="3cm" 
 				count="9" 
 				boxWidth="0.4cm" 
 				boxExtraGaps="2:0.2cm,4:0.1cm,6:0.1cm,8:0.2cm"
 				boxHeight="0.6cm" 
 				label="quick check that non-gap ones draw OK too; create extra lines if needed."
+				>AB123456A</letterBoxes>
+
+
+			<letterBoxes 
+				x="1cm" 
+				y="1cm" 
+				count="9" 
+				boxWidth="0.4cm" 
+				boxGap="0.0cm"
+				boxHeight="0.5cm" 
+				label="Trying to turn off the top edge"
+				strokeTop="0"
+				combHeight="1.00"
 				>AB123456A</letterBoxes>
 
 

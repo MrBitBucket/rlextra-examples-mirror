@@ -1,7 +1,8 @@
 <!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
 <document filename="test_001_cmbox.pdf" invariant="1">
 <docinit useCropMarks="1">
-	<cropMarks borderWidth="10" markWidth="1" markColor="black" markLength="5" markLast="0" bleedWidth="0"/>
+	<cropMarks borderWidth="10" markWidth="1" markColor="black" markLength="5" markLast="0" bleedWidth="1"/>
+	<canvasConfig bleedBox="9,9,606,852"/>
 </docinit>
 
 <template pageSize="596,842" leftMargin="72" showBoundary="1">
