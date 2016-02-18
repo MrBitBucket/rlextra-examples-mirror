@@ -767,6 +767,19 @@ various categories. We will bring evidence in favor of The following thesis:<br/
 most of the methodological work in modern linguistics can be defined in such a way<br/>
 as to impose problems of phonemic and morphological analysis.<br/>
 </para>
+<nextPage/>
+<para style="h1">Messing with &lt;sup&gt; height</para>
+<para style="style.normal" spaceBefore="10">This is a<sup><span color="red">sup</span></sup></para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="5"><span color="red">sup</span></sup>rise=5</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="6"><span color="red">sup</span></sup>rise=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="7"><span color="red">sup</span></sup>rise=7</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="8"><span color="red">sup</span></sup>rise=8</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="9"><span color="red">sup</span></sup>rise=9</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="5" size="6"><span color="red">sup</span></sup>rise=5 size=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="6" size="6"><span color="red">sup</span></sup>rise=6 size=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="7" size="6"><span color="red">sup</span></sup>rise=7 size=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="8" size="6"><span color="red">sup</span></sup>rise=8 size=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="9" size="6"><span color="red">sup</span></sup>rise=9 size=6</para>
 </story>
 
 </document>
