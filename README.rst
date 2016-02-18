@@ -1,6 +1,6 @@
-==================
+=======================
 ReportLab PLUS Examples
-==================
+=======================
 
 This contains runnable examples for our commercial PDF library, ReportLab PLUS.
 It should help you get up and running and creating your own PDF document layouts
