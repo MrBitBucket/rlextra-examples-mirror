@@ -292,7 +292,15 @@
         <lineStyle start="0,0" stop="-1,-1" kind="GRID" colorName="black"/>
         <lineStyle start="0,0" stop="-1,-1" kind="BOX" colorName="black" thickness="2"/>
     </blockTableStyle>
-		
+
+	<blockTableStyle id="HeaderGrey">
+		<blockTopPadding length="0" />
+		<blockBottomPadding length="5" />
+		<blockValign value="middle" />
+		<blockBackground colorName="silver" start="0,0" stop="1,0"/>
+	</blockTableStyle>
+	<paraStyle name="phone_list_headers" fontName="Helvetica" fontSize="11" leading="9" spaceBefore="5" spaceAfter="5" />
+	<paraStyle name="phone_list" fontName="Helvetica" fontSize="11" leading="9" spaceBefore="5" spaceAfter="5" />
 </stylesheet>
 
 
@@ -780,6 +788,20 @@ as to impose problems of phonemic and morphological analysis.<br/>
 <para style="style.normal" spaceBefore="10">This is a<sup rise="7" size="6"><span color="red">sup</span></sup>rise=7 size=6</para>
 <para style="style.normal" spaceBefore="10">This is a<sup rise="8" size="6"><span color="red">sup</span></sup>rise=8 size=6</para>
 <para style="style.normal" spaceBefore="10">This is a<sup rise="9" size="6"><span color="red">sup</span></sup>rise=9 size=6</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="90%" size="70%"><span color="red">sup</span></sup>rise=90% size=70%</para>
+<para style="style.normal" spaceBefore="10">This is a<sup rise="-4" size="-3"><span color="red">sup</span></sup>rise=-4 size=-3</para>
+<nextPage/>
+<para style="h1">Messing with splitLongWords</para>
+<blockTable style="HeaderGrey" colWidths="2.1in,.5in">
+	<tr><td><para style="phone_list_headers"><b>Important Numbers</b></para></td></tr>
+	<tr><td><para alignment="left" style="phone_list">Branch Mgr Escalation</para></td><td><para alignment="right" style="phone_list">6888</para></td></tr>
+	<tr><td><para alignment="left" style="phone_list">Card Activation</para></td><td><para alignment="right" style="phone_list">866-100-1234</para></td></tr>
+</blockTable>
+<blockTable style="HeaderGrey" colWidths="2.1in,.5in">
+	<tr><td><para style="phone_list_headers"><b>Important Numbers</b></para></td></tr>
+	<tr><td><para alignment="left" style="phone_list">Branch Mgr Escalation</para></td><td><para alignment="right" style="phone_list" splitLongWords="0">6888</para></td></tr>
+	<tr><td><para alignment="left" style="phone_list">Card Activation</para></td><td><para alignment="right" style="phone_list" splitLongWords="0">866-100-1234</para></td></tr>
+</blockTable>
 </story>
 
 </document>

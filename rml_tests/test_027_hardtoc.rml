@@ -168,8 +168,8 @@
 </blockTable>
 
 <setNextTemplate name="main"/>
+<namedString id="pageZero"><evalString default="XXX"><pageNumber/>+1</evalString></namedString>
 <nextFrame/>
-<namedString id="pageZero"><pageNumber/></namedString>
 <para style="h1">Chapter 1: About this page</para>
 <namedString id="label1">Chapter 1</namedString>
 <namedString id="page1"><evalString default="XXX"><pageNumber/>-<getName id="pageZero"/>+1</evalString></namedString>

@@ -122,7 +122,7 @@
 		<para>The email address should be a clickable mailto link built by creating a plugin within the cell.  And Robin's job title
         should be on a separate line to his name.  In the third row, we use the newer and easier table cell properties "href" and "destination".</para>
 		<spacer length="24"/>
-		<blockTable colWidths="6cm,6cm" style="temp001">
+		<blockTable colWidths="6cm,6cm" style="temp001" longTableOptimize="0">
 			<tr>
 				<td>Name</td>
 				<td>Email</td>

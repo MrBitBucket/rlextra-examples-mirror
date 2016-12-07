@@ -1,22 +1,25 @@
 <!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
 <document filename="test_028_fields.pdf" invariant="1">
 
-<template pageSize="letter" leftMargin="72" showBoundary="1">
-	<pageTemplate id="main" pageSize="letter portrait">
+<template pageSize="A4" leftMargin="72" showBoundary="1">
+	<pageTemplate id="main" pageSize="A4 portrait">
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="760">RML Example 29: Fields</drawString>
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="730" width="72" height="72"/>
     		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
 		<setFont name="Helvetica-BoldOblique" size="10"/>
-		<textField x="72" y="600" width="72" height="12" id="tf0" value="inittf0"/>
-		<textField width="72" height="12" id="tf1">
+		<textField x="72" y="600" width="72" height="12" name="tf0" value="inittf0"/>
+		<textField width="72" height="12" name="tf1">
 			<param name="x">72</param>
 			<param name="y">580</param>
 			<param name="value">ivalue2</param>
 		</textField>
 	</pageGraphics>
 	<frame id="second" x1="35" y1="45" width="525" height="590"/>
+	</pageTemplate>
+	<pageTemplate id="plain" pageSize="A4 portrait">
+		<frame id="first" x1="0" y1="0" width="595.3" height="841.9"/>
 	</pageTemplate>
 </template>
 
@@ -32,6 +35,7 @@
 </stylesheet>
 
 <story>
+<setNextTemplate name="plain"/>
 <storyPlace x="35" y="660" width="525" height="73" origin="page">
 <para style="intro">RML (Report Markup Language) is ReportLab's own language for specifying the appearance of a printed page, which is converted into PDF by the utility rml2pdf.</para>
 <hr color="white" thickness="8pt"/>
@@ -41,8 +45,31 @@
 <rect x="0" y = "-12" width="525" height="3" round="1" fill="1" stroke = "Yes" />
 </illustration>
 </storyPlace>
-	<para style="normal">Hello World. Left click on the items to demonstrate.
-	</para>
+	<para style="normal">Hello World. Left click on the items to demonstrate.  </para>
+<nextPage/>
+	<illustration width="594" height="841">
+		<checkboxField name='cb1A' tooltip='Field cb1A' checked='1' x='72' y='72' buttonStyle='circle' borderWidth='1'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<checkboxField name='cb1B' tooltip='Field cb1B' checked='1' x='72' y='108' buttonStyle='check' borderWidth='2'  borderColor='green'  fillColor='blue'  textColor='red' forceBorder='true'/>
+		<checkboxField name='cb1C' tooltip='Field cb1C' checked='1' x='72' y='144' buttonStyle='cross' borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<checkboxField name='cb1D' tooltip='Field cb1D' checked='1' x='72' y='180' buttonStyle='star' borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<checkboxField name='cb1E' tooltip='Field cb1E' checked='1' x='72' y='216' buttonStyle='diamond' borderStyle='bevelled'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<checkboxField name='cb1F' tooltip='Field cb1F' checked='1' x='72' y='252' buttonStyle='check'  borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1H' tooltip='Field cb1H' checked='1' x='72' y='288' buttonStyle='check'  borderStyle='underlined' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1G' tooltip='Field cb1G' checked='1' x='72' y='324' buttonStyle='check'  borderStyle='dashed' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1I' tooltip='Field cb1I' checked='1' x='72' y='360' buttonStyle='check'  borderStyle='inset' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1J' tooltip='Field cb1J' checked='1' x='72' y='396' buttonStyle='check'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<checkboxField name='cb1K' tooltip='Field cb1K' checked='1' x='72' y='432' buttonStyle='check'  borderWidth='1'  borderColor='None'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1L' tooltip='Field cb1L' checked='0' x='72' y='800' buttonStyle='check' borderColor='None'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1M' tooltip='Field cb1M' checked='0' x='72' y='600' buttonStyle='check' borderWidth='2'  borderColor='blue'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<radioField name='rb1A' tooltip='Field rb1A' value='V1'  selected='0' x='144' y='72' buttonStyle='circle'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<radioField name='rb1A' tooltip='Field rb1A' value='V2'  selected='1' x='144' y='108' buttonStyle='circle'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
+		<radioField name='rb1B' tooltip='Field rb1B' value='V1'  selected='0' x='180' y='72' buttonStyle='check'  borderStyle='solid' shape='square'  borderWidth='2'  borderColor='green'  fillColor='red'  textColor='blue' forceBorder='true'/>
+		<radioField name='rb1B' tooltip='Field rb1B' value='V2'  selected='0' x='180' y='108' buttonStyle='check'  borderStyle='solid' shape='square'  borderWidth='2'  borderColor='green'  fillColor='red'  textColor='blue' forceBorder='true'/>
+		<radioField name='rb1C' tooltip='Field rb1C' value='V1'  selected='0' x='288' y='72' buttonStyle='circle'  borderStyle='bevelled' shape='circle'  borderWidth='2'  borderColor='green'  fillColor='yellow'  textColor='blue' forceBorder='true'/>
+		<radioField name='rb1C' tooltip='Field rb1C' value='V2'  selected='1' x='288' y='108' buttonStyle='circle'  borderStyle='inset' shape='circle'  borderWidth='2'  borderColor='magenta'  fillColor='pink'  textColor='blue' forceBorder='true'/>
+		<textField name='tf1A' tooltip='Field tf1A' value='Hello World' x='324' y='72'  borderStyle='inset'  borderWidth='2'  borderColor='magenta'  fillColor='pink'  textColor='blue' forceBorder='true'/>
+		<textField name='tf1B' tooltip='Field tf1B' value='Hello World' x='324' y='144'  borderStyle='inset'  borderWidth='2'  fontName='Courier-Bold'  borderColor='magenta'  fillColor='pink'  textColor='blue' forceBorder='true'/>
+	</illustration>
 </story>
 
 </document>

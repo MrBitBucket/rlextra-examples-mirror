@@ -147,6 +147,7 @@
 <keepTogether maxHeight="2000"><!--spurious maxHeight for testing-->
 <para style="sample">Etiam fringilla faucibus libero, at bibendum risus luctus ac. Aliquam erat volutpat. Curabitur at odio non erat tincidunt semper. Proin pulvinar volutpat dolor, viverra blandit neque blandit in. Ut augue quam, vehicula et iaculis vitae, vehicula eu ligula. Aliquam erat volutpat. Donec ultrices magna vel massa rhoncus sed laoreet nunc posuere. Sed sed auctor felis. Vivamus lacinia sem sed mi molestie at malesuada velit consequat. Vestibulum malesuada mauris vel libero tempor hendrerit. Vivamus vel quam sem, sit amet tincidunt metus. Phasellus nibh turpis, varius et feugiat ac, pharetra id leo. In laoreet gravida lorem, sit amet laoreet mi pretium nec. Integer ultricies est at odio tincidunt gravida. Maecenas convallis tellus nec nisl volutpat volutpat. Mauris vel quam nibh, vel posuere justo. Proin sit amet felis convallis velit laoreet semper ut id felis. </para>
 </keepTogether>
+<keepTogether><!--empty keepTogether should not crash--></keepTogether>
 <para style="normal">Using the tag &lt;nextPage/&gt; will now break to the next page</para>
 <nextPage/>
 <para style="h2">keepWithNext</para>
