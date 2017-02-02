@@ -505,6 +505,26 @@ virtual gibberish (e.g. (98d)).  This suggests that the theory of
 syntactic features developed earlier delimits a descriptive fact.
 </para>
 </imageAndFlowables>
+<imageAndFlowables imageName="replogo.gif" imageWidth="50" imageHeight="50" imageSide="left">
+<para style="h1">Test imageAndFlowables tag with a small image</para>
+<para style="style1">The image on the left is a PDF file, not a bitmap.<br/>
+Summarizing, then, we assume that the fundamental error of regarding
+functional notions as categorial may remedy and, at the same time,
+eliminate the levels of acceptability from fairly high (e.g. (99a)) to
+virtual gibberish (e.g. (98d)).  This suggests that the theory of
+syntactic features developed earlier delimits a descriptive fact.
+</para>
+</imageAndFlowables>
+<imageAndFlowables imageName="tiger.svg" imageType="svg" autoSize="1" imageWidth="50" imageHeight="50" imageSide="left">
+<para style="h1">Test imageAndFlowables tag with SVG image</para>
+<para style="style1">The image on the left is a SVG file, not a bitmap.<br/>
+Summarizing, then, we assume that the fundamental error of regarding
+functional notions as categorial may remedy and, at the same time,
+eliminate the levels of acceptability from fairly high (e.g. (99a)) to
+virtual gibberish (e.g. (98d)).  This suggests that the theory of
+syntactic features developed earlier delimits a descriptive fact.
+</para>
+</imageAndFlowables>
 
 
 

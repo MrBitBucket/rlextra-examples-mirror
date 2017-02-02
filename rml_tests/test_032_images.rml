@@ -377,6 +377,28 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 <figure captionAlign="left" captionPosition="top"><para style="normal">a para caption</para>
     <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
 </figure>
+<nextPage/>
+<para style="h2">SVG Images</para>
+<illustration height="533" width="500" borderStrokeWidth="2" borderStrokeColor="blue">	
+	<stroke color="red" width="1"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="500" height="533" showBoundary="yes" preserveAspectRatio="yes" />
+</illustration>
+<nextPage/>
+<illustration height="266" width="250" borderStrokeWidth="2" borderStrokeColor="blue">	
+	<stroke color="red" width="1"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="yes" preserveAspectRatio="yes" />
+</illustration>
+<nextPage/>
+<para style="h2">SVG Images</para>
+<illustration height="533" width="500" borderStrokeWidth="2" borderStrokeColor="blue">	
+	<stroke color="red" width="1"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="500" height="533" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
+</illustration>
+<nextPage/>
+<illustration height="266" width="250" borderStrokeWidth="2" borderStrokeColor="blue">	
+	<stroke color="red" width="1"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
+</illustration>
 
 
 </story>
