@@ -34,6 +34,7 @@
     <paraStyle name="lpsty" parent="bodytext" spaceAfter="18" />
     <paraStyle name="intro"  fontName="Helvetica" fontSize="12" leading="12" spaceAfter="12"/>
     <paraStyle name="h1" fontName="Helvetica-Bold" fontSize="12" spaceBefore ="10" />
+    <paraStyle name="bullet" parent="normal" bulletFontName = "Helvetica" bulletFontSize="5"/>
     <blockTableStyle id="redgreen" spaceBefore="20">
         <!--blockAlignment value="left"/>
         <blockValign value="top"/>
@@ -74,7 +75,18 @@ put flowing content in lists, with configurable markers. </para>
         <li><para style="normal">Line two</para></li>
         <li><para style="normal">Line three will be made very long, to make sure it wraps onto a second line.
 This is to check we get the bullets nicely top-aligned.  Blah blah blah</para></li>
-        <li><para style="normal">Line four</para></li>
+        <li><para style="bullet">Line four</para></li>
+        <li><para style="bullet"><bullet>&bull;</bullet>Line five</para></li>
+        <li><ul>
+                <li><para style="normal">Line five 1</para></li>
+                <li><para style="normal">Line five 2</para></li>
+                <li><ul>
+                        <li><para style="normal">Line five 3 1</para></li>
+                        <li><para style="normal">Line five 3 2</para></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
     </ul>
 
     <para style="normal">Here is the markup:</para>
@@ -85,6 +97,18 @@ This is to check we get the bullets nicely top-aligned.  Blah blah blah</para></
         <li><para style="normal">Line one</para></li>
         <li><para style="normal">Line two</para></li>
         <li><para style="normal">Line three</para></li>
+        <li><para style="bullet">Line four</para></li>
+        <li><para style="bullet"><bullet>A</bullet>Line five</para></li>
+        <li><ul>
+                <li><para style="normal">Line five 1</para></li>
+                <li><para style="normal">Line five 2</para></li>
+                <li><ul>
+                        <li><para style="normal">Line five 3 1</para></li>
+                        <li><para style="normal">Line five 3 2</para></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
     </ul>
 
 ]]></codesnippet>
