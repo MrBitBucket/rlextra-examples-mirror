@@ -29,6 +29,10 @@
 </template>
 
 <stylesheet>
+	<initialize>
+		<alias id="ul.defaultStyle" value="my.ul.defaultStyle"/>
+		<alias id="ol.defaultStyle" value="my.ol.defaultStyle"/>
+	</initialize>
     <paraStyle name="normal" fontName="Helvetica" fontSize="10" leading="12" />
     <paraStyle name="bodytext" parent="normal" spaceBefore="6" />
     <paraStyle name="lpsty" parent="bodytext" spaceAfter="18" />
@@ -50,6 +54,10 @@
     <listStyle name="blah" spaceAfter="10" bulletType="A" spaceBefore="23" />
     <listStyle name="square" spaceAfter="10" bulletType="bullet" spaceBefore="23" bulletColor="red" start="square"/>
     <listStyle name="list_normal" bulletFontSize="10" bulletFontName="Helvetica"/>
+	<listStyle name="my.ul.defaultStyle" parent="style.UnorderedList" bulletFontSize="8" bulletOffsetY="0" 
+		start='circle square blackstar sparkle disc diamond'/>
+	<listStyle name="my.ol.defaultStyle" parent="style.OrderedList" bulletFontSize="8"
+		start='1 i a A I'/>
 </stylesheet>
 <story>
 <storyPlace x="35" y="660" width="525" height="73" origin="page">
