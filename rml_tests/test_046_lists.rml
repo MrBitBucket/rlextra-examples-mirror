@@ -291,5 +291,26 @@ symbol.</para>
         <li><para style="normal">para 2</para><para style="normal">another paragraph</para></li>
         <li value="circle" bulletColor="green"><para style="normal">para 3</para></li>
     </ul>
+
+	<nextPage/>
+<para style="h1">Ordered Lists With auto sequences</para>
+    <ol>
+        <li><para style="normal">Line one.  Unordered lists use a &lt;ul&gt; tag.</para></li>
+        <li><para style="normal">Line two</para></li>
+        <li><para style="normal">Line three will be made very long, to make sure it wraps onto a second line.
+This is to check we get the bullets nicely top-aligned.  Blah blah blah</para></li>
+        <li><para style="bullet">Line four</para></li>
+        <li><para style="bullet"><bullet>&bull;</bullet>Line five</para></li>
+        <li><ol>
+                <li><para style="normal">Line five 1</para></li>
+                <li><para style="normal">Line five 2</para></li>
+                <li><ol>
+                        <li><para style="normal">Line five 3 1</para></li>
+                        <li><para style="normal">Line five 3 2</para></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
 </story>
 </document>
