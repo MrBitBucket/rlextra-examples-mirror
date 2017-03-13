@@ -7,7 +7,7 @@
 <pageTemplate id="main">
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
-		    <drawString x="35" y="783">RML Example 30: Keepinframe</drawString>
+		    <drawString x="35" y="783">RML Example 29: Keepinframe</drawString>
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
     		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
 	</pageGraphics>
