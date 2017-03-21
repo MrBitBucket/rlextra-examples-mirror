@@ -310,8 +310,7 @@
 		<blockTable colWidths="3cm,10%,10%,10%,30%" rowHeights="2cm,1cm,1cm,1cm,None" style="span001">
 			<tr>
 				<td vAlign="middle">
-					<para>This should span the first 3 cells in the top row. It's ordinary left aligned
-                text but could be centred if you want.</para>
+					<para>This should span the first 3 cells in the top row. Also cell B spans two rows and two columns</para>
 				</td>
 				<td>B</td>
 				<td>C</td>
@@ -328,8 +327,8 @@
 					<para>some more text</para>
 				</td>
 			</tr>
-			<tr><td>A</td><td>B</td><td>C</td><td>DB</td><td>E</td></tr>
-			<tr><td>A</td><td>B</td><td>C</td><td>DB</td><td>E</td></tr>
+			<tr><td>A</td><td colspan="2" rowspan="2" background="red" vAlign="middle" fontSize="14" fontColor="blue">B</td><td/><td>DB</td><td>E</td></tr>
+			<tr><td>A</td><td/><td/><td>DB</td><td>E</td></tr>
 			<tr><td>A</td><td>B</td><td>C</td><td>DB</td><td>E</td></tr>
 			<tr><td>A</td><td>B</td><td>C</td><td>DB</td><td>E</td></tr>
 		</blockTable>

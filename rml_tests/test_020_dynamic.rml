@@ -59,17 +59,25 @@
 		<loop_b var="i" in="range(5)">
 			<para style="code">pass <expr>i</expr>: this adds dynamic capabilities</para>
 		</loop_b>
-		<para style="normal">The author's name was assigned earlier, and it is:  <expr>author</expr>.  Here is the system path:</para>
-		<script_b>import sys</script_b>
+		<para style="normal">The author's name was assigned earlier, and it is:  <expr>author</expr>. Here is the some info about this process:</para>
+		<script_b>import reportlab, os, sys, reportlab.rl_config</script_b>
+		<script_b>from reportlab.lib.utils import TimeStamp</script_b>
 		<spacer length="8"/>
-		<loop_b var="dirName" in="sys.path">
-			<pre style="code"><expr>dirName</expr></pre>
-		</loop_b>
+		<if_b cond="not reportlab.rl_config.invariant">
+			<loop_b var="v" in="('sys.version',sys.version),('cwd',os.getcwd()),('location',os.path.dirname(reportlab.__file__)),('version',reportlab.__version__),('date',reportlab.__date__),('now',TimeStamp().asctime)">
+				<pre style="code"><expr>v[0]</expr>: <expr>v[1]</expr></pre>
+			</loop_b>
+		</if_b>
+		<if_b cond="reportlab.rl_config.invariant">
+			<loop_b var="v" in="(('t',TimeStamp().t),('YMDhms',TimeStamp().YMDhms))">
+				<pre style="code"><expr>v[0]</expr>: <expr>v[1]</expr></pre>
+			</loop_b>
+		</if_b>
 		<para style="h1">Data acquisition</para>
 		<para style="normal">This document uses a data tag to slurp in a source XML document in  "sample_invoice.xml".  The source is here...(in fact, this could
     be useful once I have the escaping sorted out....)</para>
 <xpre style="code">
-<expr escape="off" encoding="iso-8859-1">open('test_020_sampledata.xml','rb').read()</expr>
+<expr escape="off" encoding="iso-8859-1">open('test_020_sampledata.xml','r').read()</expr>
 </xpre>
 		<para style="normal">This can be referred to with the dynamic tags.  Let's pull out the customer name from a node in the file: <b>
 				<expr>data.invoice.customerDetails.customerName</expr>
