@@ -77,7 +77,7 @@
 		<para style="normal">This document uses a data tag to slurp in a source XML document in  "sample_invoice.xml".  The source is here...(in fact, this could
     be useful once I have the escaping sorted out....)</para>
 <xpre style="code">
-<expr escape="off" encoding="iso-8859-1">open('test_020_sampledata.xml','r').read()</expr>
+<expr escape="off" encoding="iso-8859-1">open('test_020_sampledata.xml','rb').read().replace(b'\r\n',b'\n')</expr>
 </xpre>
 		<para style="normal">This can be referred to with the dynamic tags.  Let's pull out the customer name from a node in the file: <b>
 				<expr>data.invoice.customerDetails.customerName</expr>
