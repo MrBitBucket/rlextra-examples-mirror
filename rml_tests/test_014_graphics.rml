@@ -205,6 +205,50 @@ complete this in a release next week.
     file on disk, this is cut off; but in RML documents it leaks out.  You should design your drawings
     to leave adequate space for the longest expected data labels.
     </para>
+	<nextFrame/>
+    <para style="h1">Drawings in graphics mode</para>
+	<graphicsMode borderStrokeColor="red" borderStrokeWidth="1" origin="frame">
+	<stroke width="0.5" color="blue"/>
+	<drawingGraphic x="10" y="536" anchor="w" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='w'</param>
+	</drawingGraphic>
+	<drawingGraphic x="154" y="536" anchor="c" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='c'</param>
+	</drawingGraphic>
+	<drawingGraphic x="398" y="536" anchor="e" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='e'</param>
+	</drawingGraphic>
+	<drawingGraphic x="10" y="464" anchor="sw" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='sw'</param>
+	</drawingGraphic>
+	<drawingGraphic x="154" y="464" anchor="s" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='s'</param>
+	</drawingGraphic>
+	<drawingGraphic x="398" y="464" anchor="se" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='se'</param>
+	</drawingGraphic>
+	<drawingGraphic x="10" y="392" anchor="nw" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='nw'</param>
+	</drawingGraphic>
+	<drawingGraphic x="154" y="392" anchor="n" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='n'</param>
+	</drawingGraphic>
+	<drawingGraphic x="398" y="392" anchor="ne" module="test_014_graphic" function="Graphic">
+		<param name="s.text">anchor='ne'</param>
+	</drawingGraphic>
+	<stroke color="red"/>
+	<lines>10 534 10 538 8 536 12 536</lines>
+	<lines>154 534 154 538 152 536 156 536</lines>
+	<lines>398 534 398 538 396 536 400 536</lines>
+	<lines>10 462 10 466 8 464 12 464</lines>
+	<lines>154 462 154 466 152 464 156 464</lines>
+	<lines>398 462 398 466 396 464 400 464</lines>
+	<lines>10 390 10 394 8 392 12 392</lines>
+	<lines>154 390 154 394 152 392 156 392</lines>
+	<lines>398 390 398 394 396 392 400 392</lines>
+</graphicsMode>
+
+<para>The <b>&lt;drawingGraphic&gt;</b> is the equivalent of the <b>&lt;drawing&gt;</b> tag that can be used in graphics mode. It has extra attributes <b>x</b>, <b>y</b> and <b>anchor</b>.</para>
 
   </story>
 </document>
