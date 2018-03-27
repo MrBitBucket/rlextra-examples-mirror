@@ -802,6 +802,20 @@ as to impose problems of phonemic and morphological analysis.<br/>
 	<tr><td><para alignment="left" style="phone_list">Branch Mgr Escalation</para></td><td><para alignment="right" style="phone_list" splitLongWords="0">6888</para></td></tr>
 	<tr><td><para alignment="left" style="phone_list">Card Activation</para></td><td><para alignment="right" style="phone_list" splitLongWords="0">866-100-1234</para></td></tr>
 </blockTable>
+<nextPage/>
+<para style="h1">Messing with &lt;U&gt; &amp; &lt;strike&gt;</para>
+<para style="style.normal" spaceBefore="10">This is underlined &lt;sup&gt;: a<sup><u><span color="red">sup</span></u></sup></para>
+<para style="style.normal" spaceBefore="10">This is <u>underlined</u></para>
+<para style="style.normal" spaceBefore="10">This is <u kind="double">underlined double</u></para>
+<para style="style.normal" spaceBefore="10">This is <strike>striken</strike></para>
+<para style="style.normal" spaceBefore="10">This is <strike><u>both</u></strike></para>
+<para style="style.normal" spaceBefore="10">This is <u width="0.5" offset="-1" kind="double">underlined kind="double"</u></para>
+<para style="style.normal" spaceBefore="10">This is <u width="0.25" offset="-1" kind="double">double underlined with thinner lines</u></para>
+<para style="style.normal" spaceBefore="10">This is <u width="0.5" offset="-0.5" color="red">underlined in red</u></para>
+<para style="style.normal" spaceBefore="10">This is <strike width="0.5" color="red">overstruck in red</strike></para>
+<para style="style.normal" spaceBefore="10">This is <strike width="0.5" color="red" kind="double">doubly overstruck in red</strike></para>
+<para style="style.normal" spaceBefore="10">This is <strike width="0.5" offset="0.125*F" color="red" kind="triple" gap="0.5">triply overstruck in red</strike></para>
+<para autoLeading="max" spaceAfter="10" spaceBefore="30">this is in 12 <font size="30">this is in 30</font> <u offset="-0.5" width="0.5" color="red"><u offset="-1.5" width="0.5" color="blue">and</u></u> <link underline="1" ucolor="blue" href="http://google.com/">the link box<sup><a color="red" ucolor="green" underline="1" href="https://www.reportlab.com">2</a></sup> is right (twice).</link></para>
 </story>
 
 </document>
