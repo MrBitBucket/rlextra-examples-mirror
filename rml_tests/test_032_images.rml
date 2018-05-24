@@ -252,8 +252,62 @@ You can choose an anchor from the standard compass points.</para>
             </illustration>
         </td>
         <td>
-            <illustration width="80" height="50">
+            <illustration width="80" height="80">
                 <image file="internet_access.pdf" x="0" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="se"/>
+            </illustration>
+        </td>
+    </tr>
+</blockTable>
+<para style="normal">Draws the 40 x 40 image in an 80x80 box, with each anchor point with anchorAtXY=True</para>
+<blockTable style="simpler">
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="0" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="nw" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="40" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="n" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="80" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="ne" anchorAtXY="1"/>
+            </illustration>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="0" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="w" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="40" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="c" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="80" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="e" anchorAtXY="1"/>
+            </illustration>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="0" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="sw" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="40" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="s" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="internet_access.pdf" x="80" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="se" anchorAtXY="1"/>
             </illustration>
         </td>
     </tr>
@@ -309,6 +363,60 @@ You can choose an anchor from the standard compass points.</para>
         <td>
             <illustration width="80" height="50">
                 <image file="replogo.gif" x="0" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="se"/>
+            </illustration>
+        </td>
+    </tr>
+</blockTable>
+<para style="normal">Draws the 40 x 40 gif image in an 80x80 box, with each anchor point &amp; anchorAtXY=1</para>
+<blockTable style="simpler">
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="0" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="nw" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="40" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="n" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="80" y="80" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="ne" anchorAtXY="1"/>
+            </illustration>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="0" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="w" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="40" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="c" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="80" y="40" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="e" anchorAtXY="1"/>
+            </illustration>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="0" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="sw" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="80">
+                <image file="replogo.gif" x="40" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="s" anchorAtXY="1"/>
+            </illustration>
+        </td>
+        <td>
+            <illustration width="80" height="50">
+                <image file="replogo.gif" x="80" y="0" width="40" height="40" showBoundary="yes" preserveAspectRatio="yes" anchor="se" anchorAtXY="1"/>
             </illustration>
         </td>
     </tr>
@@ -399,7 +507,9 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 	<stroke color="red" width="1"/>
 	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
 </illustration>
-
-
+<nextPage/>
+<illustration height="40" width="40" borderStrokeWidth="1" borderStrokeColor="red">	
+	<image file="tclip.svg" type="svg" x="5" y="5" width="30" height="30" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
+</illustration>
 </story>
 </document>
