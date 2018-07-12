@@ -1585,6 +1585,8 @@ plus magnum of champagne</td>
 		<blockTable ident="plain000" htmlSpans="1" style="realplain" colWidths="100%">
 			<tr><td><plugInFlowable module="mymodule" function="MyExpandingText">text="THE EMPIRE STATE BUILDING", fontColor="blue", fillColor="pink", strokeColor="red", leftPad=10, rightPad=10, bottomPad=10, topPad=10</plugInFlowable></td></tr>
 		</blockTable>
+		<blockTable ident="plain000" htmlSpans="1" style="realplain" colWidths="100%" emptyTableAction="ignore">
+		</blockTable>
 		<bookmark name="BACK_PAGE"/>
 	</story>
 </document>

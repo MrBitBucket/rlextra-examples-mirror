@@ -1,7 +1,7 @@
 <!DOCTYPE document SYSTEM "../rml.dtd"> 
 <document filename="test_000_catchforms.pdf" invariant="1">
 	<docinit>
-		<registerTTFont faceName="DejaVuSans" fileName="DejaVuSans.ttf"/>
+		<registerTTFont faceName="Vera" fileName="Vera.ttf"/>
 	</docinit>
 
 
@@ -172,7 +172,7 @@ blah blah forward-thinking blah.
 
 		<lines>67 300 77 300 72 295 72 305    167 280 177 280 172 275 172 285    267 260 277 260 272 255 272 265</lines>
 		<lines>67 240 77 240 72 235 72 245    167 220 177 220 172 215 172 225    267 200 277 200 272 195 272 205</lines>
-		<setFont name="DejaVuSans" size="12"/>
+		<setFont name="Vera" size="12"/>
 		<drawString x="72" y="300" direction='RTL'>&#x05d4;&#x05e0;&#x05d3;&#x05e1;&#x05ea; &#x05d0;&#x05d9;&#x05e0;&#x05d8;&#x05e8;&#x05e0;&#x05d8; &#x05e2;&#x05dc; &#x05e9;&#x05de;&#x05d5;.</drawString>
 		<drawRightString x="172" y="280" direction='RTL'>&#x05d4;&#x05e0;&#x05d3;&#x05e1;&#x05ea; &#x05d0;&#x05d9;&#x05e0;&#x05d8;&#x05e8;&#x05e0;&#x05d8; &#x05e2;&#x05dc; &#x05e9;&#x05de;&#x05d5;.</drawRightString>
 		<drawCentredString x="272" y="260" direction='RTL'>&#x05d4;&#x05e0;&#x05d3;&#x05e1;&#x05ea; &#x05d0;&#x05d9;&#x05e0;&#x05d8;&#x05e8;&#x05e0;&#x05d8; &#x05e2;&#x05dc; &#x05e9;&#x05de;&#x05d5;.</drawCentredString>
