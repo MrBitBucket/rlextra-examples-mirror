@@ -32,7 +32,7 @@ MT(PINK)
 	</initialize>
 	<paraStyle name="h1" fontName="Helvetica-BoldOblique" fontSize="16" leading="12" spaceAfter="16"/>
 	<paraStyle name="italic" fontName="Helvetica-Oblique" fontSize="10" leading="12"/>
-	<paraStyle name="normal" fontName="Helvetica" fontSize="10" leading="12" hyphenationLang="en_GB"/>
+	<paraStyle name="normal" fontName="Helvetica" fontSize="10" leading="12" hyphenationLang="en_GB" hyphenationMinWordLength="5"/>
     <paraStyle name="normalb" fontName="Helvetica-Bold" parent="normal" spaceBefore="10"/>
 	<paraStyle name="spaced" fontName="Helvetica" fontSize="12" leading="12" 
 		spaceBefore="12" spaceAfter="12"/>
@@ -63,13 +63,8 @@ MT(PINK)
 	<para style="normal" hyphenationLang="lt_LT">Sed pretium sollicitudin lacinia. Maecenas eget neque sit amet urna commodo vehicula. Fusce sed felis a lorem semper luctus. Duis congue metus eget nulla gravida placerat. Praesent arcu libero, gravida vitae commodo at, pharetra et tellus. Suspendisse pulvinar nulla nec massa convallis scelerisque in sed lacus. Donec sed orci est, sed congue neque. In hac habitasse platea dictumst.</para>
 <!-- the <nobr></nobr> section inhibits hyphenation -->
 	<para style="normal" hyphenationLang="lt_LT">Sed pretium sollicitudin lacinia. Maecenas eget neque sit amet urna commodo vehicula. Fusce sed felis a lorem <nobr>semper</nobr> luctus. Duis congue metus eget nulla gravida placerat. Praesent arcu libero, gravida vitae commodo at, pharetra et tellus. Suspendisse pulvinar nulla nec massa convallis scelerisque in sed lacus. Donec sed orci est, sed congue neque. In hac habitasse platea dictumst.</para>
-<ol>
-<li>
-	<para>
-	</para>
-</li>
-</ol>
-    <para style="normalb"> Hyphenation of long URLS</para>
+<spacer length="5"/>
+    <para style="normalb" hyphenationLang="en_GB" hyphenationMinWordLength="5"> Hyphenation of long URLS</para>
 	<para style="normal">https://www.reportlab.com/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/test/</para>
     <para style="normalb">Hyphenation of long URLS with HTML formatting tags</para>
     <para style="normal">https://www.reportlab.com/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/<span color="red">test</span>/documentation/relnotes/test/documentation/relnotes/test/documentation/relnotes/test/</para>
@@ -77,6 +72,10 @@ MT(PINK)
     <para style="normal">https://www.reportlab.com/documentation/relnotes/test/documentation/relnotes/test/documentation/rel-notes/<span color="red">test-1</span>/documentation/rel-notes/test/documentation/relnotes/test/documentation/relnotes/test/</para>
     <para style="normalb">Hyphenation of paragraphs with "no split" tags and words with hyphens</para>
 	<para style="normal" >I have now started a new paragraph with a new tag; note that because there was no spaceAfter attribute <nobr>on-the-previous</nobr> paragraph, there is no gap between these blocks of text. I have also assigned a new paragraph style which is no longer in italics.</para>
+	<para style="normal">This is an ampersand &AMP;</para>
+	<para style="normal">This is an ampersand &amp;</para>
+	<para style="normal">This is a less than sign &lt;</para>
+	<para style="normal">This is a less than sign &LT;</para>
 </story>
 
 </document>

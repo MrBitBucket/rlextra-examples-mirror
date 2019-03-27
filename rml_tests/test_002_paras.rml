@@ -50,6 +50,7 @@
 	<paraStyle name="style1"
 	fontName="Courier"
 	fontSize="10"
+	underlineColor="blue"
 	/>
 	<paraStyle name="dotStyle1" parent="style1" endDots="." endDotsDy="3" endDotsFontName="Courier-Bold" endDotsFontSize="10" endDotsColor="red" spaceAfter="12"/>
 	<paraStyle name="dotStyle2"
@@ -816,6 +817,10 @@ as to impose problems of phonemic and morphological analysis.<br/>
 <para style="style.normal" spaceBefore="10">This is <strike width="0.5" color="red" kind="double">doubly overstruck in red</strike></para>
 <para style="style.normal" spaceBefore="10">This is <strike width="0.5" offset="0.125*F" color="red" kind="triple" gap="0.5">triply overstruck in red</strike></para>
 <para autoLeading="max" spaceAfter="10" spaceBefore="30">this is in 12 <font size="30">this is in 30</font> <u offset="-0.5" width="0.5" color="red"><u offset="-1.5" width="0.5" color="blue">and</u></u> <link underline="1" ucolor="blue" href="http://google.com/">the link box<sup><a color="red" ucolor="green" underline="1" href="https://www.reportlab.com">2</a></sup> is right (twice).</link></para>
+<para style="style1" spaceBefore="10">para<u><font size="1pt" color="red">^SS^</font>    </u></para>
+<xpre style="style1" spaceBefore="10">xpre<u><font size="1pt" color="red">^SS^</font>    </u></xpre>
+<para style="style1" spaceBefore="10">para<u><font size="1pt" color="red">^SS^</font>    </u>|</para>
+<xpre style="style1" spaceBefore="10">xpre<u><font size="1pt" color="red">^SS^</font>    </u>|</xpre>
 </story>
 
 </document>

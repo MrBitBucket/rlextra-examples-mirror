@@ -61,6 +61,7 @@
             
 			<drawRightString x="523" y="620"><getName id="chapterName"/></drawRightString>
 			<drawRightString x="523" y="40"><pageNumber/></drawRightString>
+			<drawString x="10" y="40">delayed <getName id="ns0"/></drawString>
 
         	<fill color="rml:chapterColor"/>
         	<rect x="60" y="56" width="475" height="16" fill="yes" stroke="0"/>
@@ -105,6 +106,7 @@
 </stylesheet>
 
 <story firstPageTemplate="cover">
+	<namedString id="ns0">This is a string</namedString>
 
 <storyPlace x="35" y="660" width="525" height="73" origin="page">
 <para style="intro">RML (Report Markup Language) is ReportLab's own language for specifying the appearance of a printed page, which is converted into PDF by the utility rml2pdf.</para>
@@ -123,6 +125,7 @@
 
 <setNextTemplate name="main"/>
 <nextPage/>
+<namedString id="ns0">Another string</namedString>
 <para>This page has an undefined colour and chapter name. </para>
 
 

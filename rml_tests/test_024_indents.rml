@@ -294,12 +294,53 @@ Item 3 of outer list.
 <para style="normal">This text should be indented an extra 1cm on the left.</para>
 <indent left="-1cm"/>
 <para style="normal">This text should not have the extra indent.</para>
+
+<nextPage/>
+<para style="normal">Below we should colour the background lightgreen</para>
+<frameBackground start="1" color="lightgreen"/>
+<para style="normal">We should have a light green background here</para>
+<frameBackground start="0"/>
+<frameBackground start="1" color="lightgreen" borderColor="pink" borderWidth="2"/>
+<para style="normal">We should have a light green background here with a thick pink border</para>
+<frameBackground start="0"/>
+
+<nextPage/>
+<para style="normal">Below we should colour the background lightgreen</para>
+<frameBackground start="frame" color="lightgreen"/>
+<para style="normal">We should have a light green background here</para>
+
+<nextPage/>
+<para style="normal">Here we should have no background.</para>
+
+<nextPage/>
+<frameBackground start="frame" color="lightblue"/>
+<para style="normal">We should have a light blue background here and the whole frame should be filled in.</para>
+
+<nextPage/>
+<para style="normal">Here we should have no background again.</para>
+
+<para style="normal">Below we should colour the background lightgreen</para>
+<frameBackground start="frame-permanent" color="lightgreen"/>
+<para style="normal">We should have a light green background here</para>
+
+<nextPage/>
+<para style="normal">Here we should still have a lightgreen background.</para>
+
+<nextPage/>
+<frameBackground start="frame" color="lightblue" left="36" right="36"/>
+<para style="normal">We should have a lighgreen/lightblue background.</para>
+
+<nextPage/>
+<para style="normal">Here we should have only light green background.</para>
+
 <para style="h4">style h4</para>
 <para style="h5">style h5</para>
 <para style="h6">style h6</para>
 <h4>tag h4</h4>
 <h5>tag h5</h5>
 <h6>tag h6</h6>
+
+
 </story>
 
 </document>
