@@ -43,6 +43,7 @@
   <stylesheet>
     <initialize>
       <alias id="style.normal" value="style.Normal"/>
+	  <color id="green1" RGB="rgb(10,255,10)"/>
     </initialize>
     <paraStyle name="h1" fontName="VeraBold" fontSize="12" spaceBefore="12" leading="15"/>
     <paraStyle name="normal" fontName="Vera" fontSize="10" spaceBefore="6" leading="12"/>
@@ -185,7 +186,7 @@ complete this in a release next week.
       &lt;widget module="reportlab.graphics.shapes" function="Rect" name="border" 
             initargs="0,0,175,105"/&gt;
       &lt;param name="border.fillColor"&gt;None&lt;/param&gt;
-      &lt;param name="border.strokeColor"&gt;reportlab.lib.colors.black&lt;/param&gt;      
+      &lt;param name="border.strokeColor"&gt;green1&lt;/param&gt;      
     &lt;/drawing>
 
     </xpre>
@@ -198,7 +199,7 @@ complete this in a release next week.
       <param name="title.fontName">Helvetica</param>
       <widget module="reportlab.graphics.shapes" function="Rect" name="border" initargs="0,0,175,105"/>
       <param name="border.fillColor">None</param>
-      <param name="border.strokeColor">reportlab.lib.colors.black</param>
+      <param name="border.strokeColor">green1</param>
     </drawing>
     <para style="normal">This last one illustrates a "feature":  it is possible for drawings to draw out
     of the box, as the data point does on the left.  Obviously, if you ask Diagra to make a bitmap

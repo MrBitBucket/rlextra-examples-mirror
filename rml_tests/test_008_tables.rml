@@ -580,10 +580,10 @@ vAlign
 -</td>
 				<td vAlign="bottom">bottom</td>
 			</tr>
-			<tr>
-				<td>lineBelow</td>
-				<td lineBelowThickness="1" lineBelowColor="red" lineBelowCap="square">red 1pt thickness</td>
-			</tr>
+			<tr><td>lineRight</td><td lineRightThickness="1.5" lineRightColor="green" lineRightDash="5,2">green 1.5pt thickness dash 5 2</td></tr>
+			<tr><td>lineLeft</td><td lineLeftThickness="2" lineLeftColor="magenta" lineLeftDash="5,7">magenta 2pt thickness dash 5 7</td></tr>
+			<tr><td>lineAbove</td><td lineAboveThickness="0.5" lineAboveColor="blue" lineAboveDash="2,3">blue 0.5pt thickness dash 2 3</td></tr>
+			<tr><td>lineBelow</td><td lineBelowThickness="1" lineBelowColor="red" lineBelowCap="square" lineBelowDash="3,5">red 1pt thickness dash 3 5</td></tr>
 		</blockTable>
 		<nextPage/>
 		<para>This is the previous table again, but this time in a &lt;ytopPadder&gt; tag (which begins immediately after the <font color="green">green</font> &lt;hr&gt;)

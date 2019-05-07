@@ -48,6 +48,8 @@
 		alignment="right"
 		/>
 		<paraStyle name="intro"  fontName="Helvetica" fontSize="12" leading="12" spaceAfter="12"/>
+	<paraStyle name="zeidler" fontName="Helvetica" fontSize="8" leading="9.6" alignment="left" hyphenationLang=""/>
+	<paraStyle name="zeidler-paras" parent="zeidler" spaceAfter="5" spaceBefore="5" />
 
 	<!--this style used for a tablerow example later on in document-->
 		<blockTableStyle id="simple">
@@ -220,6 +222,84 @@ color</td></tr>
 			does not readily tolerate the strong
 			generative capacity of the theory.
 		</para>
+	<nextPage/>
+	<frameBackground start="1" color="palegreen" borderColor="darkgrey" borderWidth="0.5"/>
+	<indent left="10" right="10">
+	<spacer length="1e-5"/>
+		<balancedColumns ncols="3" innerPadding="none" showBoundary="border(color='blue',width=0.7)"
+							needed="0" boxFillColor="white" boxStrokeColor="green"
+							boxStrokeWidth="0.6" boxMargin="0" topPadding="10" bottomPadding="10" rightPadding="5" leftPadding="6"
+							vLinesStrokeWidth="0.6" vLinesStrokeColor="darkred">
+		<para style="zeidler-paras">Further information on the fund is available from the website - <b>www.fundsmith.co.uk.</b> You can also obtain it by calling us on <b>0330 1231 815</b> or by writing to <b>Fundsmith LLP, PO Box 10846, Chelmsford, Essex CM99 2BW. </b></para>
+		<para style="zeidler-paras">This includes the Supplementary Information Document, the Prospectus, the latest price of shares of the fund, and the latest annual or semi-annual reports as and when they are published. These documents are available free of charge and in English.</para>
+		<para style="zeidler-paras">This Key Investor Information Document describes the GBP I Class shares. The equivalent document for other share classes is available from the website and address above.</para>
+		<para style="zeidler-paras">The depositary of the fund is <b>State Street Trustees Limited. </b></para>
+		<para style="zeidler-paras">Details of Fundsmith LLP's up to date remuneration policy are available from the website - www.fundsmith.co.uk and include a description of how remuneration and benefits are calculated and the identities of the persons responsible for awarding remuneration and benefits. A paper copy of this information will be made available free of charge on request.</para>
+		<para style="zeidler-paras">The tax legislation of the United Kingdom may have an impact on the personal tax position of the investor.</para>
+		<para style="zeidler-paras">We are required, under Money Laundering regulations, to confirm your identity. In the majority of cases, we do this electronically, but we may require additional documents from you if we cannot do this.</para>
+		<para style="zeidler-paras">Fundsmith LLP may be held liable solely on the basis of any statement contained in this document that is misleading, inaccurate or inconsistent with the relevant parts of the prospectus for the fund.</para>
+	</balancedColumns>
+	</indent>
+	<frameBackground start="0" color="fbg"/>
+	<spacer length="5"/>
+	<frameBackground start="1" color="lightyellow" borderColor="darkgrey" borderWidth="0.5"/>
+	<indent left="10" right="10">
+		<spacer length="5"/>
+		<balancedColumns ncols="3" innerPadding="none" showBoundary="border(color='blue',width=0.7)"
+							needed="0" boxFillColor="white" boxStrokeColor="green"
+							boxStrokeWidth="0.6" boxMargin="0" topPadding="10" bottomPadding="10" rightPadding="5" leftPadding="6"
+							vLinesStrokeWidth="0.6" vLinesStrokeColor="darkred">
+		<para style="zeidler-paras">Further information on the fund is available from the website - <b>www.fundsmith.co.uk.</b> You can also obtain it by calling us on <b>0330 1231 815</b> or by writing to <b>Fundsmith LLP, PO Box 10846, Chelmsford, Essex CM99 2BW. </b></para>
+		<para style="zeidler-paras">This includes the Supplementary Information Document, the Prospectus, the latest price of shares of the fund, and the latest annual or semi-annual reports as and when they are published. These documents are available free of charge and in English.</para>
+		<para style="zeidler-paras">This Key Investor Information Document describes the GBP I Class shares. The equivalent document for other share classes is available from the website and address above.</para>
+		<para style="zeidler-paras">The depositary of the fund is <b>State Street Trustees Limited. </b></para>
+		<para style="zeidler-paras">Details of Fundsmith LLP's up to date remuneration policy are available from the website - www.fundsmith.co.uk and include a description of how remuneration and benefits are calculated and the identities of the persons responsible for awarding remuneration and benefits. A paper copy of this information will be made available free of charge on request.</para>
+		<para style="zeidler-paras">The tax legislation of the United Kingdom may have an impact on the personal tax position of the investor.</para>
+		<para style="zeidler-paras">We are required, under Money Laundering regulations, to confirm your identity. In the majority of cases, we do this electronically, but we may require additional documents from you if we cannot do this.</para>
+		<para style="zeidler-paras">Fundsmith LLP may be held liable solely on the basis of any statement contained in this document that is misleading, inaccurate or inconsistent with the relevant parts of the prospectus for the fund.</para>
+	</balancedColumns>
+	<spacer length="5"/>
+	</indent>
+	<frameBackground start="0" color="fbg"/>
+	<spacer length="5"/>
+	<frameBackground start="1" color="lightblue" borderColor="none" borderWidth="0.5"/>
+	<indent left="10" right="10">
+		<spacer length="5"/>
+		<balancedColumns ncols="3" innerPadding="none" showBoundary="border(color='blue',width=0.7)"
+							needed="0" boxFillColor="white" boxStrokeColor="green"
+							boxStrokeWidth="0.6" boxMargin="0" topPadding="10" bottomPadding="10" rightPadding="5" leftPadding="6"
+							vLinesStrokeWidth="0.6" vLinesStrokeColor="darkred">
+		<para style="zeidler-paras">Further information on the fund is available from the website - <b>www.fundsmith.co.uk.</b> You can also obtain it by calling us on <b>0330 1231 815</b> or by writing to <b>Fundsmith LLP, PO Box 10846, Chelmsford, Essex CM99 2BW. </b></para>
+		<para style="zeidler-paras">This includes the Supplementary Information Document, the Prospectus, the latest price of shares of the fund, and the latest annual or semi-annual reports as and when they are published. These documents are available free of charge and in English.</para>
+		<para style="zeidler-paras">This Key Investor Information Document describes the GBP I Class shares. The equivalent document for other share classes is available from the website and address above.</para>
+		<para style="zeidler-paras">The depositary of the fund is <b>State Street Trustees Limited. </b></para>
+		<para style="zeidler-paras">Details of Fundsmith LLP's up to date remuneration policy are available from the website - www.fundsmith.co.uk and include a description of how remuneration and benefits are calculated and the identities of the persons responsible for awarding remuneration and benefits. A paper copy of this information will be made available free of charge on request.</para>
+		<para style="zeidler-paras">The tax legislation of the United Kingdom may have an impact on the personal tax position of the investor.</para>
+		<para style="zeidler-paras">We are required, under Money Laundering regulations, to confirm your identity. In the majority of cases, we do this electronically, but we may require additional documents from you if we cannot do this.</para>
+		<para style="zeidler-paras">Fundsmith LLP may be held liable solely on the basis of any statement contained in this document that is misleading, inaccurate or inconsistent with the relevant parts of the prospectus for the fund.</para>
+	</balancedColumns>
+	<spacer length="5"/>
+	</indent>
+	<frameBackground start="0" color="fbg"/>
+	<frameBackground start="1" color="pink" borderColor="none" borderWidth="0.5"/>
+	<indent left="10" right="10">
+		<spacer length="5"/>
+		<balancedColumns ncols="3" innerPadding="none"
+							needed="0" boxFillColor="white" boxStrokeColor="green"
+							boxStrokeWidth="0.6" boxMargin="0" topPadding="10" bottomPadding="10" rightPadding="5" leftPadding="6"
+							vLinesStrokeWidth="0.6" vLinesStrokeColor="darkred">
+		<para style="zeidler-paras">Further information on the fund is available from the website - <b>www.fundsmith.co.uk.</b> You can also obtain it by calling us on <b>0330 1231 815</b> or by writing to <b>Fundsmith LLP, PO Box 10846, Chelmsford, Essex CM99 2BW. </b></para>
+		<para style="zeidler-paras">This includes the Supplementary Information Document, the Prospectus, the latest price of shares of the fund, and the latest annual or semi-annual reports as and when they are published. These documents are available free of charge and in English.</para>
+		<para style="zeidler-paras">This Key Investor Information Document describes the GBP I Class shares. The equivalent document for other share classes is available from the website and address above.</para>
+		<para style="zeidler-paras">The depositary of the fund is <b>State Street Trustees Limited. </b></para>
+		<para style="zeidler-paras">Details of Fundsmith LLP's up to date remuneration policy are available from the website - www.fundsmith.co.uk and include a description of how remuneration and benefits are calculated and the identities of the persons responsible for awarding remuneration and benefits. A paper copy of this information will be made available free of charge on request.</para>
+		<para style="zeidler-paras">The tax legislation of the United Kingdom may have an impact on the personal tax position of the investor.</para>
+		<para style="zeidler-paras">We are required, under Money Laundering regulations, to confirm your identity. In the majority of cases, we do this electronically, but we may require additional documents from you if we cannot do this.</para>
+		<para style="zeidler-paras">Fundsmith LLP may be held liable solely on the basis of any statement contained in this document that is misleading, inaccurate or inconsistent with the relevant parts of the prospectus for the fund.</para>
+	</balancedColumns>
+	<spacer length="5"/>
+	</indent>
+	<frameBackground start="0" color="fbg"/>
 </story>
 
 </document>

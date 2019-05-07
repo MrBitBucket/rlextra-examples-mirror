@@ -76,6 +76,8 @@ MT(PINK)
 	<para style="normal">This is an ampersand &amp;</para>
 	<para style="normal">This is a less than sign &lt;</para>
 	<para style="normal">This is a less than sign &LT;</para>
+	<para style="normal"><a href="www.reportlab.com">link to www dot reportlab dot com</a></para>
+	<para style="normal"><span color="red">Another</span> <a href="www.reportlab.com/login/">link to www dot reportlab dot com</a></para>
 </story>
 
 </document>

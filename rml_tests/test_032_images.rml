@@ -479,14 +479,14 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 <nextPage/>
 <para style="h2">Figures with various strange parameters</para>
 <figure caption="scatterPlot" captionAlign="left" captionPosition="top">
-    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
+    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing" showBoundary="border(width=2,dashArray=[3,2],color='green')"/>
 </figure>
 <para style="h2">Figures with various strange parameters</para>
 <figure captionAlign="left" captionPosition="top"><para style="normal">a para caption</para>
     <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
 </figure>
 <nextPage/>
-<para style="h2">SVG Images</para>
+<para style="h2">SVG Images With autosize="1" (default)</para>
 <illustration height="533" width="500" borderStrokeWidth="2" borderStrokeColor="blue">	
 	<stroke color="red" width="1"/>
 	<image file="tiger.svg" type="svg" x="0" y="0" width="500" height="533" showBoundary="yes" preserveAspectRatio="yes" />
@@ -497,19 +497,23 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="yes" preserveAspectRatio="yes" />
 </illustration>
 <nextPage/>
-<para style="h2">SVG Images</para>
+<para style="h2">SVG Images With autosize="0"</para>
 <illustration height="533" width="500" borderStrokeWidth="2" borderStrokeColor="blue">	
 	<stroke color="red" width="1"/>
-	<image file="tiger.svg" type="svg" x="0" y="0" width="500" height="533" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="500" height="533" showBoundary="border(color='red',width=2,dashArray=[3,3])" preserveAspectRatio="yes" autoSize="0"/>
 </illustration>
 <nextPage/>
-<illustration height="266" width="250" borderStrokeWidth="2" borderStrokeColor="blue">	
+<illustration height="266" width="250" borderStrokeWidth="2" borderStrokeColor="None">	
 	<stroke color="red" width="1"/>
-	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
+	<image file="tiger.svg" type="svg" x="0" y="0" width="250" height="266" showBoundary="border(color='red',width=2,dashArray=[3,3])" preserveAspectRatio="yes" autoSize="0"/>
 </illustration>
 <nextPage/>
 <illustration height="40" width="40" borderStrokeWidth="1" borderStrokeColor="red">	
 	<image file="tclip.svg" type="svg" x="5" y="5" width="30" height="30" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
 </illustration>
+
+<nextPage/>
+<para style="h2">Test of in line drawing</para>
+<drawing module="test_014_scatterplot" function="ScatterPlotDrawing" showBoundary="border(width=2,dashArray=[3,2],color='green')"/>
 </story>
 </document>
