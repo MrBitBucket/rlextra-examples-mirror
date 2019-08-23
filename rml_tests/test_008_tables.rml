@@ -334,6 +334,51 @@
 		</blockTable>
 		<spacer length="12"/>
 		<frameBackground start="0" color="palegreen"/>
+		<blockTable colWidths="3cm,3cm,3cm,3cm,3cm" rowHeights="1.5cm,1cm,1cm,1cm,1cm" style="span001">
+			<tr>
+				<td>
+					<para>This should span the first 3 cells in the top row. It's ordinary left aligned
+                text but could be centred if you want.</para>
+				</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				<td>
+					<para>This should span all five cells in the right column.  We vertically centred the
+                text to make it look sensible using a separate stylesheet command.</para>
+					<hr spaceBefore="5"/>
+					<para>some more text</para>
+				</td>
+			</tr>
+			<tr>
+				<td vAlign="MIDDLE" leftPadding="0" rightPadding="0"><hr width="100%"/></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>DB</td>
+				<td>E</td>
+			</tr>
+		</blockTable>
 		<nextPage/>
 		<bookmark name="PAGE_TWO"/>
 		<para>This shows some pointers on doing financial tables.  It demonstrates the decimal alignment and

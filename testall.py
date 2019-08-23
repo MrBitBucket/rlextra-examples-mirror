@@ -125,8 +125,8 @@ class ManualsAndDemos(unittest.TestCase):
     #     sys.path = sys.path[1:]
     #     shutil.copyfile('rml2pdf-userguide.pdf', self.docsDir + '/rml2pdf-userguide.pdf')
 
-    # def testRmlForIdiots(self):
-    #     os.chdir('../docs/rml2pdf/rml-for-idiots')
+    # def testRmlForBeginners(self):
+    #     os.chdir('../docs/rml2pdf/rml-for-beginners')
     #     sys.path.insert(0, os.getcwd())
 
     #     class FakeOptions(object):
@@ -134,10 +134,10 @@ class ManualsAndDemos(unittest.TestCase):
 
     #     fakeOptions = FakeOptions()
     #     fakeOptions.DULL = False
-    #     import gen_rml_for_idiots
-    #     gen_rml_for_idiots.run(fakeOptions)
+    #     import gen_rml_for_beginners
+    #     gen_rml_for_beginners.run(fakeOptions)
     #     sys.path = sys.path[1:]
-    #     shutil.copyfile('rml-for-idiots.pdf', self.docsDir + '/rml-for-idiots.pdf')
+    #     shutil.copyfile('rml-for-beginners.pdf', self.docsDir + '/rml-for-beginners.pdf')
 
     # def testPageCatcherUserGuide(self):
     #     os.chdir('../docs/pagecatcher')
