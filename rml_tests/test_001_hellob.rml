@@ -15,6 +15,7 @@
     title="My title"
     creator="My creator"
 	displayDocTitle="1"
+	duplex="Simplex"
 	lang="en-US"
 	cropBox="(.1,.1,595.0756,841.6898)"
     >

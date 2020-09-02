@@ -2,7 +2,7 @@
 <document filename="test_037_plugingraphic.pdf" invariant="1">
 
 <stylesheet/>
-<pageInfo title="My simple document" displayDocTitle="1" lang="en-US"/>
+<pageInfo title="My simple document" displayDocTitle="1" lang="en-US" duplex="Simplex"/>
 
 <pageDrawing>
  <setFont name="Helvetica-Bold" size="18"/>

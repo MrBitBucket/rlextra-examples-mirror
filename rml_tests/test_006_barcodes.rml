@@ -36,6 +36,7 @@
 	</initialize>
     <paraStyle name="h1" fontName="VeraBold" fontSize="12" spaceBefore="12" leading="15"/>
     <paraStyle name="normal" fontName="Vera" fontSize="10" spaceBefore="6" leading="12"/>
+    <paraStyle name="small" fontName="Vera" fontSize="8" spaceBefore="3" leading="9"/>
     <paraStyle name="intro"  fontName="Helvetica" fontSize="12" leading="12" spaceAfter="12"/>
     <paraStyle name="code" fontName="Courier" fontSize="8" leading="10" textColor="navy" spaceBefore="12"/>
 	<blockTableStyle id="temp001">
@@ -131,6 +132,32 @@
 
     <para style="normal">QR 2d barcode contributed by Germ&aacute;n M. Bravo &lt;german.mb@gmail.com&gt;</para>
     <barCodeFlowable code="QR" value="QR 2d barcode contributed by Germ&aacute;n M. Bravo &lt;german.mb@gmail.com&gt;"/>
+	<nextPage/>
+
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" humanReadable="1" barFillColor="blue" textColor="red"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" humanReadable="1" barFillColor="blue" textColor="red"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" pitch="0"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" pitch="0"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" pitch="20"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" pitch="20"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" barWidth="0.8" barHeight="1"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" barWidth="0.8" barHeight="1"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0.5" heightSize="0.5"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0.5" heightSize="0.5"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0" heightSize="0"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0" heightSize="0"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0.5" heightSize="0.5" humanReadable="1" fontSize="10"/>]]></para>
+    <barCodeFlowable code="USPS_4State" value="01234567094987654321" widthSize="0.5" heightSize="0.5" humanReadable="1" fontSize="10"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="01234567094987654321" routing="12345"/>]]></para>
+	<barCodeFlowable code="USPS_4State" value="01234567094987654321" routing="12345"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" value="11235328334847649652" routing="57492682302" humanReadable="1"/>]]></para>
+	<barCodeFlowable code="USPS_4State" value="11235328334847649652" routing="57492682302" humanReadable="1"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" tracking="11235328334847649652" routing="57492682302" humanReadable="1"/>]]></para>
+	<barCodeFlowable code="USPS_4State" tracking="11235328334847649652" routing="57492682302" humanReadable="1"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" tracking="01234567094987654321" routing="01234567891" humanReadable="1"/>]]></para>
+	<barCodeFlowable code="USPS_4State" tracking="01234567094987654321" routing="01234567891" humanReadable="1"/>
 
 </story>
 
