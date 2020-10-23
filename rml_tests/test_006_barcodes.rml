@@ -159,6 +159,11 @@
     <para style="small"><![CDATA[<barCodeFlowable code="USPS_4State" tracking="01234567094987654321" routing="01234567891" humanReadable="1"/>]]></para>
 	<barCodeFlowable code="USPS_4State" tracking="01234567094987654321" routing="01234567891" humanReadable="1"/>
 
+	<nextPage/>
+    <para style="small"><![CDATA[<barCodeFlowable code="DataMatrix" value="Happy Corona Virus Year 2020!" size="SquareAuto" color="black" bgColor="paleyellow"/>]]></para>
+	<barCodeFlowable code="DataMatrix" value="Happy Corona Virus Year 2020!" size="SquareAuto" color="black" bgColor="lightyellow"/>
+
+
 </story>
 
 </document>

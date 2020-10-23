@@ -1632,6 +1632,33 @@ plus magnum of champagne</td>
 		</blockTable>
 		<blockTable ident="plain000" htmlSpans="1" style="realplain" colWidths="100%" emptyTableAction="ignore">
 		</blockTable>
+		<nextPage/>
+		<para>Example table with no rowHeights</para>
+		<blockTable style="temp001" longTableOptimize="0">
+			<tr><td>Name</td><td>Email</td></tr>
+			<tr><td>Robin Becker</td><td><plugInFlowable module="mymodule" function="linkURL">("mailto:robin@reportlab.com",)</plugInFlowable></td> </tr>
+			<tr><td>AAAAAAA</td><td>BBBBBBBBBB</td></tr>
+		</blockTable>
+		<para>Example table with rowHeights="15,15,20"</para>
+		<blockTable style="temp001" longTableOptimize="0" rowHeights="15,15,20">
+			<tr><td>Name</td><td>Email</td></tr>
+			<tr><td>Robin Becker</td><td><plugInFlowable module="mymodule" function="linkURL">("mailto:robin@reportlab.com",)</plugInFlowable></td> </tr>
+			<tr><td>AAAAAAA</td><td>BBBBBBBBBB</td></tr>
+		</blockTable>
+		<spacer length="12"/>
+		<para>Example table with rowHeights="12,15,20"</para>
+		<blockTable style="temp001" longTableOptimize="0" rowHeights="12,15,20">
+			<tr><td>Name</td><td>Email</td></tr>
+			<tr><td>Robin Becker</td><td><plugInFlowable module="mymodule" function="linkURL">("mailto:robin@reportlab.com",)</plugInFlowable></td> </tr>
+			<tr><td>AAAAAAA</td><td>BBBBBBBBBB</td></tr>
+		</blockTable>
+		<spacer length="12"/>
+		<para>Example table with heights specified in the &lt;tr&gt; tags</para>
+		<blockTable style="temp001" longTableOptimize="0" rowHeights="15,15,20">
+			<tr height="12"><td>Name</td><td>Email</td></tr>
+			<tr height="15"><td>Robin Becker</td><td><plugInFlowable module="mymodule" function="linkURL">("mailto:robin@reportlab.com",)</plugInFlowable></td> </tr>
+			<tr height="21"><td>AAAAAAA</td><td>BBBBBBBBBB</td></tr>
+		</blockTable>
 		<bookmark name="BACK_PAGE"/>
 	</story>
 </document>

@@ -12,7 +12,8 @@
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
     		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
                 <fill color="Cy"/>
-                <overprint mode="overprint"/>
+                 <overprint mode="overprint"/>
+                 <blendMode mode="Normal"/>
                  <rect x="75" y="500" width="50" height="50" fill="1"/>
                  <fill color="Mag"/>
                  <rect x="100" y="525" width="50" height="50" fill="1"/>
