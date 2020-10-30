@@ -2,10 +2,6 @@
 
 ReportLab will check these work against our nightly packages.
 You can also run it by simply executing 'test.py'
-
-
-
-
 """
 import os, sys, glob, shutil
 from reportlab.lib.utils import annotateException
@@ -17,9 +13,7 @@ from rlextra.rml2pdf import rml2pdf
 class TrivialTestCase(unittest.TestCase):
     "We need one to be sure the test machinery is working"
     def test_laws_of_mathematics(self):
-        self.assertEquals(2+2, 4, "the world is OK")
-
-
+        self.assertEqual(2+2, 4, "the world is OK")
 
 class ParameterizedTestCase(unittest.TestCase):
     """ TestCase classes that want to be parameterized should
@@ -69,10 +63,12 @@ class RmlTestCase(ParameterizedTestCase):
             if not expectError:
                 annotateException('while rendering %s' % self.fileName)
 
-
 def makeRmlTests():
     suite = unittest.TestSuite()
     targets = sorted(glob.glob(os.path.join('rml_tests', '*.rml')))
+    from reportlab.lib.pdfencrypt import pyaes
+    if pyaes is None:
+        targets.remove(os.path.join('rml_tests','test_000_simple_e256.rml'))
 
     #one quirk:  we need test_000_simple.rml to execute before test_000_complex.rml,
     #so put it first.  At some point we should arrange in alpha order.
@@ -99,10 +95,8 @@ class ManualsAndDemos(unittest.TestCase):
 #        self.docsDir = os.path.normpath(os.path.join(self.startDir, '../docs'))
         os.chdir(self.baseDir)
 
-
     def tearDown(self):
         os.chdir(self.startDir)
-
 
     def testProductCatalogue(self):
         os.chdir('product_catalogue')
@@ -149,10 +143,7 @@ class ManualsAndDemos(unittest.TestCase):
     #     rml = open('diagradoc.rml','rb').read()
     #     rml2pdf.go(rml, outDir='..')  #create in docs
 
-
     #     #diagra guide not yet done, depends heavily on graphics examples directory
-
-
 
 def makeSuite():
     from reportlab.lib.testutils import eqCheck, equalStrings
@@ -167,7 +158,6 @@ def makeSuite():
     
     #load all RML samples in test directory
     suite.addTests(makeRmlTests())
-
 
     #find all the RML samples
     return suite
