@@ -309,7 +309,7 @@
 
 <nextPage suppressFirst="1"/>
 <storyPlace x="35" y="660" width="525" height="73" origin="page" >
-<para style="intro">RML (Report Markup Language) is ReportLab's own language for specifying the appearance of a printed page, which is converted into PDF by the utility rml2pdf.</para>
+<para style="intro" borderPadding="0">RML (Report Markup Language) is ReportLab's own language for specifying the appearance of a printed page, which is converted into PDF by the utility rml2pdf.</para>
 <hr color="white" thickness="8pt"/>
 <para style="intro">These RML samples showcase techniques and features for generating various types of ouput and are distributed within our commercial package as test cases. Each should be self explanatory and stand alone.</para>
 <illustration height="3" width="525" align="center">

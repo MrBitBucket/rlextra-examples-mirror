@@ -1777,6 +1777,19 @@ plus magnum of champagne</td>
 			<tr height="15"><td>Robin Becker</td><td><plugInFlowable module="mymodule" function="linkURL">("mailto:robin@reportlab.com",)</plugInFlowable></td> </tr>
 			<tr height="21"><td>AAAAAAA</td><td>BBBBBBBBBB</td></tr>
 		</blockTable>
+		<nextPage/>
+		<blockTable style="realplain" longTableOptimize="0">
+			<tr><td>
+				<plugInFlowable module="mymodule" function="myTab">(
+					text="This is tab text",
+					fontName='Helvetica',
+					fontSize=12,
+					leftPad=6,
+					bottomPad=6,
+					width="80%",
+				)</plugInFlowable></td></tr>
+			<tr><td>This is just a rather boring example of a table</td></tr>
+		</blockTable>
 		<bookmark name="BACK_PAGE"/>
 	</story>
 </document>

@@ -55,7 +55,7 @@
     <listStyle name="square" spaceAfter="10" bulletType="bullet" spaceBefore="23" bulletColor="red" start="square"/>
     <listStyle name="list_normal" bulletFontSize="10" bulletFontName="Helvetica"/>
 	<listStyle name="my.ul.defaultStyle" parent="style.UnorderedList" bulletFontSize="8" bulletOffsetY="0" 
-		start='circle square blackstar sparkle disc diamond'/>
+		start='circle &#x274d; blackstar sparkle disc diamond'/>
 	<listStyle name="my.ol.defaultStyle" parent="style.OrderedList" bulletFontSize="8"
 		start='1 i a A I'/>
 </stylesheet>
@@ -165,9 +165,9 @@ _bulletNames = dict(
 
     <ul style="list_normal">
         <li value="bulletchar"><para style="normal">Unicode Bullet character (usually small circle)</para></li>
+        <li value="&#x274d;"><para style="normal">Disc</para></li>
         <li value="circle"><para style="normal">Circle</para></li>
         <li value="square"><para style="normal">Square</para></li>
-        <li value="disc"><para style="normal">Disc</para></li>
         <li value="diamond"><para style="normal">Diamond</para></li>
         <li value="rarrowhead"><para style="normal">Right arrow head</para></li>
         <li value="&#x2022;"><para style="normal">Bullet, defined by unicode code point</para></li>
@@ -181,6 +181,31 @@ _bulletNames = dict(
 
 
     <ol style="list_normal" bulletType="i">
+        <li><para style="normal">Item one</para></li>
+        <li><para style="normal">Item two</para></li>
+        <li><para style="normal">Item three</para></li>
+        <li><para style="normal">Item four</para></li>
+        <li><para style="normal">Item five</para></li>
+        <li value="99"><para style="normal">Item six, but with value changed to 99</para></li>
+        <li><para style="normal">Item six</para></li>
+        <li><para style="normal">Item six</para></li>
+    </ol>
+
+<para style="normal">this shows the numbering with dots</para>
+
+    <ol style="list_normal" bulletType="1" bulletFormat="%s.">
+        <li><para style="normal">Item one</para></li>
+        <li><para style="normal">Item two</para></li>
+        <li><para style="normal">Item three</para></li>
+        <li><para style="normal">Item four</para></li>
+        <li><para style="normal">Item five</para></li>
+        <li value="99"><para style="normal">Item six, but with value changed to 99</para></li>
+        <li><para style="normal">Item six</para></li>
+        <li><para style="normal">Item six</para></li>
+    </ol>
+
+<para style="normal">Again with another number style - I -</para>
+    <ol style="list_normal" bulletType="I" leftIndent="40" bulletFormat="- %s. -">
         <li><para style="normal">Item one</para></li>
         <li><para style="normal">Item two</para></li>
         <li><para style="normal">Item three</para></li>
