@@ -18,7 +18,7 @@
     		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
     		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
 		<setFont name="Helvetica-BoldOblique" size="18"/>
-		<textAnnotation><param name="Rect">0,0,1,1</param><param name="F">3</param><param name="escape">6</param>X::PDF
+		<textAnnotation><param name="Rect">0,0,10,10</param><param name="F">3</param><param name="escape">6</param>X::PDF
 PX(S)
 MT(PINK)
 </textAnnotation>

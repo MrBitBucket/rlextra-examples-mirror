@@ -23,7 +23,7 @@
 		</place>
 		<setFont name="Helvetica-BoldOblique" size="18"/>
 		<drawRightString x="titleX" y="800">RML2PDF Test Suite</drawRightString>
-		<textAnnotation><param name="Rect">0,0,1,1</param><param name="F">3</param><param name="escape">6</param>X::PDF
+		<textAnnotation><param name="Rect">0,0,72,72</param><param name="F">3</param><param name="escape">6</param>X::PDF
 PX(S)
 MT(PINK)
 </textAnnotation>

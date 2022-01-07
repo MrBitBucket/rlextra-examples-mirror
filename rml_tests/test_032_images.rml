@@ -511,6 +511,13 @@ we get an extraneous boundary box from drawPdfImage appearing at top right - shi
 <illustration height="40" width="40" borderStrokeWidth="1" borderStrokeColor="red">	
 	<image file="tclip.svg" type="svg" x="5" y="5" width="30" height="30" showBoundary="yes" preserveAspectRatio="yes" autoSize="0"/>
 </illustration>
+<nextPage/>
+<para style="h2">Inline svg image</para>
+<illustration height="166.11" width="500" borderStrokeWidth="2" borderStrokeColor="green">	
+	<image file=".svg" type="svg" x="0" y="0" width="500" height="166.11" showBoundary="border(color='green',width=2,dashArray=[3,3])" preserveAspectRatio="yes">
+		<inlineData filters="base64 bzip2">QlpoOTFBWSZTWQ43mN8AAPnfgCSQcAf/956nz6A/79/wQAIS1sytQSpkICnp6TKZHqZPSaaGQyAGR5I0BJIBU3ojU9Q9QBoANANNAAASKCU9pIB+qZAaAA2oAAAPUOYBNMAmQwABMEwAACAjYU+xgeh5MYGZwi8IOBEEhzC3H3XSGJKDkGVl4hIGgLPv5yR76NbRoZnhG0ljey8Jnop8xsDtljpcSJBbxs5pTrk/jxXGg66KbKjOCrQ+Qs1sFCysUpMVEibDE022yWl+145NAw0AtDOeogZm5dh0VzBqiRtq2VZ1GlMHoVzUgg97xEYmpREEMnqzoM1OmMMbsQVVauGsrAjklJnl6Z/CPfMdsQg0SC3vsyEwjZT2u0Q62huScGoToGo1YganbOMewsj9l9Xpu5Df9u4QvInQ0+RcKueYbNk5mrrx+rVc5c93P8cm642zn0nveLddgZt2b7ZUkcec+8dgivRm8Lbc7m7v1rOmLSDa2PNA3u9l4P0KaVKHsalWh7vSMZzug5YJmCTcya5al/udOQxfJthNUGTmVFVi1qWTFhQ3NAYpPiOAS1ZBIygqAewyvCZ47+whWffSKvIZSsqOHJzleqW7NhgBWhAltjc9xurStZQlvcy0igUkoFZEmSkxYXFRAYT5mNjyE3LPhaCKKdHlpICZQxaqiOUUNkwMDJD1YZMTiWk4Zs/8/Bj/F3JFOFCQDjeY3w==</inlineData>
+	</image>
+</illustration>
 
 <nextPage/>
 <para style="h2">Test of in line drawing</para>
