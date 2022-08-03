@@ -85,6 +85,13 @@ PDF is 1296x1296, so the rubbish at top right of the page is the unscaled one be
 
 <para style="normal">The <b>preserveAspectRatio</b> flag lets you place your image in a box and it will be centered intelligently,
 touching either the sides or the top depending on its own aspect ratio.</para>
+
+<spacer length="12"/>
+<para style="normal">Below we have a pdf with file="https://www.reportlab.com/ftp/internet_access.pdf"</para>
+<illustration height="100" width="432">	
+	<rect x="0" y="0" width="432" height="100" fill="0" stroke="1"/>
+	<image file="https://www.reportlab.com/ftp/internet_access.pdf" x="2" y="2" width="96" height="96" showBoundary="border(color='red',width=2)" preserveAspectRatio="yes"/>
+</illustration>
 <nextPage/>
 <para style="normal">The anchor attribute lets you determine which part of the image corresponds to the given x and y.
 You can choose an anchor from the standard compass points.</para>

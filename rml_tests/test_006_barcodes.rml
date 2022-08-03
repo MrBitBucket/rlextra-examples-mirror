@@ -162,6 +162,15 @@
 	<nextPage/>
     <para style="small"><![CDATA[<barCodeFlowable code="DataMatrix" value="Happy Corona Virus Year 2020!" size="SquareAuto" color="black" bgColor="paleyellow"/>]]></para>
 	<barCodeFlowable code="DataMatrix" value="Happy Corona Virus Year 2020!" size="SquareAuto" color="black" bgColor="lightyellow"/>
+	<nextPage/>
+    <para style="small"><![CDATA[<barCodeFlowable code="I2of5" value="00012345678905" checksum="0"/>]]></para>
+    <barCodeFlowable code="I2of5" value="00012345678905" checksum="0"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="I2of5" value="00012345678905" checksum="0" bearerBox="1"/>]]></para>
+    <barCodeFlowable code="I2of5" value="00012345678905" checksum="0" bearerBox="1"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="I2of5" value="0001234567890" checksum="1"/>]]></para>
+    <barCodeFlowable code="I2of5" value="0001234567890" checksum="1"/>
+    <para style="small"><![CDATA[<barCodeFlowable code="I2of5" value="0001234567890" checksum="1" bearerBox="1"/>]]></para>
+    <barCodeFlowable code="I2of5" value="0001234567890" checksum="1" bearerBox="1"/>
 
 
 </story>
