@@ -1867,6 +1867,17 @@ go ting-aling-aling</td><td vAlign="top">82
 despair all who
 enter here</td></tr>
 		</blockTable>
+		<nextPage/>
+		<para>Example table: each row is &lt;pre&gt; tagged</para>
+<blockTable style="realplain" colWidths="100%">
+	<tr><td><pre>I # 1      1   XYZ123M</pre></td></tr>
+	<tr><td><pre>                                   GST                0.00</pre></td></tr>
+</blockTable>
+		<para>Using &lt;pre&gt; tag directly</para>
+<pre>
+I # 1      1   XYZ123M
+               GST                0.00
+</pre>
 		<bookmark name="BACK_PAGE"/>
 	</story>
 </document>
