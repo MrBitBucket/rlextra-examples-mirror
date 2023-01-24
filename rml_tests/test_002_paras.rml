@@ -692,7 +692,7 @@ forms of the grammar. Dots</para>
 <placePara x="398" y="464" width="72" anchor="se" origin="frame">This is Line 1<br/>anchor=se<br/>this is line 3.</placePara>
 <placePara x="10" y="392" width="72" anchor="nw" origin="frame">This is Line 1<br/>anchor=nw<br/>this is line 3.</placePara>
 <placePara x="154" y="392" width="72" anchor="n" origin="frame">This is Line 1<br/>anchor=n<br/>this is line 3.</placePara>
-<placePara x="398" y="392" width="72" anchor="ne" origin="frame">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
+<placePara x="398" y="392" width="72" anchor="ne" origin="frame" backColor="yellow" leftIndent="15">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
 
 <nextPage/>
 <para style="h1">placePara in graphics mode</para>
