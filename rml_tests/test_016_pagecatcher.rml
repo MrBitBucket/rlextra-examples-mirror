@@ -160,6 +160,11 @@ and also show switching to a different cyan-coloured template.</para>
 
 <setNextTemplate name="alt"/>
 <includePdfPages filename="ir684.pdf" pages="1-2" outlineText="IR684 with both pages"/>
+<graphicsMode origin="page">
+<fill color="red"/>
+<setFont name="Helvetica-BoldOblique" size="18"/>
+<drawString x="72" y="72">Hello World!</drawString>
+</graphicsMode>
 
 <setNextTemplate name="main2"/>
 <nextFrame/>
