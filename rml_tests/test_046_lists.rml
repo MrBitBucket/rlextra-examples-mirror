@@ -79,7 +79,10 @@ put flowing content in lists, with configurable markers. </para>
     <para style="normal">Let's spit out a simple bullet list with default attributes, and explain some of the basics:</para>
 
     <ul>
-        <li><para style="normal">Line one.  Unordered lists use a &lt;ul&gt; tag.</para></li>
+		<para style="h1" alignment="center">Caption for UL</para>
+		<li><para style="normal">Line one.  Unordered lists use a &lt;ul&gt; tag.</para>
+			<para style="normal">Each &lt;li&gt; can containe multiple flowables.</para>
+		</li>
         <li><para style="normal">Line two</para></li>
         <li><para style="normal">Line three will be made very long, to make sure it wraps onto a second line.
 This is to check we get the bullets nicely top-aligned.  Blah blah blah</para></li>

@@ -11,7 +11,8 @@
 	<pageTemplate id="main">
 		<pageGraphics>
 		<setFont name="Arial-Bold" size="18"/>
-	    	    <drawString x="35" y="783">RML Example 58: Tagged Various - Paragraphs, Tables, Lists </drawString>
+	    	    <drawString x="35" y="783">RML Example 58: Tagged Various - Paragraphs,</drawString>
+	    	    <drawString x="35" y="763">Tables, Lists </drawString>
 	            <setFont name="Arial-Bold-Italic" size="12" />
 	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
 	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
@@ -25,9 +26,6 @@
 </template>
 
 <stylesheet>
-	<initialize>
-		<alias id="style.normal" value="style.Normal"/>
-	</initialize>
 
 	<paraStyle name="h1"
 	fontName="Arial-Bold"
@@ -59,12 +57,13 @@
 			space="12"
 			/>
 	</blockTableStyle>
+    <listStyle name="tagged_list" bulletFontSize="10" bulletFontName="Arial"/>
 </stylesheet>
 
 
 <story>
 
-	<para style="h1" tagType="H1">Test - Headings and Parars</para>
+	<para style="h1" tagType="H1">Test - Headings and Paras</para>
 
 	<para style="h2" tagType="H2">Heading 2</para>
 
@@ -97,23 +96,36 @@
                 </tr>
 	</blockTable>
 
-	<markedContent tagType="Artifact" kind="start"/>
 	<spacer length="10"/>
-	<para style="h1" tagType="H1">Test - Ordered Lists</para>
-	<ol>
-		<li><para>Item 1</para></li>
-		<li><para>Item 2</para></li>
-		<li><para>Item 3</para></li>
+	<ol style="tagged_list">
+		<para style="h1" tagType="H1">Test - Ordered Lists</para>
+		<li><para style="normal">Item 1</para></li>
+		<li><para style="normal">Item 2</para></li>
+		<li><para style="normal">Item 3</para></li>
 	</ol>
 
 	<spacer length="10"/>
-	<para style="h1" tagType="H1">Test - Unorder Lists</para>
-	<ul>
-		<li><para>Item 1</para></li>
-		<li><para>Item 2</para></li>
-		<li><para>Item 3</para></li>
+	<ul style="tagged_list">
+		<para style="h1" tagType="H1">Test - Unordered Lists</para>
+		<li><para style="normal">Item 1</para></li>
+		<li><para style="normal">Item 2</para></li>
+		<li><para style="normal">Item 3</para></li>
 	</ul>
 
+	<spacer length="10"/>
+	<para style="h1" tagType="H1">Test - Definition Lists</para>
+	<dl>
+		<h1 style="h1" alignment="center" textColor="red">Definition List</h1>
+		<dt><h1 style="h1">Coffee</h1></dt>
+		<dd><para style="normal">Black hot drink</para></dd>
+		<dd><para style="normal">Wakes you</para></dd>
+		<dt><h1 style="h1">Milk</h1></dt>
+		<dt><h1 style="h1">Drink</h1></dt>
+		<dd><para style="normal">White cold drink</para></dd>
+	</dl>
+
+<nextPage/>
+	<markedContent tagType="Artifact" kind="start"/>
 	<spacer length="10"/>
 	<para style="h1" tagType="H1">Test - Image</para>
 	<imageAndFlowables imageWidth="70" imageHeight="200"
