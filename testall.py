@@ -67,8 +67,20 @@ def makeRmlTests():
     suite = unittest.TestSuite()
     targets = sorted(glob.glob(os.path.join('rml_tests', '*.rml')))
     from reportlab.lib.pdfencrypt import pyaes
+    skips = []
     if pyaes is None:
         targets.remove(os.path.join('rml_tests','test_000_simple_e256.rml'))
+        skips.append('test_000_simple_e256')
+    from reportlab.pdfbase.pdfmetrics import registerFont
+    from reportlab.pdfbase.ttfonts import TTFont
+    try:
+        registerFont(TTFont("DejaVuSans","DejaVuSans.ttf"))
+        registerFont(TTFont("DejaVuSans-Bold","DejaVuSans-Bold.ttf"))
+        registerFont(TTFont("DejaVuSans-Oblique","DejaVuSans-Oblique.ttf"))
+        registerFont(TTFont("DejaVuSans-BoldOblique","DejaVuSans-BoldOblique.ttf"))
+    except:
+        targets.remove(os.path.join('rml_tests','test_053_known_entities.rml'))
+        skips.append('test_053_known_entities')
 
     #one quirk:  we need test_000_simple.rml to execute before test_000_complex.rml,
     #so put it first.  At some point we should arrange in alpha order.
@@ -82,6 +94,19 @@ def makeRmlTests():
 
     for target in targets:
         suite.addTest(ParameterizedTestCase.parameterize(RmlTestCase, param=target, expectError=target.endswith('_error.rml')))
+    if skips:
+        t = ['class SkipTestCase(unittest.TestCase):'].append
+        for _ in skips:
+            t(f''' @unittest.skip("s")
+ def {_}(*args,**kwds):
+  raise ValueError
+''')
+        t = '\n'.join(t.__self__)
+        #print(t)
+        NS = {}
+        exec(t,globals(),NS)
+        loader = unittest.defaultTestLoader
+        suite.addTests(loader.loadTestsFromTestCase(NS['SkipTestCase']))
     return suite
 
 class ManualsAndDemos(unittest.TestCase):
