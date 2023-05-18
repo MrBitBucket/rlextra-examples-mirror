@@ -1,10 +1,11 @@
 import os
 import base64
-import pyRXPU
 import preppy
-from reportlab.lib.utils import asUnicodeEx, asBytes, getBytesIO
+from io import BytesIO
+from reportlab.lib.utils import asUnicodeEx, asBytes
 
 from xml.sax.saxutils import escape, unescape
+from rlextra.radxml.xml2tt import xml2TT
 from rlextra.radxml.xmlutils import TagWrapper
 from rlextra.radxml.html_cleaner import cleanInline
 from rlextra.rml2pdf import rml2pdf
@@ -30,10 +31,8 @@ def parse_catalog(filename):
     We fully parse the XML and turn into Python variables, so that any encoding
     issues are confronted here rather than in the template
     """
-
     xml = open(filename,'rb').read()
-    p = pyRXPU.Parser()
-    tree = p.parse(xml)
+    tree = xml2TT(xml)
     tagTree = TagWrapper(tree)
     request_a_quote = [109,110,4121,4122,4123]
     # we now need to de-duplicate; the query returns multiple rows with different images
@@ -86,7 +85,7 @@ def create_pdf(catalog, template):
         }
     rml = template.getOutput(namespace,quoteFunc=preppy.stdQuote)
     open(os.path.join(DATA_DIR,'latest.rml'), 'wb').write(asBytes(rml))
-    buf = getBytesIO()
+    buf = BytesIO()
     rml2pdf.go(asBytes(rml), outputFileName=buf)
     return buf.getvalue()
 
