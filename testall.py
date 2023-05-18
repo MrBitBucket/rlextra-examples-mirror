@@ -99,12 +99,12 @@ def makeRmlTests():
         for _ in skips:
             t(f''' @unittest.skip("s")
  def {_}(*args,**kwds):
-  raise ValueError
+  pass
 ''')
         t = '\n'.join(t.__self__)
         #print(t)
         NS = {}
-        exec(t,globals(),NS)
+        exec(t,dict(unittest=unittest),NS)
         loader = unittest.defaultTestLoader
         suite.addTests(loader.loadTestsFromTestCase(NS['SkipTestCase']))
     return suite
