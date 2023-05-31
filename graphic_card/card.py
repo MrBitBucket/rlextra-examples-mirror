@@ -22,13 +22,21 @@ def calling_card():
     r2.fillColor = colors.blue
     drawing.add(r2)
 
-    s = String(200,80,"Andy was here",
+    s = String(200,85,"Andy was here",
         textAnchor='middle',
         fontName='myvera',
-        fontSize=20,
+        fontSize=24,
         fillColor=colors.white
         )
     drawing.add(s)
+
+    lin = Line(
+        75,75,325,75, 
+        strokeColor=colors.white, 
+        strokeLineCap=1,
+        strokeWidth=10
+        )
+    drawing.add(lin)
 
     return drawing
 
