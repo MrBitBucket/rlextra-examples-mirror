@@ -1,2 +1,2 @@
-rlextra[RL_RENDERPM]
+rlextra[pycairo]
 -i https://www.reportlab.com/pypi/
