@@ -125,6 +125,14 @@
 	</dl>
 
 <nextPage/>
+	<spacer length="10"/>
+	<para style="h1" tagType="H1">Test - chart</para>
+	<drawing module="test_014_scatterplot" tagType="Figure" altText="This is a scatterplot describing etc etc" function="ScatterPlotDrawing">
+		<param name="ScatterPlot.xLabel">Xlabel</param>
+		<param name="ScatterPlot.data">[((0.07, 54), (0.09, 43)), ((0.03, 27), (0.07, 32), (0.08, 15))]</param>
+	</drawing>
+
+<nextPage/>
 	<markedContent tagType="Artifact" kind="start"/>
 	<spacer length="10"/>
 	<para style="h1" tagType="H1">Test - Image</para>
