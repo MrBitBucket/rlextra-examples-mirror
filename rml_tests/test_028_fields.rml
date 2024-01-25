@@ -7,7 +7,7 @@
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="760">RML Example 29: Fields</drawString>
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="730" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		<setFont name="Helvetica-BoldOblique" size="10"/>
 		<textField x="72" y="600" width="72" height="12" name="tf0" value="inittf0"/>
 		<textField width="72" height="12" name="tf1">

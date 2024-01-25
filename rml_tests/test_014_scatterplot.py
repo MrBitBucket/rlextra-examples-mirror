@@ -7,7 +7,7 @@ from reportlab.lib.colors import green
 
 class ScatterPlotDrawing(_DrawingEditorMixin,DataAwareDrawing):
 	def __init__(self,width=400,height=200,*args,**kw):
-		DataAwareDrawing.__init__(*(self,width,height)+args, **kw)
+		DataAwareDrawing.__init__(self,width,height,*args,**kw)
 		self.add(ScatterPlot(),'ScatterPlot')
 		self.ScatterPlot.xValueAxis.labelTextFormat = '%.2f%%'
 		self.ScatterPlot.xLabel="Volatility"

@@ -10,8 +10,8 @@ loop to spit out paragraphs-->
 		<pageGraphics>
 			<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 27: LeftRight</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		</pageGraphics>
 		<frame id="F1" x1="10%" y1="10%" width="80%" height="80%"/>
 	</pageTemplate>
@@ -19,7 +19,7 @@ loop to spit out paragraphs-->
 		<pageGraphics>
 		
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="482" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<setFont name="Helvetica-Bold" size="14"/>
 			<drawRightString x="523" y="800">A plain(ish) page template with everything centered</drawRightString>
 		</pageGraphics>
@@ -30,7 +30,7 @@ loop to spit out paragraphs-->
 		<pageGraphics>
 		
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="482" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<setFont name="Helvetica-Bold" size="14"/>
 			<drawCenteredString x="297" y="800">A page template for the left side of a book</drawCenteredString>
 			<fill color="gray"/>
@@ -45,7 +45,7 @@ loop to spit out paragraphs-->
 		<pageGraphics>
 		
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="482" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<setFont name="Helvetica-Bold" size="14"/>
 			<drawCenteredString x="297" y="800">A page template for the right side of a book</drawCenteredString>
 			<fill color="gray"/>

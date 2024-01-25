@@ -18,8 +18,8 @@
 	<pageGraphics>
     	    <drawString x="35" y="783">RML Example 3 HelloDG</drawString>
             <setFont name="Times-Italic" size="12" />
-    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		<setFont name="Times-BoldItalic" size="18"/>
 		<textAnnotation><param name="Rect">0,0,1,1</param><param name="F">3</param><param name="escape">6</param>X::PDF
 PX(S)

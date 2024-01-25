@@ -8,8 +8,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 29: Keepinframe</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="F1" x1="2.5cm" y1="13.5cm" width="170" height="260"/>
 	<frame id="F2" x1="11.5cm" y1="13.5cm" width="170" height="260"/>
@@ -21,8 +21,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 30: Keepinframe</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="F1" x1="2.5cm" y1="15.5cm" width="170" height="260"/>
 	<frame id="F2" x1="11.5cm" y1="15.5cm" width="170" height="260"/>
@@ -34,8 +34,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 30: Keepinframe</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="top" x1="10%" y1="80%" width="80%" height="10%"/>
 	<frame id="upper" x1="10%" y1="60%" width="55%" height="15%"/>

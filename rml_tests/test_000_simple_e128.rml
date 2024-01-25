@@ -23,8 +23,8 @@ Hello World. First Page Drawing &divide;
 <pageGraphics>
             
             <setFont name="Helvetica-Oblique" size="12" />
-    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
     		<setFont name="Helvetica" size="12"/>
     		<place x="35" y="660" width="525" height="73"  >
 <para style="intro">RML (Report Markup Language) is ReportLab's own language for specifying the appearance of a printed page, which is converted into PDF by the utility rml2pdf.</para>
@@ -46,8 +46,8 @@ Hello World. Second Page Drawing
 <pageGraphics>
             
             <setFont name="Helvetica-Oblique" size="12" />
-    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
     		
     		</pageGraphics>
 </pageDrawing>

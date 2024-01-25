@@ -7,7 +7,7 @@
 		 <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="760">RML Example 22: Figures</drawString>
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="730" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="second" x1="35" y1="45" width="525" height="590"/>
 	</pageTemplate>
@@ -16,7 +16,7 @@
 		 <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="760">RML Example 22: Figures</drawString>
 			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="730" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="second" x1="135" y1="145" width="225" height="385"/>
 	</pageTemplate>

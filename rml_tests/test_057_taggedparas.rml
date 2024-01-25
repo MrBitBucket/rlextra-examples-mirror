@@ -13,8 +13,8 @@
 		<setFont name="Arial-Bold" size="18"/>
 	    	    <drawString x="35" y="783">RML Example 57: Tagged Paragraphs </drawString>
 	            <setFont name="Arial-Bold-Italic" size="12" />
-	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<setFont name="Arial-Bold-Italic" size="18"/>
 
 			<setFont name="Arial" size="10"/>
@@ -99,6 +99,7 @@ Proin euismod, ligula vitae fringilla aliquam, dolor sem sagittis mauris, ac imp
 	<graphicsMode origin="frame" borderStrokeWidth="2" borderStrokeColor="red">
 	<image file="testimg.gif" preserveAspectRatio="1" x="0" y="0" width="72" height="72" showBoundary="border(color='blue',width=1)" altText='Sample Image' inline="1"/>
 	</graphicsMode>
+	<para><a href="https://www.reportlab.com">single &lt;a&gt; tag link</a></para>
 	<!--graphicsMode origin="page" borderStrokeWidth="1" borderStrokeColor="red">
 		<crossMark x="35" y="45" color="red" width="0.5"/>
 		<crossMark x="107" y="52.2" color="red" width="0.5"/>

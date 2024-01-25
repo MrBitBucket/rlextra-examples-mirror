@@ -12,8 +12,8 @@
       <pageGraphics>
         <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 17: Graphics</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
         <setFont name="Vera" size="10"/>
 		<saveState/>
 		<setFontSize size="20" leading="24"/>
@@ -28,8 +28,8 @@
       <pageGraphics>
         <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 17: Graphics</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
         <setFont name="Vera" size="10"/>
 		<saveState/>
 		<setFontSize size="20" leading="24"/>
@@ -81,7 +81,7 @@
     We included a chart module <i>scatterplot.py</i> in this test directory containing a class <i>ScatterPlotDrawing</i>, 
     so for our example we will just refer so let's refer to it now:</para>
     <xpre style="code">&lt;drawing module="test_014_scatterplot" function="ScatterPlotDrawing" /&gt;</xpre>
-    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing"/>
+    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing" altText="My Scatter Plot"/>
     <para>It's important to recognize that the Diagra framework is completely general and not necessarily for charts.  We use it to crank out ReportLab logos with variable sizes and colors!  So, let's show one more example, which is about the simplest data graphic we have:  a 'slidebox' which accepts one numeric parameter:</para>
     <xpre style="code">&lt;drawing module="test_014_slidebox" function="SlideBoxDrawing" /&gt;</xpre>
     <drawing module="test_014_slidebox" function="SlideBoxDrawing"/>

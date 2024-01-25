@@ -63,6 +63,15 @@ class RmlTestCase(ParameterizedTestCase):
             if not expectError:
                 annotateException('while rendering %s' % self.fileName)
 
+def haveDejaVu():
+    from reportlab.pdfbase.ttfonts import TTFont
+    for x in ('DejaVuSans','DejaVuSans-Bold','DejaVuSans-Oblique','DejaVuSans-BoldOblique'):
+        try:
+            TTFont(x,x+'.ttf')
+        except:
+            return False
+    return True
+
 def makeRmlTests():
     suite = unittest.TestSuite()
     targets = sorted(glob.glob(os.path.join('rml_tests', '*.rml')))
@@ -71,14 +80,7 @@ def makeRmlTests():
     if pyaes is None:
         targets.remove(os.path.join('rml_tests','test_000_simple_e256.rml'))
         skips.append('test_000_simple_e256')
-    from reportlab.pdfbase.pdfmetrics import registerFont
-    from reportlab.pdfbase.ttfonts import TTFont
-    try:
-        registerFont(TTFont("DejaVuSans","DejaVuSans.ttf"))
-        registerFont(TTFont("DejaVuSans-Bold","DejaVuSans-Bold.ttf"))
-        registerFont(TTFont("DejaVuSans-Oblique","DejaVuSans-Oblique.ttf"))
-        registerFont(TTFont("DejaVuSans-BoldOblique","DejaVuSans-BoldOblique.ttf"))
-    except:
+    if not haveDejaVu():
         targets.remove(os.path.join('rml_tests','test_053_known_entities.rml'))
         skips.append('test_053_known_entities')
 

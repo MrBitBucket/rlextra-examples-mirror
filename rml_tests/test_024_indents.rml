@@ -8,8 +8,8 @@
     <pageGraphics>
        <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 25: Indents</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
     </pageGraphics>
     <frame id="first" x1="1in" y1="5.845in" width="3in" height="2.645in"/>
     <frame id="second" x1="4.27in" y1="5.845in" width="3in" height="2.645in"/>
@@ -20,8 +20,8 @@
     <pageGraphics>
        <setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 25: Indents</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
     </pageGraphics>
     <frame id="first" x1="1in" y1="5.845in" width="3in" height="4.645in"/>
     <frame id="second" x1="4.27in" y1="5.845in" width="3in" height="4.645in"/>

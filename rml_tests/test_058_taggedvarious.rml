@@ -6,6 +6,7 @@
 	<registerTTFont faceName="Arial" fileName="Arial.ttf"/>
 	<registerTTFont faceName="Arial-Bold" fileName="Arial_Bold.ttf"/>
 	<registerTTFont faceName="Arial-Bold-Italic" fileName="Arial_Bold_Italic.ttf"/>
+	<registerTTFont faceName="Arial-Italic" fileName="Arial_Italic.ttf"/>
 </docinit>
 <template pageSize="(595, 842)" leftMargin="72" showBoundary="0" title="Tagged" lang="en-GB" displayDocTitle="1">
 	<pageTemplate id="main">
@@ -14,8 +15,8 @@
 	    	    <drawString x="35" y="783">RML Example 58: Tagged Various - Paragraphs,</drawString>
 	    	    <drawString x="35" y="763">Tables, Lists </drawString>
 	            <setFont name="Arial-Bold-Italic" size="12" />
-	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<setFont name="Arial-Bold-Italic" size="18"/>
 
 			<setFont name="Arial" size="10"/>
@@ -125,14 +126,6 @@
 	</dl>
 
 <nextPage/>
-	<spacer length="10"/>
-	<para style="h1" tagType="H1">Test - chart</para>
-	<drawing module="test_014_scatterplot" tagType="Figure" altText="This is a scatterplot describing etc etc" function="ScatterPlotDrawing">
-		<param name="ScatterPlot.xLabel">Xlabel</param>
-		<param name="ScatterPlot.data">[((0.07, 54), (0.09, 43)), ((0.03, 27), (0.07, 32), (0.08, 15))]</param>
-	</drawing>
-
-<nextPage/>
 	<markedContent tagType="Artifact" kind="start"/>
 	<spacer length="10"/>
 	<para style="h1" tagType="H1">Test - Image</para>
@@ -141,6 +134,13 @@
 		imageName="logo_no_bar.png">
 	</imageAndFlowables>
 	<markedContent tagType="Artifact" kind="end"/>
+
+    <drawing module="test_014_scatterplot" function="ScatterPlotDrawing" altText="Scatterplot" tagType="Figure">
+		<param name="ScatterPlot.data">[((0.03, 50), (0.07, 54), (0.09, 43)), ((0.03, 27), (0.07, 32), (0.08, 15))]</param>
+		<param name="ScatterPlot.xValueAxis.labels.fontName">Arial</param>
+		<param name="ScatterPlot.yValueAxis.labels.fontName">Arial</param>
+		<param name="ScatterPlot.lineLabels.fontName">Arial</param>
+    </drawing>
 
 </story>
 

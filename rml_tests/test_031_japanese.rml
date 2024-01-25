@@ -10,8 +10,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 32: Japanese</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		
 		<setFont name="HeiseiMin-W3" size="18"/>
 		<drawRightString x="504" y="750">日本語は難しいですね！</drawRightString>
@@ -23,8 +23,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 0: Catchforms</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		
 		<setFont name="HeiseiMin-W3" size="18"/>
 		<drawRightString x="504" y="750">日本語は難しいですね！</drawRightString>

@@ -8,8 +8,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 26: pto</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="F1" x1="2.5cm" y1="12.5cm" width="6cm" height="10cm"/>
 	<frame id="F2" x1="11.5cm" y1="12.5cm" width="6cm" height="10cm"/>
@@ -20,8 +20,8 @@
 	<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 26: pto</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics>
 	<frame id="F1" x1="2.5cm" y1="15.5cm" width="6cm" height="10cm"/>
 	<frame id="F2" x1="11.5cm" y1="15.5cm" width="6cm" height="10cm"/>
@@ -31,8 +31,8 @@
     <pageTemplate id="OrderSheet"><pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 26: pto</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 	</pageGraphics><frame id="orders" x1="2.5in" y1="2.2in" width="5.5in" height="3.0in"/></pageTemplate>
 </template>
 

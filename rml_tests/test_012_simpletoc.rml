@@ -7,8 +7,8 @@
     	<pageGraphics>
     	<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 16: Simpletoc</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
         	<setFont name="Times-Bold" size="48"/>
         	<drawCentredString x="300" y="516">Table of Contents Example</drawCentredString>
     	</pageGraphics>
@@ -19,8 +19,8 @@
 		<pageGraphics>
 		<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 16: Simpletoc</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 			<doForm name="TOC"/>
 		</pageGraphics>
     	<frame id="first" x1="-1" y1="-1" width="0" height="0"/>
@@ -30,8 +30,8 @@
 		<pageGraphics>
 			<setFont name="Helvetica-Bold" size="18"/>
 		    <drawString x="35" y="783">RML Example 16: Simpletoc</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72"/>
-    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" />
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
                 <setFont  name="Helvetica" size="8pt"/><drawRightString x="523" y="40"><evalString default="XXX"><pageNumber/>-2</evalString></drawRightString>
 		</pageGraphics>
 		<frame id="first" x1="1in" y1="1in" width="6.27in" height="9.69in"/>
