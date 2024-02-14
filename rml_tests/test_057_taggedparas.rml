@@ -11,7 +11,7 @@
 	<pageTemplate id="main">
 		<pageGraphics>
 		<setFont name="Arial-Bold" size="18"/>
-	    	    <drawString x="35" y="783">RML Example 57: Tagged Paragraphs </drawString>
+	    	    <drawString x="35" y="783" tagType="P">RML Example 57: Tagged Paragraphs </drawString>
 	            <setFont name="Arial-Bold-Italic" size="12" />
 	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
 	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
@@ -97,7 +97,7 @@ Proin euismod, ligula vitae fringilla aliquam, dolor sem sagittis mauris, ac imp
 	<para>Followed by another ordinary paragraph</para>
 	<xpre altText="Preformatted Paragraph 1">Preformatted Paragraph</xpre>
 	<graphicsMode origin="frame" borderStrokeWidth="2" borderStrokeColor="red">
-	<image file="testimg.gif" preserveAspectRatio="1" x="0" y="0" width="72" height="72" showBoundary="border(color='blue',width=1)" altText='Sample Image' inline="1"/>
+	<image file="testimg.gif" preserveAspectRatio="1" x="0" y="0" width="72" height="72" showBoundary="border(color='blue',width=1)" tagType='figure' altText='Sample Image' inline="1"/>
 	</graphicsMode>
 	<para><a href="https://www.reportlab.com">single &lt;a&gt; tag link</a></para>
 	<!--graphicsMode origin="page" borderStrokeWidth="1" borderStrokeColor="red">
