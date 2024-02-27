@@ -1,1 +1,8 @@
 
+Steps
+-----
+
+Make a virtual environment
+Install requirements
+Generate a report
+ (retrofitzero) $ python gen_invoice.py data/invoice.json 
