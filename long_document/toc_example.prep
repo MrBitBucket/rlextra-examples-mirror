@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
+<document filename="toc_example.pdf" colorSpace="CMYK">
+{{script}}
+    from datetime import date
+    date = date.today()
+{{endscript}}
+
+<docinit useCropMarks="0">
+    <registerTTFont faceName="Carlito-Regular" fileName="fonts/Carlito-Regular.ttf"/>
+    <registerTTFont faceName="Carlito-Bold" fileName="fonts/Carlito-Bold.ttf"/>
+    <registerFontFamily normal="Carlito-Regular" bold="Carlito-Bold"/>
+</docinit>
+
+<template showBoundary="0">
+    <pageTemplate id="TOC" pageSize="A4">
+        <pageGraphics>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="560" y="800">reportlab.com</drawRightString>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
+            <drawString x="30" y="22">Printed on {{date}}</drawString>
+            <setFont name="Carlito-Regular" size="17" leading="9.4"/>
+            {{if len(art_of_war['chapters'])>32 }}
+                <drawString x="225" y="640">Table of Contents</drawString>
+            {{else}}
+                <drawString x="100" y="640">Table of Contents</drawString>
+            {{endif}}
+        </pageGraphics>
+        <frame id="top" x1="30" y1="660" width="530" height="120"/>
+        <frame id="left" x1="30" y1="30" width="255" height="600"/>
+        <frame id="right" x1="305" y1="30" width="255" height="600"/>
+    </pageTemplate>
+
+    <pageTemplate id="TOC_extended" pageSize="A4">
+        <pageGraphics>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="560" y="800">reportlab.com</drawRightString>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
+            <drawString x="30" y="22">Printed on {{date}}</drawString>
+            <setFont name="Carlito-Regular" size="17" leading="9.4"/>
+            {{if len(art_of_war['chapters'])>40 }}
+                <drawString x="225" y="780">Table of Contents</drawString>
+            {{else}}
+                <drawString x="100" y="780">Table of Contents</drawString>
+            {{endif}}
+        </pageGraphics>
+        <frame id="left" x1="30" y1="30" width="255" height="740"/>
+        <frame id="right" x1="305" y1="30" width="255" height="740"/>
+    </pageTemplate>
+
+    <pageTemplate id="chapter_start" pageSize="A4">
+        <pageGraphics>
+            <setFont name="Helvetica-Oblique" size="8" leading="9.4"/>
+            <drawRightString x="560" y="800">reportlab.com</drawRightString>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
+            <drawString x="30" y="22">Printed on {{date}}</drawString>
+            <setFont name="Carlito-Regular" size="17" leading="9.4"/>
+        </pageGraphics>
+        <frame id="title" x1="30" y1="730" width="530" height="50"/>
+        <frame id="body" x1="30" y1="30" width="530" height="690"/>
+    </pageTemplate>
+    <pageTemplate id="chapter_extended" pageSize="A4">
+        <pageGraphics>
+            <setFont name="Helvetica-Oblique" size="8" leading="9.4"/>
+            <drawRightString x="560" y="800">reportlab.com</drawRightString>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
+            <drawString x="30" y="22">Printed on {{date}}</drawString>
+            <setFont name="Carlito-Regular" size="17" leading="9.4"/>
+        </pageGraphics>
+        <frame id="body" x1="30" y1="30" width="530" height="750"/>
+    </pageTemplate>
+</template>
+
+<stylesheet>
+    <blockTableStyle id="first" spaceAfter="10">
+		<blockFont name="Carlito-Bold" size="12" leading="10.8" start="0,0" stop="-1,0" />
+		<blockFont name="Carlito-Regular" size="12" leading="10.8" start="0,1" stop="-1,-1" />
+		<blockAlignment value="left" start="0,0" stop="-1,-1"/>
+		<blockValign value="MIDDLE"/>
+		<blockAlignment value="LEFT" start="0,0" stop="0,0"/>
+        <blockLeftPadding length="1" start="0,0" stop="0,0" />
+		<lineStyle kind="OUTLINE" colorName="black" start="0,0" stop="-1,0" />
+	</blockTableStyle>
+
+    <paraStyle name="normal" fontName="Carlito-Regular"  alignment="left" fontSize="15" spaceAfter="8" leading="16.6"/>
+</stylesheet>
+
+<story firstPageTemplate="TOC">
+    <setNextTemplate name="TOC_extended"/>
+    <para alignment="left" fontSize="15" spaceAfter="5" leading="15.6">{{art_of_war['header']}}</para>
+    <para alignment="centre" fontSize="25" spaceAfter="25">{{art_of_war['title']}}</para>
+    <para alignment="centre" fontSize="15">By {{art_of_war['author']}}</para>
+    <nextFrame name="left"/>
+
+    <blockTable style="first" repeatRows="1" colWidths="85%,15%">
+        <tr><td>Chapter</td><td>Page</td></tr>
+        {{for chapter in art_of_war['chapters']}}
+        <tr><td destination="bm_{{chapter}}_page">{{chapter}}</td><td destination="bm_{{chapter}}_page"><para><i><getName id="{{chapter}}_page" default="1"/></i></para></td></tr>
+        {{endfor}}
+    </blockTable>
+
+    {{for chapter in art_of_war['chapters']}}
+        <setNextTemplate name="chapter_start"/> <!-- Switch to extended body page template if needed -->
+        <nextPage/>
+        <namedString id="{{chapter}}_page"><pageNumber/></namedString>
+        <bookmarkPage name="bm_{{chapter}}_page"/>
+        <nextFrame name="title"/>
+        <h1 alignment="center">{{chapter}}</h1>
+        <setNextTemplate name="chapter_extended"/> <!-- Switch to extended body page template if needed -->
+        <nextFrame name="body"/>
+        <pre maxLineLength="80" style="normal">{{art_of_war['chapters'][chapter]}}</pre>
+    {{endfor}}
+
+    <nextPage/>
+    <namedString id="last_page"><pageNumber/></namedString>
+    <para alignment="left" fontSize="16" leading="16.6">{{art_of_war['copyright']}}</para>
+</story>
+</document>
