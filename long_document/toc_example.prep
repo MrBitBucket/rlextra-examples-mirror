@@ -88,7 +88,8 @@
 		<lineStyle kind="OUTLINE" colorName="black" start="0,2" stop="-1,0" />
 	</blockTableStyle>
 
-    <paraStyle name="normal" fontName="Carlito-Regular"  alignment="left" fontSize="15" spaceAfter="8" leading="16.6" allowOrphans="0"/>
+    <paraStyle name="normal" fontName="Carlito-Regular"  alignment="left" fontSize="15" spaceAfter="8" leading="16.6"/>
+    <paraStyle name="bold" parent="normal" fontName="Carlito-Bold"  alignment="center"/>
 </stylesheet>
 
 <story firstPageTemplate="TOC">
@@ -113,10 +114,14 @@
         <namedString id="{{chapter}}_page"><pageNumber/></namedString>
         <bookmarkPage name="bm_{{chapter}}_page"/>
         <nextFrame name="title"/>
+        <setPageTopFlowables show="0">
+			<placePara x="30" y="810" anchor="w" style="bold" alignment="center" textColor="black"  width="530">{{chapter}}</placePara>
+		</setPageTopFlowables>
         <h1 alignment="center">{{chapter}}</h1>
         <setNextTemplate name="chapter_extended"/> <!-- Switch to extended body page template if needed -->
         <nextFrame name="body"/>
         <pre maxLineLength="80" style="normal">{{art_of_war['chapters'][chapter]}}</pre>
+        <setPageTopFlowables show="0"/>
     {{endfor}}
 
     <nextPage/>
