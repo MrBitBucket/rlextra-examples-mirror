@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
-<document filename="toc_example.pdf" colorSpace="RGB">
+<document filename="long_example.pdf" colorSpace="RGB">
 {{script}}
     from datetime import date
     date = date.today()
@@ -29,24 +29,9 @@
         <frame id="right" x1="305" y1="30" width="255" height="600"/>
     </pageTemplate>
 
-    <pageTemplate id="TOC_extended" pageSize="A4">
-        <pageGraphics>
-            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
-            <drawRightString x="560" y="800">www.reportlab.com</drawRightString>
-            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
-            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
-            <drawString x="30" y="22">Printed on {{date}}</drawString>
-            <rect x="490" y="790" height="20" width="80" fill="0" stroke="0" href="http://www.reportlab.com"></rect> <!--link www.reportlab.com -->
-            <stroke width="20" color="silver"/>
-            <rect x="0" y="0" height="840" width="595" fill="0" stroke="1"></rect>            
-        </pageGraphics>
-        <frame id="left" x1="30" y1="30" width="255" height="740"/>
-        <frame id="right" x1="305" y1="30" width="255" height="740"/>
-    </pageTemplate>
-
     <pageTemplate id="chapter_start" pageSize="A4">
         <pageGraphics>
-            <setFont name="Helvetica-Oblique" size="8" leading="9.4"/>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
             <drawRightString x="560" y="800">www.reportlab.com</drawRightString>
             <setFont name="Carlito-Regular" size="8" leading="9.4"/>
             <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
@@ -60,8 +45,11 @@
         <frame id="title" x1="30" y1="730" width="530" height="50"/>
         <frame id="body" x1="30" y1="30" width="530" height="690"/>
     </pageTemplate>
+    
     <pageTemplate id="chapter_extended" pageSize="A4">
         <pageGraphics>
+            <setFont name="Helvetica-Oblique" size="15" leading="15"/>
+            <drawCenteredString x="297" y="800"><getName id="chapter_header" default="0"/></drawCenteredString> <!-- place the chapter on the  page header-->
             <setFont name="Helvetica-Oblique" size="8" leading="9.4"/>
             <drawRightString x="560" y="800">www.reportlab.com</drawRightString>
             <setFont name="Carlito-Regular" size="8" leading="9.4"/>
@@ -93,8 +81,8 @@
 </stylesheet>
 
 <story firstPageTemplate="TOC">
-    <setNextTemplate name="TOC_extended"/>
-    <para alignment="left" fontSize="15" spaceAfter="5" leading="15.6">{{art_of_war['header']}}</para>
+    <setNextTemplate name="chapter_start"/>
+    <para alignment="left" fontSize="15" spaceAfter="5" leading="15.6" >{{art_of_war['header']}}</para>
     <para alignment="centre" fontSize="25" spaceAfter="25">{{art_of_war['title']}}</para>
     <bookmarkPage name="bm_toc_page"/>
     <para alignment="centre" fontSize="15">By {{art_of_war['author']}}</para>
@@ -112,16 +100,13 @@
         <setNextTemplate name="chapter_start"/> <!-- Switch to extended body page template if needed -->
         <nextPage/>
         <namedString id="{{chapter}}_page"><pageNumber/></namedString>
+        <namedString id="chapter_header">{{chapter}}</namedString> <!-- -->
         <bookmarkPage name="bm_{{chapter}}_page"/>
         <nextFrame name="title"/>
-        <setPageTopFlowables show="0">
-			<placePara x="30" y="810" anchor="w" style="bold" alignment="center" textColor="black"  width="530">{{chapter}}</placePara>
-		</setPageTopFlowables>
         <h1 alignment="center">{{chapter}}</h1>
         <setNextTemplate name="chapter_extended"/> <!-- Switch to extended body page template if needed -->
         <nextFrame name="body"/>
         <pre maxLineLength="80" style="normal">{{art_of_war['chapters'][chapter]}}</pre>
-        <setPageTopFlowables show="0"/>
     {{endfor}}
 
     <nextPage/>
