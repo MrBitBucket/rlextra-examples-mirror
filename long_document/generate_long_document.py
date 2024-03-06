@@ -1,13 +1,13 @@
 import preppy
 import re
+import sys
 
 from rlextra.rml2pdf import rml2pdf
 
-
 def load_document(filename):
     data = {
-        "header": "",
         "title": "",
+        "header": "",
         "author": "",
         "translator": "",
         "chapters": [],
@@ -36,7 +36,10 @@ def load_document(filename):
 
 
 def main():
-    document = load_document("artwar.1b.txt")
+    filename = sys.argv[1] if len(sys.argv) > 1 else "artwar.1b.txt"
+    if not isinstance(filename, str):
+        raise TypeError("The first argument should be a filename")
+    document = load_document(f"documents/{filename}")
     namespace = {'document': document}
     template_file_name = 'longdocument.prep'
     template = preppy.getModule(template_file_name, savePyc=False, importModule=False)
