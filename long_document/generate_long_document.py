@@ -4,6 +4,7 @@ import sys
 
 from rlextra.rml2pdf import rml2pdf
 
+
 def load_document(filename):
     data = {
         "title": "",
