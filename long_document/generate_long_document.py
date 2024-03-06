@@ -37,7 +37,7 @@ def main():
     art_of_war = load_aow()
     namespace = {'art_of_war': art_of_war}
     template_file_name = 'longdocument.prep'
-    template = preppy.getModule(template_file_name)
+    template = preppy.getModule(template_file_name, savePyc=False, importModule=False)
     rml = template.getOutput(namespace)
     output_pdf_name = 'art_of_war.pdf'
     rml2pdf.go(rml.encode(), outputFileName=output_pdf_name)
