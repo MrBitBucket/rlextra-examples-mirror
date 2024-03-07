@@ -1,8 +1,22 @@
+Instructions
+---------------
+Before starting, you need to register for a Reportlab Account  here https://www.reportlab.com/accounts/register/
 
-Steps
------
+(You will be prompted for a user name and password when installing requirements below.)
 
-Make a virtual environment
-Install requirements
-Generate a report
-python gen_invoice.py data/invoice.json 
+How to install and run locally
+--------------------------------------
+
+python -mvirtualenv  .
+. bin/activate
+pip install -r requirements.txt
+
+data/  has sample JSON files
+
+Generate a PDF from the command line
+----------------------------------------------------
+python gen_invoice.py data/invoice.json
+
+
+Generated PDF is in output/
+
