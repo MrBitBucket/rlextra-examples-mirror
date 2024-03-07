@@ -46,7 +46,7 @@ RML samples
 ===========
 We include a full copy of our own internal RML test suite.  These files can also be seen, with their output, on our own web site:
 
-   https://www.reportlab.com/software/documentation/rml-samples/
+   https://docs.reportlab.com/rmlsamples/
 
 You should be able to convert any of them with the installed 'rml2pdf' command.
 For example::

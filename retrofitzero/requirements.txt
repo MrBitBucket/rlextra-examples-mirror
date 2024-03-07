@@ -1,2 +1,2 @@
-rlextra==3.6.8
+rlextra>=4.1.0
 -i https://www.reportlab.com/pypi

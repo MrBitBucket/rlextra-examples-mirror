@@ -11,7 +11,7 @@ This example is aimed at showing the use of Report Markup Language (RML), which 
 .. _register on our site: http://www.reportlab.com/accounts/register/
 
 
-Run the exampe
+Run the example
 --------------
 
 To see the output, run product_catalog.py and look at the generated file under /output.
