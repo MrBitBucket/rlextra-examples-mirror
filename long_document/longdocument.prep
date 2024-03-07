@@ -65,6 +65,22 @@
         </pageGraphics>
         <frame id="body" x1="30" y1="30" width="530" height="750"/>
     </pageTemplate>
+
+    <pageTemplate id="copyright" pageSize="A4">
+        <pageGraphics>
+            <setFont name="Helvetica-Oblique" size="8" leading="9.4"/>
+            <drawRightString x="560" y="800">www.reportlab.com</drawRightString>
+            <setFont name="Carlito-Regular" size="8" leading="9.4"/>
+            <drawRightString x="565" y="22">Page <pageNumber/> of <getName id="last_page" default="0"/></drawRightString>
+            <drawString x="30" y="22">Printed on {{date}}</drawString>
+            <setFont name="Carlito-Regular" size="17" leading="9.4"/>
+            <rect x="520" y="18" height="20" width="50" fill="0" stroke="0" destination="bm_toc_page"></rect> <!--link page number to contents page-->
+            <rect x="490" y="790" height="20" width="80" fill="0" stroke="0" href="http://www.reportlab.com"></rect> <!--link www.reportlab.com -->
+            <stroke width="20" color="silver"/>
+            <rect x="0" y="0" height="840" width="595" fill="0" stroke="1"></rect>
+        </pageGraphics>
+        <frame id="body" x1="30" y1="30" width="530" height="750"/>
+    </pageTemplate>
 </template>
 
 <stylesheet>
@@ -115,7 +131,7 @@
         {{endfor}}
     {{endfor}}
 
-    <nextPage/>
+    <nextPage name="copyright"/>
     <namedString id="last_page"><pageNumber/></namedString>
     <para alignment="left" fontSize="16" leading="16.6">{{document['copyright']}}</para>
 </story>
