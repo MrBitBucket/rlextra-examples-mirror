@@ -2,6 +2,7 @@
 <!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
 <document filename="long_example.pdf" colorSpace="RGB">
 {{script}}
+    import html
     from datetime import date
     date = date.today()
 {{endscript}}
@@ -110,7 +111,7 @@
         <setNextTemplate name="chapter_extended"/> <!-- Switch to extended body page template if needed -->
         <nextFrame name="body"/>
         {{for para in chapter}}
-            <para style="normal">{{para}}</para>
+            <para style="normal">{{html.escape(para)}}</para>
         {{endfor}}
     {{endfor}}
 

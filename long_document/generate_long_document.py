@@ -1,5 +1,4 @@
 import preppy
-import re
 import sys
 
 from rlextra.rml2pdf import rml2pdf
