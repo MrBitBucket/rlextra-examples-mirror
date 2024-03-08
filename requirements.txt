@@ -1,0 +1,4 @@
+rlextra>=4.1.0
+-i https://www.reportlab.com/pypi
+rlextra[pycairo]
+-i https://www.reportlab.com/pypi/

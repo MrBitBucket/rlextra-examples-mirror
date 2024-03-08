@@ -20,6 +20,9 @@ Current contents:
 Quickstart
 ==========
 
+Install a virtual environment
+run `pip install -r requirements`
+
 Run::
 
     $ cd rml_tests && rml2pdf *.rml

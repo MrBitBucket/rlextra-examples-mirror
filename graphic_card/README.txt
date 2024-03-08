@@ -11,7 +11,7 @@ Instructions
 ---------------
 Before starting, you need to register for a Reportlab Account  here https://www.reportlab.com/accounts/register/
 
-(You will be prompted for a user name and password when installing requirements below.)
+(You will be prompted for a username and password when installing requirements below.)
 
 Installation
 ---------------
@@ -20,8 +20,15 @@ python -mvirtualenv  .
 pip install -r requirements.txt
 
 
-Note that The above installion only allows PDF outputs
+Note that The above installation only allows PDF outputs
 
 Optional Installation for png, jpg, gif outputs
 ----------------------------------------------------------
 With 'pip install rlextra[RL_RENDERPM]
+
+
+Running
+---------------
+After installing the requirements as mentioned above simply run:
+python card.py
+
