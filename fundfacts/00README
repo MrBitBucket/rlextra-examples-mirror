@@ -82,7 +82,7 @@ To generate PDFs from the web:
 
 Then browse to
 
-http://localhost:8000/fundreports/
+http://localhost:8000/
 
 and click on any link to generate the corresponding PDF.
 
@@ -144,7 +144,7 @@ on the web site explains how to start our visual chart editor to adjust
 chart sizes, colours etc; alternatively you can just edit the code.
 We are hoping to replace the GUI Drawing Editor with a web based editor
 in a future version.  The same charts can trivially be served as bitmaps
-for the web.   (TODO: include examples).
+for the web.
 
 
 At this stage, we can already see how a Django app can store the
@@ -157,7 +157,7 @@ for a report.
 One nice thing about Django is the test framework.  We added a couple
 of tests to make sure the PDF output works.  You can execute these
 with...
-% python manage.py test fundreport
+% python manage.py test project.fundreport
 
 It's always a good idea to create a fixture with enough data for your
 reports, including a few pathological examples (missing data, accents,
