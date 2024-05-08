@@ -41,7 +41,11 @@ syntax: regexp
 ^product_catalogue/data/latest\.rml
 ^product_catalogue/output/harwood_flyer\.pdf
 ^product_catalogue/latest\.xml
+^tips_and_tricks/aliases/aliases_substack.pdf
 ^lib/
 ^bin/
 ^include/
 ^REPOS/
+# Default ignored files
+.idea/workspace.xml
+.idea
