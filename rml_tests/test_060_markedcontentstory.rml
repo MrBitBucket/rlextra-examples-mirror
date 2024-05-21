@@ -18,8 +18,10 @@
 	<pageTemplate id="main" pageSize="a4">
 		<pageGraphics>
 			<setFont name="Arial-Bold" size="18"/>
-			<drawString x="35" y="783">RML Example 3: Hello</drawString>
-			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+			<markedContent tagType="Forced Sect" text="template section" kind="startGroup"/>
+			<drawString x="35" y="783" tagType="P" altText="TITLE">RML Example 3: Hello</drawString>
+			<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" altText="ReportLab Logo" alt_file=""/>
+			<markedContent tagType="Sect" kind="endGroup"/>
 			<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
 		</pageGraphics>
 		<frame id="1" x1="35" y1="45" width="525" height="590"/>
