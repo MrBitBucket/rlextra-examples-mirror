@@ -42,6 +42,9 @@ syntax: regexp
 ^product_catalogue/output/harwood_flyer\.pdf
 ^product_catalogue/latest\.xml
 ^tips_and_tricks/aliases/aliases_substack.pdf
+^hansard/lib/
+^hansard/bin/
+^hansard/share
 ^lib/
 ^bin/
 ^include/

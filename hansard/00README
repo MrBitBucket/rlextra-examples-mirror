@@ -1,0 +1,34 @@
+Take content from here, and make nice PDFs...
+
+https://hansard.parliament.uk/
+
+
+
+Hansard can be searched with a get request.  e.g. looking for a recent debate, do this:
+  https://hansard.parliament.uk/search?searchTerm=western%20balkans
+
+
+To run default document, Security in the West Balkans:
+
+	python convert.py
+
+	In case you're offline we've included secwestbalkans_files so that example can be run fully.
+	You may need to adjust the code to read from a file again to do so however
+
+To run a custom report:
+	1. download the html file and save it in the data/ directory
+	2. run convert.py with the arguments provided
+
+	current arguments:
+		--url - the hansard url page you downloaded
+
+	Example document urls:
+		https://hansard.parliament.uk/Commons/2024-05-24/debates/35765685-8E64-4885-B31D-9B4460A907E2/LeaseholdAndFreeholdReformBill
+		https://hansard.parliament.uk/Lords/2024-05-21/debates/C0DFBC16-BF81-4FC5-B7B0-B16FC6EB6452/WaterCompaniesFailure
+		https://hansard.parliament.uk/Lords/2024-05-22/debates/E27EEF21-946C-4443-896D-616EF6BA374F/IsraelAndGaza
+
+	Example run:
+		python convert.py --url="https://hansard.parliament.uk/Commons/2024-05-02/debates/F7540B05-869A-40BD-9374-02F1D32A4BF7/SecurityInTheWesternBalkans"
+
+
+Markup is very good and consistent

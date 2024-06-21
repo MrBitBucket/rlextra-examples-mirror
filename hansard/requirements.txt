@@ -1,0 +1,4 @@
+bs4
+rlextra[pycairo]==4.2.1.1
+-i https://www.reportlab.com/pypi
+selenium
