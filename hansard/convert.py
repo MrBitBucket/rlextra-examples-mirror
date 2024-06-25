@@ -48,18 +48,20 @@ def selenium_fetch_html_page(url):
     return filepath
 
 
-def strip_column_text(text):
-    # This method is a patch to resolve a mismatch between saved html and copying and saving view-source: manually.
-    if text.startswith("Column"):
-        return ""
-    pat = re.compile(r"(Column \d*)(.|\n)*(Column \d*)")
-    match = re.search(pat, text)
-    if not match:
-        return text
-    while match is not None:
-        text = re.sub(pat, "", text)
-        match = re.search(pat, text)
-    return text
+def strip_invalid_tags(para):
+    """There are a variety of bad tags, many starting with "column-number", "sr-only" is a standalone bad tag.
+    # We must strip this content"""
+    if not para:
+        return para
+
+    for tag in para.findChildren():
+        attrs = getattr(tag, 'attrs', {})
+        if attrs:
+            classes = attrs.get('class', [])
+            if classes:
+                for class_name in classes:
+                    if class_name.startswith("column-number"):
+                        tag.decompose()
 
 
 def create_pdf(debate):
@@ -136,8 +138,8 @@ def run(url, filepath):
             for cont_item in contrib.find_all("div", class_="content"):
                 paras = cont_item.find_all("p")
                 for para in paras:
+                    strip_invalid_tags(para)
                     text = para.get_text()
-                    text = strip_column_text(text)
                     if text and text.strip():
                         content.append({"text": text.strip(), "italics": bool(para.find("em"))})
 
@@ -145,8 +147,8 @@ def run(url, filepath):
             # Contributions that get interrupted by other debate items
             para = contrib.find("div")
             if para:
+                strip_invalid_tags(para)
                 text = para.get_text().strip()
-                text = strip_column_text(text)
                 if text:
                     content.append({"text": text, "italics": bool(para.find("em"))})
 

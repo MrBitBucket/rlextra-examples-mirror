@@ -44,9 +44,12 @@ current arguments:
 	`--url` - the hansard url page you downloaded
 
 Example document urls:
+	https://hansard.parliament.uk/Commons/2024-05-02/debates/F7540B05-869A-40BD-9374-02F1D32A4BF7/SecurityInTheWesternBalkans
 	https://hansard.parliament.uk/Commons/2024-05-24/debates/35765685-8E64-4885-B31D-9B4460A907E2/LeaseholdAndFreeholdReformBill
+	https://hansard.parliament.uk/Commons/2024-05-15/debates/1B66A098-5488-44EE-9923-659A44A02121/BiodiversityLoss
 	https://hansard.parliament.uk/Lords/2024-05-21/debates/C0DFBC16-BF81-4FC5-B7B0-B16FC6EB6452/WaterCompaniesFailure
 	https://hansard.parliament.uk/Lords/2024-05-22/debates/E27EEF21-946C-4443-896D-616EF6BA374F/IsraelAndGaza
+	https://hansard.parliament.uk/Lords/2024-05-21/debates/7919B99E-891F-4C6F-A9BD-93F130521BD7/RussiaSanctions
 
 Example run:
 	python convert.py --url="https://hansard.parliament.uk/Commons/2024-05-02/debates/F7540B05-869A-40BD-9374-02F1D32A4BF7/SecurityInTheWesternBalkans"
