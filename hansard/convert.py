@@ -139,14 +139,16 @@ def run(url, filepath):
                 paras = cont_item.find_all("p")
                 for para in paras:
                     strip_invalid_tags(para)
-                    text = para.get_text()
-                    if text and text.strip():
-                        content.append({"text": text.strip(), "italics": bool(para.find("em"))})
+                    text = para.get_text().strip()
+                    if text:
+                        content.append({"text": text, "italics": bool(para.find("em"))})
 
         else:
             # Contributions that get interrupted by other debate items
-            para = contrib.find("div")
-            if para:
+            div = contrib.find("div")
+            if div:
+                # No non-singular examples found
+                para = div.find("p")
                 strip_invalid_tags(para)
                 text = para.get_text().strip()
                 if text:
