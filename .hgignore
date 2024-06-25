@@ -45,6 +45,9 @@ syntax: regexp
 ^hansard/lib/
 ^hansard/bin/
 ^hansard/share
+^long_document/lib/
+^long_document/bin/
+^long_document/share
 ^lib/
 ^bin/
 ^include/
