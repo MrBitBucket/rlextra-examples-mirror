@@ -7,11 +7,12 @@
 	<registerTTFont faceName="Arial-Bold" fileName="Arial_Bold.ttf"/>
 	<registerTTFont faceName="Arial-Bold-Italic" fileName="Arial_Bold_Italic.ttf"/>
 	<registerTTFont faceName="Arial-Italic" fileName="Arial_Italic.ttf"/>
+	<registerFontFamily normal="Arial" bold="Arial-Bold" italic="Arial-Italic" boldItalic="Arial-Bold-Italic"/>
 </docinit>
 <template pageSize="(595, 842)" leftMargin="72" showBoundary="0" title="Tagged" lang="en-GB" displayDocTitle="1">
 	<pageTemplate id="main">
 		<pageGraphics>
-		<setFont name="Arial-Bold" size="18"/>
+			<setFont name="Arial-Bold" size="18"/>
 	    	    <drawString x="35" y="783">RML Example 58: Tagged Various - Paragraphs,</drawString>
 	    	    <drawString x="35" y="763">Tables, Lists </drawString>
 	            <setFont name="Arial-Bold-Italic" size="12" />
@@ -141,7 +142,23 @@
 		<param name="ScatterPlot.yValueAxis.labels.fontName">Arial</param>
 		<param name="ScatterPlot.lineLabels.fontName">Arial</param>
     </drawing>
-
+	<illustration width="525" height="72">
+		<setFont name="Arial" size="10" leading="12"/>
+		<fill color="red"/>
+		<drawString x="0" y="60">Left</drawString>
+		<fill color="green"/>
+		<drawRightString x="525" y="48">Right</drawRightString>
+		<fill color="blue"/>
+		<drawCenteredString x="262.5" y="36">Centered</drawCenteredString>
+		<fill color="magenta"/>
+		<drawCentredString x="262.5" y="24">Centred</drawCentredString>
+		<stroke color="black" width="2"/>
+		<fill color="pink"/>
+		<rect x="10" y="12" width="515" height="10" fill="1" stroke="1" href="https://www.reportlab.com/"/>
+		<markedContent tagType="Artifact" kind="start"/>
+			<rect x="10" y="0" width="515" height="10" fill="1" stroke="1" href="https://www.reportlab.com/"/>
+		<markedContent tagType="Artifact" kind="end"/>
+	</illustration>
 </story>
 
 </document>
