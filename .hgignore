@@ -48,6 +48,9 @@ syntax: regexp
 ^long_document/lib/
 ^long_document/bin/
 ^long_document/share
+^opensource-examples/lib/
+^opensource-examples/bin/
+^opensource-examples/share
 ^lib/
 ^bin/
 ^include/
