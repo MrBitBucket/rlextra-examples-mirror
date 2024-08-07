@@ -22,7 +22,7 @@ def myLaterPages(canvas, doc):
 	canvas.setFont('Times-Roman',9)
 	canvas.drawString(inch, 0.75 * inch, "Page %d %s" % (doc.page, pageinfo))
 	canvas.restoreState()
-	
+
 def go():
 	doc = SimpleDocTemplate("flowing_content.pdf")
 	Story = [Spacer(1,1*inch)]
