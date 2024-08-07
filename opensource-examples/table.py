@@ -9,6 +9,7 @@ TABLE_DATA = [
     ['20', '21', '22', '23', '24'],
     ['30', '31', '32', '33', '34']]
 
+
 def table(canvas):
     """Create a demo table"""
     # The line's use a thickness specified in their respective styles.
@@ -20,13 +21,13 @@ def table(canvas):
         ('ALIGN', (1, 1), (-1, -1), 'RIGHT')])
 
     LIST_STYLE1 = TableStyle(LIST_STYLE.getCommands())
-    LIST_STYLE1.add('BOX', (0, 0), (1, -1), 2, colors.red) # Add style after styles have already been declared
+    LIST_STYLE1.add('BOX', (0, 0), (1, -1), 2, colors.red)  # Add style after styles have already been declared
     t1 = Table(TABLE_DATA, style=LIST_STYLE1)
     t1.wrapOn(canvas, 100, 100)
     t1.drawOn(canvas, x=50, y=700)
 
     LIST_STYLE2 = TableStyle(LIST_STYLE.getCommands())
-    LIST_STYLE2.add('BACKGROUND', (0, 0), (-1, 0), colors.Color(0, 0.7, 0.7)) # Blue background, colour manually declared
+    LIST_STYLE2.add('BACKGROUND', (0, 0), (-1, 0), colors.Color(0, 0.7, 0.7))  # Blue background, colour manually declared
     t2 = Table(TABLE_DATA, style=LIST_STYLE2)
     t2.wrapOn(canvas, 100, 100)
     t2.drawOn(canvas, x=50, y=500)
