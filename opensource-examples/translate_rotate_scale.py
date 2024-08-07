@@ -1,4 +1,3 @@
-import os
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
 
@@ -6,7 +5,7 @@ from reportlab.lib.pagesizes import A4
 def transformations():
     # Setting transformations apply to canvas and effects all added after, so use saveState and restoreState.
     c = canvas.Canvas("translate_rotate_scale.pdf", pagesize=A4)  # 595 x 842 is the page dimensions for A4 at 72DPI
-    logo = os.path.join('media', 'reportlab.png')
+    logo = 'reportlab.png'
     c.setFont("Helvetica", 20, leading=None)
 
     # Translate
