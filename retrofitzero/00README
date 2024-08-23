@@ -15,7 +15,7 @@ data/  has sample JSON files
 
 Generate a PDF from the command line
 ----------------------------------------------------
-pythongen_report.py data/report.json 
+python gen_report.py data/report.json
 
 
 Generated PDF is in output/
