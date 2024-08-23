@@ -72,7 +72,7 @@ def generate_pdf(json_file_name, options):
         #projects we usually have a settings variable to toggle this
         #on and off.
         rml_file_name = file_name_root + '.rml'
-        open(rml_file_name, 'w').write(rmlText)
+        open(rml_file_name, 'wb').write(rmlText)
     pdf_file_name = file_name_root + '.pdf'
 
     #convert to PDF on disk.  If you wanted a PDF in memory,
