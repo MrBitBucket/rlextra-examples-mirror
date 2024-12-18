@@ -172,6 +172,10 @@
     <para style="small"><![CDATA[<barCodeFlowable code="I2of5" value="0001234567890" checksum="1" bearerBox="1"/>]]></para>
     <barCodeFlowable code="I2of5" value="0001234567890" checksum="1" bearerBox="1"/>
 
+	<nextPage/>
+    <para style="small"><![CDATA[<barCodeFlowable code="QR" value="Hello Cruel World from ReportLab"/>]]></para>
+    <barCodeFlowable code="QR" value="Hello Cruel World from ReportLab"/>
+
 
 </story>
 
