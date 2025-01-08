@@ -23,6 +23,11 @@
 			<frame id="t0" x1="1in" y1="1in" width="3in" height="5in"/>
 			<frame id="t1" x1="4.27in" y1="1in" width="3in" height="5in"/>
 		</pageTemplate>
+		<pageTemplate id="three">
+			<frame id="f1" x1="1in" y1="9in" width="6.27in" height="0.5in" showBoundary="border(color='red',width=1)"/>
+			<frame id="f2" x1="1in" y1="7.5in" width="6.27in" height="1in" showBoundary="border(color='red',width=1)"/>
+			<frame id="f3" x1="1in" y1="6in" width="6.27in" height="1in" showBoundary="border(color='red',width=1)"/>
+		</pageTemplate>
 	</template>
 	<stylesheet>
 		<blockTableStyle id="realplain">
@@ -1883,5 +1888,33 @@ I # 1      1   XYZ123M
                GST                0.00
 </pre>
 		<bookmark name="BACK_PAGE"/>
+		<setNextTemplate name="three"/>
+		<nextPage/>
+		<para><b>The next two frames show a table being split in a row</b></para>
+		<setNextFrame name="f2"/>
+		<nextFrame/>
+		<setNextFrame name="f3"/>
+		<blockTable splitInRow="1" colWidths="(50, 70, 70, 90, 90, 70)">
+			<blockTableStyle id="test-splitInRow-0" spaceBefore="12">
+				<lineStyle kind="GRID" colorName="green" thickness="0.25"/>
+				<blockValign start="0,1" stop="1,1" value="BOTTOM"/>
+				<blockValign start="1,1" stop="2,1" value="MIDDLE"/>
+				<blockValign start="2,1" stop="3,1" value="TOP"/>
+				<blockValign start="3,1" stop="4,1" value="BOTTOM"/>
+				<blockValign start="4,1" stop="5,1" value="MIDDLE"/>
+				<blockValign start="5,1" stop="6,1" value="TOP"/>
+			</blockTableStyle>
+			<tr>
+				<td>Row 1</td><td>Two rows:&#x0a;So there</td><td>is a</td><td>place</td><td>to split</td><td>the table</td>
+			</tr>
+			<tr>
+				<td><para>This is a very tall cell to make a tall row for splitting.</para></td>
+				<td><para>This cell has two flowables.</para><para>And valign=MIDDLE.</para></td>
+				<td><para>Paragraph with valign=TOP</para></td>
+				<td>valign=BOTTOM</td>
+				<td>valign=MIDDLE</td>
+				<td>valign=TOP</td>
+			</tr>
+		</blockTable>
 	</story>
 </document>
