@@ -49,6 +49,12 @@
 	leading="12"
 	spaceBefore="12"
 	/>
+	<paraStyle name="list-normal"
+	fontName="Arial"
+	fontSize="10"
+	leading="12"
+	spaceBefore="3"
+	/>
 
 	<blockTableStyle id="basic" spaceBefore="0" spaceAfter="0" >
 		<blockFont name="Arial" size="10" leading="12"/>
@@ -83,10 +89,11 @@
 
 	<para style="h1" tagType="H1">Test - Table</para>
 	<para style="normal" tagType="H2">Table 1 Example</para>
-    <blockTable  style="basic" align="LEFT">
+    <blockTable  style="basic" align="LEFT" altText="Table's AltText" summary="Table Summary Example">
+				<caption style="h1" tagType="H1">Robin's Table</caption>
                 <tr>
-                    <td tagType="TH SCOPE=COLUMN">Col 1</td>
-					<td tagType="TH SCOPE=COLUMN">Col 2</td>
+                    <td tagType="TH scope=column">Col 1</td>
+                    <td tagType="TH scope=column">Col 2</td>
                 </tr>
                 <tr>
                     <td>Row 1, Col 1</td>
@@ -98,20 +105,20 @@
                 </tr>
 	</blockTable>
 
-	<spacer length="10"/>
+	<spacer length="5"/>
 	<ol style="tagged_list">
 		<para style="h1" tagType="H1">Test - Ordered Lists</para>
-		<li><para style="normal">Item 1</para></li>
-		<li><para style="normal">Item 2</para></li>
-		<li><para style="normal">Item 3</para></li>
+		<li><para style="list-normal">Item 1</para></li>
+		<li><para style="list-normal">Item 2</para></li>
+		<li><para style="list-normal">Item 3</para></li>
 	</ol>
 
 	<spacer length="10"/>
 	<ul style="tagged_list">
 		<para style="h1" tagType="H1">Test - Unordered Lists</para>
-		<li><para style="normal">Item 1</para></li>
-		<li><para style="normal">Item 2</para></li>
-		<li><para style="normal">Item 3</para></li>
+		<li><para style="list-normal">Item 1</para></li>
+		<li><para style="list-normal">Item 2</para></li>
+		<li><para style="list-normal">Item 3</para></li>
 	</ul>
 
 	<spacer length="10"/>
@@ -119,11 +126,11 @@
 	<dl>
 		<h1 style="h1" alignment="center" textColor="red">Definition List</h1>
 		<dt><h1 style="h1">Coffee</h1></dt>
-		<dd><para style="normal">Black hot drink</para></dd>
-		<dd><para style="normal">Wakes you</para></dd>
+		<dd><para style="list-normal">Black hot drink</para></dd>
+		<dd><para style="list-normal">Wakes you</para></dd>
 		<dt><h1 style="h1">Milk</h1></dt>
 		<dt><h1 style="h1">Drink</h1></dt>
-		<dd><para style="normal">White cold drink</para></dd>
+		<dd><para style="list-normal">White cold drink</para></dd>
 	</dl>
 
 <nextPage/>
@@ -159,6 +166,116 @@
 			<rect x="10" y="0" width="515" height="10" fill="1" stroke="1" href="https://www.reportlab.com/"/>
 		<markedContent tagType="Artifact" kind="end"/>
 	</illustration>
+	    <blockTable  style="basic" align="LEFT" altText="Test Table Tagging" summary="Table Summary Example" repeatRows="1" spaceBefore="10">
+                <tr>
+                    <td tagType="TH scope=column" background="grey">Col 1</td>
+                    <td tagType="TH scope=column" background="grey">Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 1, Col 1</td>
+                    <td>Row 1, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 2, Col 1</td>
+                    <td>Row 2, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 3, Col 1</td>
+                    <td>Row 3, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 4, Col 1</td>
+                    <td>Row 4, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 5, Col 1</td>
+                    <td>Row 5, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 6, Col 1</td>
+                    <td>Row 6, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 7, Col 1</td>
+                    <td>Row 7, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 8, Col 1</td>
+                    <td>Row 8, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 9, Col 1</td>
+                    <td>Row 9, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 10, Col 1</td>
+                    <td>Row 10, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 11, Col 1</td>
+                    <td>Row 11, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 12, Col 1</td>
+                    <td>Row 12, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 13, Col 1</td>
+                    <td>Row 13, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 14, Col 1</td>
+                    <td>Row 14, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 14, Col 1</td>
+                    <td>Row 14, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 15, Col 1</td>
+                    <td>Row 15, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 16, Col 1</td>
+                    <td>Row 16, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 17, Col 1</td>
+                    <td>Row 17, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 19, Col 1</td>
+                    <td>Row 19, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 20, Col 1</td>
+                    <td>Row 20, Col 2</td>
+                </tr>                
+                <tr>
+                    <td>Row 21, Col 1</td>
+                    <td>Row 21, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 22, Col 1</td>
+                    <td>Row 22, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 23, Col 1</td>
+                    <td>Row 23, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 24, Col 1</td>
+                    <td>Row 24, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 25, Col 1</td>
+                    <td>Row 25, Col 2</td>
+                </tr>
+                <tr>
+                    <td>Row 26, Col 1</td>
+                    <td>Row 26, Col 2</td>
+                </tr>                
+	</blockTable>
 </story>
 
 </document>
