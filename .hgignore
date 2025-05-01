@@ -52,9 +52,13 @@ syntax: regexp
 ^opensource-examples/bin/
 ^opensource-examples/share
 ^lib/
+lib64
 ^bin/
 ^include/
+^share/
 ^REPOS/
+^.venv/
+pyvenv.cfg
 # Default ignored files
 .idea/workspace.xml
 .idea
