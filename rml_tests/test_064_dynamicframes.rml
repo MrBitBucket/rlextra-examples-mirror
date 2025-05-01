@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="test_064_dynamicframes.pdf" compression="0" invariant="1" tagged="1">
+
+<docinit>
+	<registerTTFont faceName="Arial" fileName="Arial.ttf"/>
+	<registerTTFont faceName="Arial-Bold" fileName="Arial_Bold.ttf"/>
+	<registerTTFont faceName="Arial-Bold-Italic" fileName="Arial_Bold_Italic.ttf"/>
+	<registerTTFont faceName="Arial-Italic" fileName="Arial_Italic.ttf"/>
+	<registerFontFamily normal="Arial" bold="Arial-Bold" italic="Arial-Italic" boldItalic="Arial-Bold-Italic"/>
+</docinit>
+<template pageSize="(595, 842)" leftMargin="72" showBoundary="0" title="Tagged" lang="en-GB" displayDocTitle="1">
+	<pageTemplate id="main">
+		<pageGraphics>
+		<setFont name="Arial-Bold" size="18"/>
+			<drawString x="35" y="783" tagType="P">RML Example 064: Dynamic Frame usage</drawString>
+	            <setFont name="Arial-Bold-Italic" size="12" />
+	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file="" altText="ReportLab Logo" tagType="Forced Figure"/>
+	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
+			<setFont name="Arial-Bold-Italic" size="18"/>
+
+			<setFont name="Arial" size="10"/>
+			<drawCentredString x="297" y="36"><pageNumber countingFrom="2"/></drawCentredString>
+			<place x="57" y="700" width="481" height="30">
+				<para alignment="center">
+				All 3 frames have the same y value and height. The first frame is coloured red and the others blue.
+				The end of the content in the first frame pushes down the start of content in the latter two frames.
+				</para>
+			</place>
+		</pageGraphics>
+		<frame id ="full" x1="57" y1="200" width="481" height="490" showBoundary="border(color='red')"/>
+		<frame id ="left" x1="57" y1="200" width="239" height="490" showBoundary="border(color='blue')"/>
+		<frame id ="right" x1="299" y1="200" width="239" height="490" showBoundary="border(color='blue')"/>
+    </pageTemplate>
+	<pageTemplate id="main2">
+		<pageGraphics>
+		<setFont name="Arial-Bold" size="18"/>
+			<drawString x="35" y="783" tagType="P">RML Example 064: Dynamic Frame usage</drawString>
+	            <setFont name="Arial-Bold-Italic" size="12" />
+	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file="" altText="ReportLab Logo" tagType="Forced Figure"/>
+	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
+			<setFont name="Arial-Bold-Italic" size="18"/>
+
+			<setFont name="Arial" size="10"/>
+			<drawCentredString x="297" y="36"><pageNumber countingFrom="2"/></drawCentredString>
+			<place x="57" y="700" width="481" height="30">
+				<para alignment="center">
+				All 3 frames have the same y value and height. The first frame is coloured red and the others blue.
+				The end of the content in the first frame pushes down the start of content in the latter two frames.
+				</para>
+			</place>
+			<place x="57" y="395" width="481" height="30">
+				<para alignment="center">
+				See the below. It uses the same original frame sizes, but as you can see longer items in the first frame
+				reduces the height of the subsequent frames that haven't yet had content added to them.
+				</para>
+			</place>
+		</pageGraphics>
+		<frame id ="full_1" x1="57" y1="450" width="481" height="245" showBoundary="border(color='red')"/>
+		<frame id ="left_1" x1="57" y1="450" width="239" height="245" showBoundary="border(color='blue')"/>
+		<frame id ="right_1" x1="299" y1="450" width="239" height="245" showBoundary="border(color='blue')"/>
+		<frame id ="full_2" x1="57" y1="130" width="481" height="245" showBoundary="border(color='red')"/>
+		<frame id ="left_2" x1="57" y1="130" width="239" height="245" showBoundary="border(color='blue')"/>
+		<frame id ="right_2" x1="299" y1="130" width="239" height="245" showBoundary="border(color='blue')"/>
+    </pageTemplate>
+	<pageTemplate id="main3">
+		<pageGraphics>
+		<setFont name="Arial-Bold" size="18"/>
+			<drawString x="35" y="783" tagType="P">RML Example 064: Dynamic Frame usage</drawString>
+	            <setFont name="Arial-Bold-Italic" size="12" />
+	    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file="" altText="ReportLab Logo" tagType="Forced Figure"/>
+	    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
+			<setFont name="Arial-Bold-Italic" size="18"/>
+
+			<setFont name="Arial" size="10"/>
+			<drawCentredString x="297" y="36"><pageNumber countingFrom="2"/></drawCentredString>
+			<place x="57" y="700" width="481" height="30">
+				<para alignment="center">
+				This also covers expanding the starting point of frames.
+				In this example both smaller frames are the same size but with the adjustment the first frame's starting point expands.
+				</para>
+			</place>
+			<place x="57" y="240" width="481" height="50">
+				<para alignment="center">
+					Please note dynamic frames logic is not set to handle that first frame overflowing.<br/>
+					Once a frame has content within it, we cannot adjust the _y2 value. So once it's overflowed we cant
+					adjust the frame that the content has overflowed into.
+				</para>
+			</place>
+		</pageGraphics>
+		<frame id ="full" x1="57" y1="400" width="481" height="290" showBoundary="border(color='red')"/>
+		<frame id ="left" x1="57" y1="300" width="239" height="200" showBoundary="border(color='blue')"/>
+		<frame id ="right" x1="299" y1="300" width="239" height="200" showBoundary="border(color='blue')"/>
+    </pageTemplate>
+</template>
+
+<stylesheet>
+	<blockTableStyle id="basic">
+		<blockFont name="Arial" size="10" leading="12"/>
+		<blockBackground colorName="grey" start="0,0" stop="-1,0"/>
+		<lineStyle colorName="black" kind="GRID" thickness="0.5" space="12" />
+	</blockTableStyle>
+</stylesheet>
+<story firstPageTemplate="main">
+	<!-- Page 1 -->
+	<para><b>This is line 1</b></para>
+	<para>This is line 2</para>
+	<!-- Add content here to see the two vertical frames get pushed down further. -->
+	<docAssign var='_y' expr='doc.frame._y'/>
+	<docAssign var='doc.pageTemplate.frames[1]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[1]._reset()'/>
+	<docAssign var='doc.pageTemplate.frames[2]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[2]._reset()'/>
+	<nextFrame/>
+	<para textColor='blue'><i>this should be in the left frame</i></para>
+	<nextFrame/>
+	<para textColor='green'><i>this should be in the right frame</i></para>
+
+	<!-- Page 2 -->
+	<setNextTemplate name="main2"/>
+	<nextPage/>
+	<!-- Add content here to see the two vertical frames get pushed down further. -->
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 1</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+	<docAssign var='_y' expr='doc.frame._y'/>
+	<docAssign var='doc.pageTemplate.frames[1]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[1]._reset()'/>
+	<docAssign var='doc.pageTemplate.frames[2]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[2]._reset()'/>
+	<nextFrame/>
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 2</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+	<nextFrame/>
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 3</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+
+	<nextFrame name="full_2"/>
+
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 1</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+	<docAssign var='_y' expr='doc.frame._y'/>
+	<docAssign var='doc.pageTemplate.frames[4]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[4]._reset()'/>
+	<docAssign var='doc.pageTemplate.frames[5]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[5]._reset()'/>
+	<nextFrame/>
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 2</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+	<nextFrame/>
+	<spacer length="5"/>
+	<indent left="5" right="5">
+		<blockTable style="basic">
+			<tr><td><para>Frame 3</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+			<tr><td><para>&nbsp;</para></td></tr>
+		</blockTable>
+	</indent>
+
+	<!-- Page 3 -->
+	<setNextTemplate name="main3"/>
+	<nextPage/>
+	<para>Frame 1</para>
+	<docAssign var='_y' expr='doc.frame._y'/>
+	<docAssign var='doc.pageTemplate.frames[1]._y2' expr='_y'/>
+	<docExec stmt='doc.pageTemplate.frames[1]._reset()'/>
+	<nextFrame/>
+	<para>Frame 2</para>
+	<nextFrame/>
+	<para>Frame 3</para>
+</story>
+</document>
