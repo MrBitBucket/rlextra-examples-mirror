@@ -104,6 +104,18 @@ def my_function(arg):
     return [bar, foo[0]]
 </codesnippet>
 
+<para>Empty code snippets below should have no</para>
+<codesnippet language="python"></codesnippet>
+<codesnippet language="python">
+</codesnippet>
+<codesnippet language="python">
+
+
+
+</codesnippet>
+<para>ill effects and just vanish.</para>
+
+
 	</story>
 </document>
 
