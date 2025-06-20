@@ -108,5 +108,149 @@
 			<tr><td><para>anchor</para></td><td><para>ne</para></td></tr>
 		</blockTable>
 	</placedStory>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="nw" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>nw</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="n" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>n</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="ne" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>ne</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="e" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>e</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="se" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>se</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="s" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>s</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="sw" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>sw</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
+
+    <nextPage/>
+    <placedStory x="262.5" y="350.0" origin="frame" anchor="c" maxWidth="3in" maxHeight="2.5in"
+        showBoundary="border(color='blue',width=0.2)" onOverflow="shrink">
+        <h3>Placed Story</h3>
+        <para>This is a longer paragraph used to test the behaviour of the placed story overflow handling etc etc.</para>
+        <h2>Table 1 Example</h2>
+        <blockTable  style="basic" align="LEFT" tagType="Table">
+            <tr><td><para><b>Parameter</b></para></td><td><para><b>Value</b></para></td></tr>
+            <tr><td><para>(x,y)</para></td><td><para>(262.5,350.0)</para></td></tr>
+            <tr><td><para>max width height</para></td><td><para>1.8in x 1.5in</para></td></tr>
+            <tr><td><para>origin</para></td><td><para>frame</para></td></tr>
+            <tr><td><para>anchor</para></td><td><para>c</para></td></tr>
+        </blockTable>
+    </placedStory>
+    <graphicsMode origin="frame">
+        <crossMark x="262.5" y="350.0" size="5" gap="1" color="red" width="1"/>
+    </graphicsMode>
 </story>
 </document>

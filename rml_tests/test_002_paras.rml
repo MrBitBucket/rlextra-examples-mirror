@@ -678,10 +678,13 @@ forms of the grammar. Dots</para>
 	<lines>154 534 154 538 152 536 156 536</lines>
 	<lines>398 534 398 538 396 536 400 536</lines>
 	<lines>10 462 10 466 8 464 12 464</lines>
-	<lines>154 462 154 466 152 464 156 464</lines>
+	<lines>226 462 226 466 224 464 228 464</lines>
+	<lines>288 462 288 466 286 464 290 464</lines>
 	<lines>398 462 398 466 396 464 400 464</lines>
 	<lines>10 390 10 394 8 392 12 392</lines>
 	<lines>154 390 154 394 152 392 156 392</lines>
+	<lines>226 390 226 394 224 392 228 392</lines>
+	<lines>288 390 288 394 286 392 290 392</lines>
 	<lines>398 390 398 394 396 392 400 392</lines>
 </graphicsMode>
 <placePara x="10" y="536" width="72" anchor="w" origin="frame">This is Line 1<br/>anchor=w<br/>this is line 3.</placePara>
@@ -689,9 +692,13 @@ forms of the grammar. Dots</para>
 <placePara x="398" y="536" width="72" anchor="e" origin="frame">This is Line 1<br/>anchor=e<br/>this is line 3.</placePara>
 <placePara x="10" y="464" width="72" anchor="sw" origin="frame">This is Line 1<br/>anchor=sw<br/>this is line 3.</placePara>
 <placePara x="154" y="464" width="72" anchor="s" origin="frame">This is Line 1<br/>anchor=s<br/>this is line 3.</placePara>
+<placePara x="226" y="464" width="72" anchor="st" origin="frame">This is Line 1<br/>anchor=st<br/>this is line 3.</placePara>
+<placePara x="288" y="464" width="72" anchor="sl" origin="frame">This is Line 1<br/>anchor=sl<br/>this is line 3.</placePara>
 <placePara x="398" y="464" width="72" anchor="se" origin="frame">This is Line 1<br/>anchor=se<br/>this is line 3.</placePara>
 <placePara x="10" y="392" width="72" anchor="nw" origin="frame">This is Line 1<br/>anchor=nw<br/>this is line 3.</placePara>
 <placePara x="154" y="392" width="72" anchor="n" origin="frame">This is Line 1<br/>anchor=n<br/>this is line 3.</placePara>
+<placePara x="226" y="392" width="72" anchor="nl" origin="frame">This is Line 1<br/>anchor=nl<br/>this is line 3.</placePara>
+<placePara x="288" y="392" width="72" anchor="nb" origin="frame">This is Line 1<br/>anchor=nb<br/>this is line 3.</placePara>
 <placePara x="398" y="392" width="72" anchor="ne" origin="frame" backColor="yellow" leftIndent="15">This is Line 1<br/>anchor=ne<br/>this is line 3.</placePara>
 
 <nextPage/>
