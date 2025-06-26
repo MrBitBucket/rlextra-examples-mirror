@@ -51,6 +51,9 @@ syntax: regexp
 ^opensource-examples/lib/
 ^opensource-examples/bin/
 ^opensource-examples/share
+^xls-to-pdf/lib/
+^xls-to-pdf/bin/
+^xls-to-pdf/share
 ^lib/
 lib64
 ^bin/
