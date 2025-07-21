@@ -68,6 +68,7 @@
 
 
 <story>
+	<bookmark name="FIRST_PAGE"/>
 	<h1>This is in h1 style</h1>
 	<para>This is an ordinary paragraph</para>
 
@@ -99,7 +100,7 @@ Proin euismod, ligula vitae fringilla aliquam, dolor sem sagittis mauris, ac imp
 	<graphicsMode origin="frame" borderStrokeWidth="2" borderStrokeColor="red">
 	<image file="testimg.gif" preserveAspectRatio="1" x="0" y="0" width="72" height="72" showBoundary="border(color='blue',width=1)" tagType='figure' altText='Sample Image' inline="1"/>
 	</graphicsMode>
-	<para><a href="https://www.reportlab.com">single &lt;a&gt; tag link</a></para>
+	<para><a href="https://www.reportlab.com" altText="Hello World">single &lt;a&gt; tag link</a></para>
 	<!--graphicsMode origin="page" borderStrokeWidth="1" borderStrokeColor="red">
 		<crossMark x="35" y="45" color="red" width="0.5"/>
 		<crossMark x="107" y="52.2" color="red" width="0.5"/>
@@ -113,6 +114,27 @@ Proin euismod, ligula vitae fringilla aliquam, dolor sem sagittis mauris, ac imp
 		<tr><td tagType="th scope=row" altText="Profit">Profit</td><td altText="10">10</td><td altText="-30">-30</td><td altText="25">25</td></tr>
 		<tr tagType="artifact"><td>unwanted</td><td>0</td><td>1</td><td>2</td></tr>
 	</blockTable>
+	<nextPage/>
+	<h2>Some links</h2>
+	<para>here is <a href="https://www.reportlab.com">ReportLab Website no altText</a></para>
+	<para>and now for <a href="https://www.reportlab.com" altText="Hello World">ReportLab Website again</a></para>
+	<para>and the last <a href="https://google.com" altText="Hello Cruel World">Link to google</a></para>
+	<spacer length="36"/>
+	<xpre>Here is some text <a href="admin.reportlab.com" altText="link to admin">with a
+link</a> inside to our admin</xpre>
+	<nextPage/>
+	<xpre>Here is some text <link href="admin.reportlab.com" altText="link tag to admin">with a
+link</link> inside to our admin</xpre>
+	<illustration width="72" height="72">
+		<saveState/>
+		<fill color="pink"/>
+		<rect x="0" y="0" width="71" height="35" fill="1" href="https://bbc.co.uk" altText="Hello BBC" tagType="Link"/>
+		<fill color="yellow"/>
+		<rect x="0" y="36" width="71" height="35" fill="1" destination="FIRST_PAGE" altText="Jumping Jiminy" tagType="Link"/>
+		<restoreState/>
+	</illustration>
+	<spacer length="36"/>
+	<para>Back to the <a href="#FIRST_PAGE" altText="Not a time jump">top</a></para>
 </story>
 
 </document>

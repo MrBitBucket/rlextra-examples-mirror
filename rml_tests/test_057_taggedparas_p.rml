@@ -68,6 +68,7 @@
 
 
 <story>
+	<bookmark name="FIRST_PAGE"/>
 	<h1>This is in h1 style</h1>
 	<p>This is an ordinary paragraph</p>
 
@@ -113,6 +114,27 @@ Proin euismod, ligula vitae fringilla aliquam, dolor sem sagittis mauris, ac imp
 		<tr><td tagType="th scope=row" altText="Profit">Profit</td><td altText="10">10</td><td altText="-30">-30</td><td altText="25">25</td></tr>
 		<tr tagType="artifact"><td>unwanted</td><td>0</td><td>1</td><td>2</td></tr>
 	</blockTable>
+	<nextPage/>
+	<h2>Some links</h2>
+	<p>here is <a href="https://www.reportlab.com">ReportLab Website no altText</a></p>
+	<p>and now for <a href="https://www.reportlab.com" altText="Hello World">ReportLab Website again</a></p>
+	<p>and the last <a href="https://google.com" altText="Hello Cruel World">Link to google</a></p>
+	<spacer length="36"/>
+	<xpre>Here is some text <a href="admin.reportlab.com" altText="link to admin">with a
+link</a> inside to our admin</xpre>
+	<nextPage/>
+	<xpre>Here is some text <link href="admin.reportlab.com" altText="link tag to admin">with a
+link</link> inside to our admin</xpre>
+	<illustration width="72" height="72">
+		<saveState/>
+		<fill color="pink"/>
+		<rect x="0" y="0" width="71" height="35" fill="1" href="https://bbc.co.uk" altText="Hello BBC" tagType="Link"/>
+		<fill color="yellow"/>
+		<rect x="0" y="36" width="71" height="35" fill="1" destination="FIRST_PAGE" altText="Jumping Jiminy" tagType="Link"/>
+		<restoreState/>
+	</illustration>
+	<spacer length="36"/>
+	<p>Back to the <a href="#FIRST_PAGE" altText="Not a time jump">top</a></p>
 </story>
 
 </document>

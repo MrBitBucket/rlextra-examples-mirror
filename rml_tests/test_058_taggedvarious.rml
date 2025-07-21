@@ -89,7 +89,7 @@
 
 	<para style="h1" tagType="H1">Test - Table</para>
 	<para style="normal" tagType="H2">Table 1 Example</para>
-    <blockTable  style="basic" align="LEFT" altText="Table's AltText" summary="Table Summary Example">
+    <blockTable  style="basic" align="LEFT" altText="Table's AltText" summary="Robin's Table Summary Example">
 				<caption style="h1" tagType="H1">Robin's Table</caption>
                 <tr>
                     <td tagType="TH scope=column">Col 1</td>
@@ -166,7 +166,7 @@
 			<rect x="10" y="0" width="515" height="10" fill="1" stroke="1" href="https://www.reportlab.com/"/>
 		<markedContent tagType="Artifact" kind="end"/>
 	</illustration>
-	    <blockTable  style="basic" align="LEFT" altText="Test Table Tagging" summary="Table Summary Example" repeatRows="1" spaceBefore="10">
+	    <blockTable  style="basic" align="LEFT" altText="Test Table Tagging" summary="Split Table Summary Example" repeatRows="1" spaceBefore="10">
                 <tr>
                     <td tagType="TH scope=column" background="grey">Col 1</td>
                     <td tagType="TH scope=column" background="grey">Col 2</td>
