@@ -7,7 +7,7 @@ Before starting, you need to register for a Reportlab Account  here https://www.
 How to install and run locally
 --------------------------------------
 
-python -mvirtualenv  .
+python -m venv  .
 . bin/activate
 pip install -r requirements.txt
 

@@ -42,6 +42,10 @@ You should have Django 2.2 installed and
 an installation of ReportLab PLUS - register on our site and 
 follow the instructions. We generally recommend using virtualenv.
 
+$ python -m venv .
+$ . bin/activate
+$ pip install -r requirements.txt
+
 Our site has full instructions but if you haven't worked through
 them and want to check that all the dependencies are in place,
 start Python up (inside your virtual environment, if you are
@@ -56,7 +60,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 (2, 2, 10, 'final', 0)
 >>> import reportlab
 >>> import PIL._imaging
->>> import pyRXPU  
 >>> import rlextra
 
 To set up, cd into the 'project' directory and execute

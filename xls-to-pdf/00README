@@ -37,5 +37,6 @@ utils.py contains functions used to process the XLS file.
 
 Making Your First Document In Report Markup Language
 
-    $ python runme.py.py  data/data.xls
-You should now see a file output/invoice.pdf, which should look like:
+    $ python runme.py data/data.xls
+
+You should now see a file output/invoice.pdf.

@@ -15,7 +15,7 @@ Before starting, you need to register for a Reportlab Account  here https://www.
 
 Installation
 ---------------
-python -mvirtualenv  .
+python -m venv  .
 . bin/activate
 pip install -r requirements.txt
 

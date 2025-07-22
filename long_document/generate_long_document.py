@@ -42,7 +42,7 @@ def main():
     document = load_document(f"documents/{filename}")
     namespace = {'document': document}
     template_file_name = 'longdocument.prep'
-    template = preppy.getModule(template_file_name, savePyc=False, importModule=False)
+    template = preppy.getModule(template_file_name, savePyc=False)
     rml = template.getOutput(namespace)
     output_pdf_name = "_".join(document['title'].lower().split(" ")) + '.pdf'
     rml2pdf.go(rml.encode(), outputFileName=output_pdf_name, saveRml="latest.rml")

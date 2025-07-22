@@ -13,7 +13,7 @@ Run the example
 2. Create a virtual environment (e.g. `python3.12 -m venv .`)
 3. Activate the virtual environment (`. bin/activate`)
 4. Install requirements (`pip install -r requirements.txt`) and use your username from step 1.
-5. Run `rml2pdf alises_substack.rml`
+5. Run `rml2pdf aliases_substack.rml`
 
 The file should then be generated as `aliases_substack.pdf`
 

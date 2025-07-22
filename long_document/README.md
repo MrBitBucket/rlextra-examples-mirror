@@ -7,6 +7,11 @@ It does so by parsing documents from the Internet Classics Archive. http://class
 
 ## Running
 
+    cd long_document
+    python -m venv .
+    . bin/activate
+    pip install -r requirements.txt
+
 An example way you may run the command is as below:
 
     python generate_long_document.py odyssey.mb.txt

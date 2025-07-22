@@ -7,8 +7,11 @@ loops/conditionals/variables, embedded in an RML document to control the formatt
 
 To try it::
 
- 	cd product_catalogue
- 	python product_catalog.py
+    cd product_catalogue
+    python -m venv .
+    . bin/activate
+    pip install -r requirements.txt
+    python product_catalog.py
 
 Look at the output files in output/, then the main script, then the .prep file which controls the layout.  Feel free to make some edits
 
