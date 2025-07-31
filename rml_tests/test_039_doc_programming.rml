@@ -129,6 +129,48 @@ blah blah forward-thinking blah.
 		<para style="normal">elsePart.....</para>
 	</docIf>
 </docWhile>
+
+	<para><br/><b>Testing &lt;docElif cond="expr"/&gt;</b></para>
+<docAssign var='i' expr="0"/>
+<docIf cond='i==3'>
+	<para>3</para>
+<docElif cond='i==42'/>
+	<para>42</para>
+<docElif cond='i==43'/>
+	<para>43</para>
+<docElse/>
+	<para>not 3 or 42 or 43</para>
+</docIf>
+<docAssign var='i' expr="3"/>
+<docIf cond='i==3'>
+	<para>3</para>
+<docElif cond='i==42'/>
+	<para>42</para>
+<docElif cond='i==43'/>
+	<para>43</para>
+<docElse/>
+	<para>not 4 or 42 or 43</para>
+</docIf>
+<docAssign var='i' expr="42"/>
+<docIf cond='i==3'>
+	<para>3</para>
+<docElif cond='i==42'/>
+	<para>42</para>
+<docElif cond='i==43'/>
+	<para>43</para>
+<docElse/>
+	<para>not 4 or 42 or 43</para>
+</docIf>
+<docAssign var='i' expr="43"/>
+<docIf cond='i==3'>
+	<para>3</para>
+<docElif cond='i==42'/>
+	<para>42</para>
+<docElif cond='i==43'/>
+	<para>43</para>
+<docElse/>
+	<para>not 4 or 42 or 43</para>
+</docIf>
 <para style="normal">Now we should be on page 3</para>
 <setNextTemplate name="autoNextTemplate"/>
 <nextPage/>
