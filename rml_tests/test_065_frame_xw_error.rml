@@ -1,0 +1,49 @@
+<!DOCTYPE document SYSTEM "rml_1_0.dtd"> 
+<!--expect:y2='545'> @ 23:2 - 23:62-->
+<document filename="test_065_frame_xw_error.pdf" invariant="1">
+
+<template pageSize="a4" leftMargin="72" showBoundary="1"
+    author="A.N. Author"
+    subject="My subject"
+    title="My title"
+    creator="My creator"
+	displayDocTitle="1"
+	duplex="Simplex"
+	lang="en-US"
+    >
+	<pageTemplate id="main" pageSize="a4">
+	<pageGraphics>
+	<setFont name="Helvetica-Bold" size="18"/>
+    	    <drawString x="35" y="783">RML Example 65: Hello width frame specified by x2, y2</drawString>
+            <setFont name="Helvetica-Oblique" size="12" />
+    		<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="749" width="72" height="72" required="no" alt_file=""/>
+    		<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" alt_file="" required="no"/>
+		<setFont name="Helvetica-BoldOblique" size="18"/>
+	</pageGraphics>
+	<frame id="1" x1="35" y1="45" x2="490" width="535" y2="545"/>
+	</pageTemplate>
+</template>
+
+<stylesheet>
+	<initialize>
+	<alias id="style.normal" value="style.Normal"/>
+	</initialize>
+	<paraStyle name="h1" fontName="Helvetica-BoldOblique" fontSize="16" leading="12" spaceAfter="16"/>
+	<paraStyle name="italic" fontName="Helvetica-Oblique" fontSize="10" leading="12"/>
+	<paraStyle name="normal" fontName="Helvetica" fontSize="10" leading="12" hyphenationLang="en_GB" hyphenationMinWordLength="5"/>
+    <paraStyle name="normalb" fontName="Helvetica-Bold" parent="normal" spaceBefore="10"/>
+	<paraStyle name="spaced" fontName="Helvetica" fontSize="12" leading="12" 
+		spaceBefore="12" spaceAfter="12"/>
+		<paraStyle 
+        name="intro" 
+        fontName="Helvetica" 
+        fontSize="12" 
+        leading="12"
+        spaceAfter="12"/>
+</stylesheet>
+
+<story>
+<para style="intro">This document has a frame specifeid by x1-x2 y1-y2 not the usual width and height.</para>
+</story>
+
+</document>
