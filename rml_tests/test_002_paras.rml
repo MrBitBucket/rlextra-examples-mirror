@@ -828,6 +828,28 @@ as to impose problems of phonemic and morphological analysis.<br/>
 <xpre style="style1" spaceBefore="10">xpre<u><font size="1pt" color="red">^SS^</font>    </u></xpre>
 <para style="style1" spaceBefore="10">para<u><font size="1pt" color="red">^SS^</font>    </u>|</para>
 <xpre style="style1" spaceBefore="10">xpre<u><font size="1pt" color="red">^SS^</font>    </u>|</xpre>
+<nextPage/>
+<para style="h1">placePara &amp; placeXPre drawOnce</para>
+<placePara x="35" y="700" width="525" anchor="sw">placePara repeated 5 times</placePara>
+<placePara x="35" y="700" width="525" anchor="sw">placePara repeated 5 times</placePara>
+<placePara x="35" y="700" width="525" anchor="sw">placePara repeated 5 times</placePara>
+<placePara x="35" y="700" width="525" anchor="sw">placePara repeated 5 times</placePara>
+<placePara x="35" y="700" width="525" anchor="sw">placePara repeated 5 times</placePara>
+<placePara x="35" y="688" width="525" anchor="sw" drawOnce="para">placePara repeated 5 times with drawOnce</placePara>
+<placePara x="35" y="688" width="525" anchor="sw" drawOnce="para">placePara repeated 5 times with drawOnce</placePara>
+<placePara x="35" y="688" width="525" anchor="sw" drawOnce="para">placePara repeated 5 times with drawOnce</placePara>
+<placePara x="35" y="688" width="525" anchor="sw" drawOnce="para">placePara repeated 5 times with drawOnce</placePara>
+<placePara x="35" y="688" width="525" anchor="sw" drawOnce="para">placePara repeated 5 times with drawOnce</placePara>
+<placeXPre x="35" y="668" width="525" anchor="sw" style="Normal">placeXPre repeated 5 times</placeXPre>
+<placeXPre x="35" y="668" width="525" anchor="sw" style="Normal">placeXPre repeated 5 times</placeXPre>
+<placeXPre x="35" y="668" width="525" anchor="sw" style="Normal">placeXPre repeated 5 times</placeXPre>
+<placeXPre x="35" y="668" width="525" anchor="sw" style="Normal">placeXPre repeated 5 times</placeXPre>
+<placeXPre x="35" y="668" width="525" anchor="sw" style="Normal">placeXPre repeated 5 times</placeXPre>
+<placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
+<placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
+<placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
+<placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
+<placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
 </story>
 
 </document>
