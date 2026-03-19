@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="iso-8859-1" standalone="no" ?> 
 <!DOCTYPE document SYSTEM "rml_1_0.dtd">
 <document filename="test_008_tables.pdf">
+	<docinit>
+		<color id="dark" CMYK="0,0,0,0.15"/>
+		<color id="medium" CMYK="0,0,0,0.10"/>
+		<color id="light" CMYK="0,0,0,0.05"/>
+	</docinit>
 	<template pageSize="(595, 842)" leftMargin="72" showBoundary="1">
 		<pageTemplate id="main">
 		<pageGraphics>
@@ -27,6 +32,15 @@
 			<frame id="f1" x1="1in" y1="9in" width="6.27in" height="0.5in" showBoundary="border(color='red',width=1)"/>
 			<frame id="f2" x1="1in" y1="7.5in" width="6.27in" height="1in" showBoundary="border(color='red',width=1)"/>
 			<frame id="f3" x1="1in" y1="6in" width="6.27in" height="1in" showBoundary="border(color='red',width=1)"/>
+		</pageTemplate>
+		<pageTemplate id="repeating" pageSize="(595, 492)">
+			<pageGraphics>
+				<setFont name="Helvetica-Bold" size="18"/>
+				<drawString x="35" y="440">RML repeating nested table headings/subheadings</drawString>
+				<image file="logo_no_bar.png" preserveAspectRatio="1" x="488" y="400" width="72" height="72" required="no"/>
+				<image file="strapline.png" preserveAspectRatio="1" x="35" y="0" width="525" required="no"/>
+			</pageGraphics>
+			<frame id="full" x1="36" y1="36" width="523" height="300"/>
 		</pageTemplate>
 	</template>
 	<stylesheet>
@@ -1963,5 +1977,172 @@ I # 1      1   XYZ123M
 				<td>valign=TOP</td>
 			</tr>
 		</blockTable>
+
+		<setNextTemplate name="repeating"/>
+		<nextPage/>
+
+		<placePara width="452" x="36" y="350">
+			This example below makes use of:<br/><br/>
+			- &lt;setPageTopFlowables show="1"&gt; set an item to repeat at the top of the first frame of every page until you unset it.<br/>
+			- &lt;setTopFlowables show="1"&gt; sets an item to repeat at the top of each frame until you unset it.<br/>
+			- repeatRows="1" repeats either a number of rows, or a set of specific rows.
+		</placePara>
+
+		<setPageTopFlowables show="1">
+			<!-- Repeated Main heading -->
+			<blockTable colWidths="45%,45%" repeatRows="1">
+				<tr>
+					<td background="dark">Asset.</td>
+					<td background="dark">Amount.</td>
+				</tr>
+			</blockTable>
+		</setPageTopFlowables>
+
+		<!-- Repeated Subheading -->
+		<setTopFlowables show="1">
+			<blockTable colWidths="45%,45%" repeatRows="1">
+				<tr>
+					<td background="medium" colspan="2">UK</td>
+					<td></td>
+				</tr>
+			</blockTable>
+		</setTopFlowables>
+		<blockTable colWidths="45%,45%" repeatRows="1">
+			<tr>
+				<td background="light" colspan="2">Property</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+		</blockTable>
+		<blockTable colWidths="45%,45%" repeatRows="1">
+			<tr>
+				<td background="light" colspan="2">Technology</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+		</blockTable>
+		<setTopFlowables show="0"/>
+
+		<!-- Repeated Subheading -->
+		<setTopFlowables show="1">
+			<blockTable colWidths="45%,45%" repeatRows="1">
+				<tr>
+					<td background="medium" colspan="2">US</td>
+					<td></td>
+				</tr>
+			</blockTable>
+		</setTopFlowables>
+		<blockTable colWidths="45%,45%" repeatRows="1">
+			<tr>
+				<td background="light" colspan="2">Energy</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+		</blockTable>
+		<blockTable colWidths="45%,45%" repeatRows="1">
+			<tr>
+				<td background="light" colspan="2">Utilities</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£123</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£456</td>
+			</tr>
+			<tr>
+				<td>example</td>
+				<td>£789</td>
+			</tr>
+		</blockTable>
+		<setTopFlowables show="0"/>
+
+		<setPageTopFlowables show="0"/>
+
+		<spacer length="10"/>
+		<placePara width="452" x="36" y="350">
+			<b>Continued...</b><br/>
+			This allows us to repeat up to 3 nested table heading rows at the start of each page,
+			alternating the headings as the data does. As you can see in the below table it repeats
+			the headings for the overall table, country, and sector.
+			<br/>
+			Re-declaring setPageTopFlowables and setTopFlowables with show="0" stops the repeating.
+			<br/><br/>
+			Please keep in mind with multiple frames on the same page the behaviour may seem different.
+		</placePara>
+
+		<setNextTemplate name="three"/>
+
 	</story>
 </document>
