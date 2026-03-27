@@ -31,6 +31,7 @@
 		<alias id="normal" value="style.Normal"/>
 		<alias id="h1" value="style.Heading1"/>
 		<alias id="h2" value="style.Heading2"/>
+		<alias id="h3" value="style.Heading3"/>
 	</initialize>
 
 	<paraStyle name="style.Heading1"
@@ -45,6 +46,12 @@
 	fontSize="11"
 	leading="12.1"
 	spaceBefore = "0.5 cm"
+	/>
+	<paraStyle name="style.Heading3"
+	parent="style.Heading1"
+	fontSize="10"
+	leading="11.8"
+	spaceBefore = "0.4 cm"
 	/>
 
 	<paraStyle name="style.Normal"

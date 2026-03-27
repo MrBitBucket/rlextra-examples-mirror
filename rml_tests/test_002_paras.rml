@@ -850,6 +850,7 @@ as to impose problems of phonemic and morphological analysis.<br/>
 <placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
 <placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
 <placeXPre x="35" y="656" width="525" anchor="sw" drawOnce="xpre" style="Normal">placeXPre repeated 5 times with drawOnce</placeXPre>
+<plugInFlowable module="mymodule" function="CommentFlowable">This is a comment added in RML</plugInFlowable>
 </story>
 
 </document>

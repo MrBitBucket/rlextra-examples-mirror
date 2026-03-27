@@ -128,6 +128,16 @@
 		<dt><h1 style="h1">Drink</h1></dt>
 		<dd><para style="list-normal">White cold drink</para></dd>
 	</dl>
+<nextPage/>
+	<ul style="tagged_list">
+        <li><para style="normal">Coffee</para></li>
+        <li><para style="normal">Tea</para>
+            <ul style="tagged_list">
+                <li><para style="normal">Black tea</para></li>
+                <li><para style="normal">Green tea</para></li>
+            </ul>
+        </li><li><para style="normal">Milk</para></li>
+    </ul>
 
 <nextPage/>
 	<markedContent tagType="Artifact" kind="start"/>
