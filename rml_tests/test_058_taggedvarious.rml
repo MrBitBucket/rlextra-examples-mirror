@@ -8,6 +8,7 @@
 	<registerTTFont faceName="Arial-Bold-Italic" fileName="Arial_Bold_Italic.ttf"/>
 	<registerTTFont faceName="Arial-Italic" fileName="Arial_Italic.ttf"/>
 	<registerFontFamily normal="Arial" bold="Arial-Bold" italic="Arial-Italic" boldItalic="Arial-Bold-Italic"/>
+	<color id="WCAGRED" RGB="0xEE0000"/>
 </docinit>
 <template pageSize="(595, 842)" leftMargin="72" showBoundary="0" title="Tagged" lang="en-GB" displayDocTitle="1">
 	<pageTemplate id="main">
@@ -120,7 +121,7 @@
 	<spacer length="10"/>
 	<para style="h1" tagType="H1">Test - Definition Lists</para>
 	<dl>
-		<h1 style="h1" alignment="center" textColor="red">Definition List</h1>
+		<h1 style="h1" alignment="center" textColor="WCAGRED">Definition List</h1>
 		<dt><h1 style="h1">Coffee</h1></dt>
 		<dd><para style="list-normal">Black hot drink</para></dd>
 		<dd><para style="list-normal">Wakes you</para></dd>
@@ -157,7 +158,7 @@
     </drawing>
 	<illustration width="525" height="72">
 		<setFont name="Arial" size="10" leading="12"/>
-		<fill color="red"/>
+		<fill color="WCAGRED"/>
 		<drawString x="0" y="60">Left</drawString>
 		<fill color="green"/>
 		<drawRightString x="525" y="48">Right</drawRightString>

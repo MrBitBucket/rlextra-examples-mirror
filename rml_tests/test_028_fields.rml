@@ -53,14 +53,14 @@
 		<checkboxField name='cb1C' tooltip='Field cb1C' checked='1' x='72' y='144' buttonStyle='cross' borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
 		<checkboxField name='cb1D' tooltip='Field cb1D' checked='1' x='72' y='180' buttonStyle='star' borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
 		<checkboxField name='cb1E' tooltip='Field cb1E' checked='1' x='72' y='216' buttonStyle='diamond' borderStyle='bevelled'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
-		<checkboxField name='cb1F' tooltip='Field cb1F' checked='1' x='72' y='252' buttonStyle='check'  borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
-		<checkboxField name='cb1H' tooltip='Field cb1H' checked='1' x='72' y='288' buttonStyle='check'  borderStyle='underlined' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
-		<checkboxField name='cb1G' tooltip='Field cb1G' checked='1' x='72' y='324' buttonStyle='check'  borderStyle='dashed' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
-		<checkboxField name='cb1I' tooltip='Field cb1I' checked='1' x='72' y='360' buttonStyle='check'  borderStyle='inset' borderWidth='2'  borderColor='red'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1F' tooltip='Field cb1F' checked='1' x='72' y='252' buttonStyle='check'  borderWidth='2'  borderColor='red'   forceBorder='true'/>
+		<checkboxField name='cb1H' tooltip='Field cb1H' checked='1' x='72' y='288' buttonStyle='check'  borderStyle='underlined' borderWidth='2'  borderColor='red'   forceBorder='true'/>
+		<checkboxField name='cb1G' tooltip='Field cb1G' checked='1' x='72' y='324' buttonStyle='check'  borderStyle='dashed' borderWidth='2'  borderColor='red'   forceBorder='true'/>
+		<checkboxField name='cb1I' tooltip='Field cb1I' checked='1' x='72' y='360' buttonStyle='check'  borderStyle='inset' borderWidth='2'  borderColor='red'   forceBorder='true'/>
 		<checkboxField name='cb1J' tooltip='Field cb1J' checked='1' x='72' y='396' buttonStyle='check'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
-		<checkboxField name='cb1K' tooltip='Field cb1K' checked='1' x='72' y='432' buttonStyle='check'  borderWidth='1'  borderColor='None'  fillColor='None'  textColor='None' forceBorder='true'/>
-		<checkboxField name='cb1L' tooltip='Field cb1L' checked='0' x='72' y='800' buttonStyle='check' borderColor='None'  fillColor='None'  textColor='None' forceBorder='true'/>
-		<checkboxField name='cb1M' tooltip='Field cb1M' checked='0' x='72' y='600' buttonStyle='check' borderWidth='2'  borderColor='blue'  fillColor='None'  textColor='None' forceBorder='true'/>
+		<checkboxField name='cb1K' tooltip='Field cb1K' checked='1' x='72' y='432' buttonStyle='check'  borderWidth='1'    forceBorder='true'/>
+		<checkboxField name='cb1L' tooltip='Field cb1L' checked='0' x='72' y='800' buttonStyle='check'   forceBorder='true'/>
+		<checkboxField name='cb1M' tooltip='Field cb1M' checked='0' x='72' y='600' buttonStyle='check' borderWidth='2'  borderColor='blue'   forceBorder='true'/>
 		<radioField name='rb1A' tooltip='Field rb1A' value='V1'  selected='0' x='144' y='72' buttonStyle='circle'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
 		<radioField name='rb1A' tooltip='Field rb1A' value='V2'  selected='1' x='144' y='108' buttonStyle='circle'  borderStyle='solid' shape='circle'  borderWidth='2'  borderColor='red'  fillColor='green'  textColor='blue' forceBorder='true'/>
 		<radioField name='rb1B' tooltip='Field rb1B' value='V1'  selected='0' x='180' y='72' buttonStyle='check'  borderStyle='solid' shape='square'  borderWidth='2'  borderColor='green'  fillColor='red'  textColor='blue' forceBorder='true'/>
